@@ -1,7 +1,44 @@
 {
   "schemaVersion": "neica-catalog.v1",
   "mode": "publish",
-  "buildId": "empty",
-  "entries": [],
-  "files": {}
+  "buildId": "67b152d16997ccddc0d1e2902120d67037b380504b554d6244afc1164f9de162",
+  "entries": [
+    {
+      "id": "calm-tech-series-01-concept",
+      "revision": "914f5934c5e79a2d56305ce10984398b41343e063b966e66641ad81c1180ef21",
+      "title": "Calm Technology 01 — 개념",
+      "displayDate": "2026-09-02T14:14:14.113Z",
+      "order": null,
+      "kind": "carousel",
+      "cover": {
+        "path": "content/calm-tech-series-01-concept/914f5934c5e79a2d56305ce10984398b41343e063b966e66641ad81c1180ef21/ef4563c320848c4101a0.png",
+        "width": 1080,
+        "height": 1350,
+        "alt": "햇빛이 드는 집 안에서 노란 스웨터를 입은 사람이 노트북 앞에 앉아 있습니다. 카메라와 식물, 책상이 함께 보이며 기술이 일상 공간의 배경에 놓이는 Calm Technology의 도입 장면을 보여 줍니다.",
+        "variants": [
+          {
+            "path": "content/calm-tech-series-01-concept/914f5934c5e79a2d56305ce10984398b41343e063b966e66641ad81c1180ef21/cover-540.webp",
+            "width": 540
+          },
+          {
+            "path": "content/calm-tech-series-01-concept/914f5934c5e79a2d56305ce10984398b41343e063b966e66641ad81c1180ef21/cover-1080.webp",
+            "width": 1080
+          }
+        ]
+      },
+      "slideCount": 6,
+      "postPath": "content/calm-tech-series-01-concept/914f5934c5e79a2d56305ce10984398b41343e063b966e66641ad81c1180ef21/post.json"
+    }
+  ],
+  "files": {
+    "content/calm-tech-series-01-concept/914f5934c5e79a2d56305ce10984398b41343e063b966e66641ad81c1180ef21/ef4563c320848c4101a0.png": "ef4563c320848c4101a0f97a75efd3ed23d14677f1d0185e9cf5fe6983071533",
+    "content/calm-tech-series-01-concept/914f5934c5e79a2d56305ce10984398b41343e063b966e66641ad81c1180ef21/1586d7dc2c8f491edbc7.png": "1586d7dc2c8f491edbc744c03799b478038f75d24c8d2aea1f2d823fc9bf97d9",
+    "content/calm-tech-series-01-concept/914f5934c5e79a2d56305ce10984398b41343e063b966e66641ad81c1180ef21/0f2ae5e0708a71a66c7a.png": "0f2ae5e0708a71a66c7a63db3fa242e20291d2da58df5029e7104da1f1cce5ac",
+    "content/calm-tech-series-01-concept/914f5934c5e79a2d56305ce10984398b41343e063b966e66641ad81c1180ef21/b52c9966ecce5809605e.png": "b52c9966ecce5809605e0bd2f1be8adf2d7f26deea739a318732bb099e0d3b89",
+    "content/calm-tech-series-01-concept/914f5934c5e79a2d56305ce10984398b41343e063b966e66641ad81c1180ef21/383432875cd37f387dbe.png": "383432875cd37f387dbea7a4fcc82273e90954073497fabc04a6d13267649cb5",
+    "content/calm-tech-series-01-concept/914f5934c5e79a2d56305ce10984398b41343e063b966e66641ad81c1180ef21/95ebf27b8e263548ed4b.png": "95ebf27b8e263548ed4b52abe4ca58f7e91f140de0733294c3a5170fbda5c1c2",
+    "content/calm-tech-series-01-concept/914f5934c5e79a2d56305ce10984398b41343e063b966e66641ad81c1180ef21/cover-540.webp": "8fd4fc5f372fb373393a42fd5c9b780c97c103e6578395e439c16d633daffce8",
+    "content/calm-tech-series-01-concept/914f5934c5e79a2d56305ce10984398b41343e063b966e66641ad81c1180ef21/cover-1080.webp": "21f8a3dc512c6afbe86cd3b8a4d0b663f88047007b2b8eff2bee6a4533271bec",
+    "content/calm-tech-series-01-concept/914f5934c5e79a2d56305ce10984398b41343e063b966e66641ad81c1180ef21/post.json": "483ec9db6f547d138164c51ceea534d95a6b50f733be7a371fc4375e5b101b4b"
+  }
 }
