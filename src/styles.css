@@ -271,6 +271,35 @@ button {
   font: 13px var(--mono);
   margin-top: 64px;
 }
+.brand-line span {
+  display: block;
+  margin-top: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-size: 16px;
+  color: #555;
+}
+.name-meaning {
+  margin: 24px 0 30px;
+  border-top: 1px solid #111;
+}
+.name-meaning > div {
+  min-height: 62px;
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) minmax(100px, 0.6fr);
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #dedede;
+}
+.name-meaning strong {
+  font: 600 18px var(--mono);
+}
+.name-meaning span {
+  font: 16px var(--mono);
+}
+.name-meaning small {
+  font-size: 14px;
+  color: #777;
+}
 .contact-page {
   max-width: calc(1040px + var(--gutter) * 2);
 }
@@ -599,6 +628,14 @@ button {
   .contact-icon svg {
     width: 21px;
     height: 21px;
+  }
+  .name-meaning > div {
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 8px;
+    padding: 10px 0;
+  }
+  .name-meaning small {
+    grid-column: 2;
   }
   .viewer-toolbar {
     padding: 0 4px;

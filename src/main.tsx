@@ -95,32 +95,72 @@ function Page({ page }: { page: string }) {
         </h1>
         <div className="prose">
           <p className="lead">
-            NEICA는 사람이 자신의 주의·시간·행동을 다시 선택할 수 있도록 기술과
-            환경을 설계합니다.
+            NEICA labs는 효율과 최적화만으로 설명되지 않는 인간의 선택을 지키며,
+            기술이 삶에서 차지하는 자리를 다시 설계합니다.
           </p>
           <p>
-            스마트폰은 많은 일을 편리하게 만들었습니다. 동시에 우리의 시간과
-            주의를 하나의 화면 안으로 모았습니다. NEICA는 스마트폰에 집중된
-            기능을 물리적 세계와 일상 속으로 분산하고, 사람이 기술을 의식적으로
-            사용할 수 있는 환경을 만듭니다.
+            기술을 덜 쓰는 것 자체가 목적은 아닙니다. 기술이 사람의
+            주의·시간·행동을 대신 결정하지 않도록, 필요한 기능은 가까이 두고
+            불필요한 요구는 주변으로 물러나게 하는 도구와 환경을 연구합니다.
           </p>
           <section>
-            <h2>기술의 재설계</h2>
+            <h2>NEICA가 기억하는 다섯 단어</h2>
+            <div className="name-meaning" aria-label="NEICA 이름의 의미">
+              <div>
+                <strong>N</strong>
+                <span>noise</span>
+                <small>소음</small>
+              </div>
+              <div>
+                <strong>E</strong>
+                <span>error</span>
+                <small>오류</small>
+              </div>
+              <div>
+                <strong>I</strong>
+                <span>inefficient</span>
+                <small>비효율적인 것</small>
+              </div>
+              <div>
+                <strong>C</strong>
+                <span>constraint</span>
+                <small>제약</small>
+              </div>
+              <div>
+                <strong>A</strong>
+                <span>ambiguous</span>
+                <small>모호함</small>
+              </div>
+            </div>
             <p>
-              NFC, 웨어러블, 전용 디바이스, Calm Technology를 통해 기술이 계속
-              주의를 요구하지 않도록 합니다. 필요한 기능이 필요한 순간과 장소에
-              머물도록 설계합니다.
+              최적화의 언어에서는 제거해야 할 값처럼 보이지만, 인간의 삶에서는
+              탐색·학습·숙련·책임·해석이 시작되는 조건이기도 합니다. NEICA는 이
+              다섯 단어를 기술이 함부로 지워서는 안 될 인간적 영역을 기억하는
+              이름으로 사용합니다.
             </p>
           </section>
           <section>
-            <h2>삶의 선택지를 늘리는 일</h2>
+            <h2>기술의 자리를 다시 설계합니다</h2>
             <p>
-              화면 사용시간을 줄인 자리에서 할 수 있는 활동·관계·공간·경험을
-              다시 발견합니다. 효율과 수치만으로 설명할 수 없는 삶의 영역에
-              주의를 기울입니다.
+              스마트폰에 집중된 기능을 사물과 공간으로 나누고, Calm Technology와
+              물리적 인터페이스를 통해 필요한 기능이 필요한 순간에만 앞으로
+              나오게 합니다. 기술이 계속 주의를 요구하는 대신 사람이 무엇에
+              집중할지 선택할 수 있어야 합니다.
             </p>
           </section>
-          <p className="brand-line">NEICA: for the immeasurable world</p>
+          <section>
+            <h2>삶의 선택지를 다시 늘립니다</h2>
+            <p>
+              화면을 덜 본 시간을 하나의 숫자로 끝내지 않습니다. 그 자리에
+              활동·관계·공간·창작과 직접 부딪히는 경험이 돌아오도록 돕습니다.
+              편리함을 포기하는 일이 아니라, 편리함 때문에 사라진 선택권을 다시
+              만드는 일입니다.
+            </p>
+          </section>
+          <p className="brand-line">
+            NEICA: for the immeasurable world
+            <span>측정할 수 없는 세계를 위해.</span>
+          </p>
         </div>
       </main>
     );
