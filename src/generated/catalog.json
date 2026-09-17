@@ -1,7 +1,7 @@
 {
   "schemaVersion": "neica-catalog.v1",
   "mode": "publish",
-  "buildId": "f6a02c46842ff6138dd1abd698989e4b5ecab27f66edb20f99c3cb2da169b0a4",
+  "buildId": "3fea0fee32f709f91fea7504f4e14c382ac6500f5e22f2ea2603aeadb5652da8",
   "entries": [
     {
       "id": "special-edition-01-thinking-cost-zero-era",
@@ -28,6 +28,32 @@
       },
       "slideCount": 6,
       "postPath": "content/special-edition-01-thinking-cost-zero-era/8b1c45ba5ffd08265ed58b4cf83c8ab5edd9597a7d6d54e113d0812eefd5fcf0/post.json"
+    },
+    {
+      "id": "special-edition-02-why-we-keep-thinking",
+      "revision": "244f1779cce5edc8e782f203b5c6b30e5a07da42936abf7218d4efe60c8d1387",
+      "title": "SPECIAL EDITION 02 — 계속 고민해야 할 이유",
+      "displayDate": "2026-09-18",
+      "order": 1,
+      "kind": "carousel",
+      "cover": {
+        "path": "content/special-edition-02-why-we-keep-thinking/244f1779cce5edc8e782f203b5c6b30e5a07da42936abf7218d4efe60c8d1387/4f969bda594ca391bbe9.png",
+        "width": 1080,
+        "height": 1350,
+        "alt": "한 사람이 고개를 숙이고 노트에 직접 글을 쓰고 있습니다. 빠른 답이 가능한 시대에도 생각을 구성하고 기록하는 행위를 보여 줍니다.",
+        "variants": [
+          {
+            "path": "content/special-edition-02-why-we-keep-thinking/244f1779cce5edc8e782f203b5c6b30e5a07da42936abf7218d4efe60c8d1387/cover-540.webp",
+            "width": 540
+          },
+          {
+            "path": "content/special-edition-02-why-we-keep-thinking/244f1779cce5edc8e782f203b5c6b30e5a07da42936abf7218d4efe60c8d1387/cover-1080.webp",
+            "width": 1080
+          }
+        ]
+      },
+      "slideCount": 6,
+      "postPath": "content/special-edition-02-why-we-keep-thinking/244f1779cce5edc8e782f203b5c6b30e5a07da42936abf7218d4efe60c8d1387/post.json"
     },
     {
       "id": "calm-tech-series-01-concept",
@@ -74,6 +100,15 @@
     "content/special-edition-01-thinking-cost-zero-era/8b1c45ba5ffd08265ed58b4cf83c8ab5edd9597a7d6d54e113d0812eefd5fcf0/be6912b33e7e4a027568.png": "be6912b33e7e4a0275687b06efb317c395a0d81d420953d3f6947d7a7db426f0",
     "content/special-edition-01-thinking-cost-zero-era/8b1c45ba5ffd08265ed58b4cf83c8ab5edd9597a7d6d54e113d0812eefd5fcf0/cover-540.webp": "5bbefd2c3d9bf9c071c66aeb17aa5a12c8639d8cc063eb3eb3efdabea01b8462",
     "content/special-edition-01-thinking-cost-zero-era/8b1c45ba5ffd08265ed58b4cf83c8ab5edd9597a7d6d54e113d0812eefd5fcf0/cover-1080.webp": "3f48ad0951b4acc71107340fde5931e728458e3536033815ce6d6cce9a518fe8",
-    "content/special-edition-01-thinking-cost-zero-era/8b1c45ba5ffd08265ed58b4cf83c8ab5edd9597a7d6d54e113d0812eefd5fcf0/post.json": "6d2a86c2bcab22b949ee3858ac4708a15baeccd4c466c0a8d35f9f420a7ff0ad"
+    "content/special-edition-01-thinking-cost-zero-era/8b1c45ba5ffd08265ed58b4cf83c8ab5edd9597a7d6d54e113d0812eefd5fcf0/post.json": "6d2a86c2bcab22b949ee3858ac4708a15baeccd4c466c0a8d35f9f420a7ff0ad",
+    "content/special-edition-02-why-we-keep-thinking/244f1779cce5edc8e782f203b5c6b30e5a07da42936abf7218d4efe60c8d1387/4f969bda594ca391bbe9.png": "4f969bda594ca391bbe96b679d95d121a94ccd077d134eeac4fec34561a1e02a",
+    "content/special-edition-02-why-we-keep-thinking/244f1779cce5edc8e782f203b5c6b30e5a07da42936abf7218d4efe60c8d1387/b4f8146d461995ce0d74.png": "b4f8146d461995ce0d74a6ac6013c3e6f5b956494ed0ace53b042c44b8f0fb24",
+    "content/special-edition-02-why-we-keep-thinking/244f1779cce5edc8e782f203b5c6b30e5a07da42936abf7218d4efe60c8d1387/fe134c1cb776d361ccab.png": "fe134c1cb776d361ccab379a1e2a65b61f283de76c44b97b61f580ef07b5cef0",
+    "content/special-edition-02-why-we-keep-thinking/244f1779cce5edc8e782f203b5c6b30e5a07da42936abf7218d4efe60c8d1387/4c95680045b7d0be127f.png": "4c95680045b7d0be127f5620a2f4d4abb934166e123c6ec76a7354fba566b8f9",
+    "content/special-edition-02-why-we-keep-thinking/244f1779cce5edc8e782f203b5c6b30e5a07da42936abf7218d4efe60c8d1387/4d76328b2a5d13d7ca59.png": "4d76328b2a5d13d7ca593ddaf61adf761cdeea88310b61baa343c55738bbc3ea",
+    "content/special-edition-02-why-we-keep-thinking/244f1779cce5edc8e782f203b5c6b30e5a07da42936abf7218d4efe60c8d1387/733fdc061caeee29d8ec.png": "733fdc061caeee29d8ec1d8915ea63b64ca9a104308d0c64ee7273fb12199fa1",
+    "content/special-edition-02-why-we-keep-thinking/244f1779cce5edc8e782f203b5c6b30e5a07da42936abf7218d4efe60c8d1387/cover-540.webp": "0a3a192d0734f1824aeaa39961b49bc46e716f7b9f6a1d1193cf5feb99a0a56f",
+    "content/special-edition-02-why-we-keep-thinking/244f1779cce5edc8e782f203b5c6b30e5a07da42936abf7218d4efe60c8d1387/cover-1080.webp": "fc95f29ba618b56797e11dda1096661ef2917a33f669bf3db3a1b6a0195f7ac8",
+    "content/special-edition-02-why-we-keep-thinking/244f1779cce5edc8e782f203b5c6b30e5a07da42936abf7218d4efe60c8d1387/post.json": "e40255d346d9568550198672fa763a2e892daee894f3907303dadd56d8fdaf23"
   }
 }
