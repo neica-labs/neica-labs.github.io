@@ -128,9 +128,14 @@ export default defineConfig(({ command, mode }) => {
     build: {
       rolldownOptions: {
         input: Object.fromEntries(
-          ["index", "about/index", "labs/index", "community/index", "404"].map(
-            (name) => [name, path.join(root, `${name}.html`)],
-          ),
+          [
+            "index",
+            "about/index",
+            "labs/index",
+            "community/index",
+            "contact/index",
+            "404",
+          ].map((name) => [name, path.join(root, `${name}.html`)]),
         ),
       },
     },

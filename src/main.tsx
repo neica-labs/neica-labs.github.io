@@ -65,6 +65,24 @@ function Labs() {
     </>
   );
 }
+
+function ContactIcon({ type }: { type: "email" | "instagram" }) {
+  if (type === "email")
+    return (
+      <svg aria-hidden="true" viewBox="0 0 24 24">
+        <rect x="2.5" y="4.5" width="19" height="15" rx="1.5" />
+        <path d="m3.5 6 8.5 7 8.5-7" />
+      </svg>
+    );
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle className="contact-icon-dot" cx="17.4" cy="6.7" r="1" />
+    </svg>
+  );
+}
+
 function Page({ page }: { page: string }) {
   if (page === "about")
     return (
@@ -124,6 +142,42 @@ function Page({ page }: { page: string }) {
             나눌 수 있는 자리를 준비합니다.
           </p>
           <p className="muted">참여 소식은 이곳에서 안내하겠습니다.</p>
+        </div>
+      </main>
+    );
+  if (page === "contact")
+    return (
+      <main className="text-page contact-page" id="main">
+        <span className="page-label">CONTACT</span>
+        <h1>
+          연결되는
+          <br />
+          곳.
+        </h1>
+        <div className="contact-list" aria-label="NEICA labs 연락처">
+          <a className="contact-link" href="mailto:neica.labs@gmail.com">
+            <span className="contact-copy">
+              <span className="contact-meta">이메일주소</span>
+              <span className="contact-address">neica.labs@gmail.com</span>
+            </span>
+            <span className="contact-icon">
+              <ContactIcon type="email" />
+            </span>
+          </a>
+          <a
+            className="contact-link"
+            href="https://www.instagram.com/neica.labs/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="contact-copy">
+              <span className="contact-meta">인스타주소</span>
+              <span className="contact-address">instagram.com/neica.labs</span>
+            </span>
+            <span className="contact-icon">
+              <ContactIcon type="instagram" />
+            </span>
+          </a>
         </div>
       </main>
     );
