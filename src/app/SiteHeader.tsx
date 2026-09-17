@@ -11,7 +11,7 @@ export default function SiteHeader({ page }: { page: string }) {
           {navigation.map((item) => (
             <a
               key={item.id}
-              href={siteUrl(item.path)}
+              href={"href" in item ? item.href : siteUrl(item.path)}
               aria-current={page === item.id ? "page" : undefined}
             >
               {item.label}

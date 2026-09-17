@@ -12,7 +12,6 @@ for (const route of [
   "about/index.html",
   "labs/index.html",
   "community/index.html",
-  "link/index.html",
   "404.html",
 ]) {
   const html = await fs.readFile(path.join(dist, route), "utf8");

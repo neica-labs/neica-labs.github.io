@@ -165,7 +165,7 @@ try {
     .click();
   assert.equal(page.url(), base + "labs/");
   assert.equal(await page.locator("dialog").count(), 0);
-  for (const route of ["about/", "labs/", "community/", "link/"]) {
+  for (const route of ["about/", "labs/", "community/"]) {
     await page.goto(base + route);
     await page.locator("main h1").waitFor();
     await page.reload();
@@ -173,7 +173,7 @@ try {
   }
   const notFound = await page.goto(base + "missing");
   assert.equal(notFound.status(), 404);
-  await page.getByRole("link", { name: "HOME으로 돌아가기 ↗" }).waitFor();
+  await page.getByRole("link", { name: "LABS로 돌아가기 ↗" }).waitFor();
   const version = await (await page.request.get(base + "build.json")).json();
   assert.equal(version.buildId, catalog.buildId);
   assert.deepEqual(failures, []);

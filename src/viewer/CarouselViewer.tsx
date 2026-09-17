@@ -148,7 +148,7 @@ export default function CarouselViewer({
       {!card ? (
         <div className="viewer-message">
           <p>콘텐츠를 찾을 수 없습니다.</p>
-          <button onClick={onClose}>HOME으로 돌아가기</button>
+          <button onClick={onClose}>LABS로 돌아가기</button>
         </div>
       ) : error ? (
         <div className="viewer-message">

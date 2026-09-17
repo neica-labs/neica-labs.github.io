@@ -1,19 +1,18 @@
 import { createRoot } from "react-dom/client";
 import catalog from "virtual:neica-catalog";
 import SiteHeader from "./app/SiteHeader";
-import { officialLinks } from "./app/siteConfig";
 import ContentCard from "./content/ContentCard";
 import CarouselViewer from "./viewer/CarouselViewer";
 import useViewerUrl from "./viewer/useViewerUrl";
-import { destination, siteUrl } from "./lib/urls";
+import { siteUrl } from "./lib/urls";
 import "./styles.css";
 
-function Home() {
+function Labs() {
   const viewer = useViewerUrl();
   return (
     <>
       <main id="main" className="home-content">
-        <h1 className="sr-only">NEICA 콘텐츠</h1>
+        <h1 className="sr-only">NEICA LABS 콘텐츠</h1>
         {catalog.entries.length ? (
           <div className="content-grid">
             {catalog.entries.map((card, index) => (
@@ -31,6 +30,27 @@ function Home() {
             <a href={siteUrl("about/")}>NEICA 알아보기 ↗</a>
           </div>
         )}
+        <section
+          className="labs-statement"
+          aria-labelledby="labs-statement-title"
+        >
+          <span className="page-label">LABS</span>
+          <h2 id="labs-statement-title">
+            기술의 자리를
+            <br />
+            다시 생각합니다.
+          </h2>
+          <div className="prose">
+            <p className="lead">
+              손에 닿는 도구, 생활 속의 작은 경계, 함께 만드는 습관을
+              연구합니다.
+            </p>
+            <p>
+              스마트폰에 모인 기능을 사물과 공간으로 나누고, 행동을 바꿀 수 있는
+              환경을 실험합니다.
+            </p>
+          </div>
+        </section>
       </main>
       {viewer.id && (
         <CarouselViewer
@@ -86,27 +106,6 @@ function Page({ page }: { page: string }) {
         </div>
       </main>
     );
-  if (page === "labs")
-    return (
-      <main className="text-page" id="main">
-        <span className="page-label">LABS</span>
-        <h1>
-          기술의 자리를
-          <br />
-          다시 생각합니다.
-        </h1>
-        <div className="prose">
-          <p className="lead">
-            손에 닿는 도구, 생활 속의 작은 경계, 함께 만드는 습관을 연구합니다.
-          </p>
-          <p>
-            스마트폰에 모인 기능을 사물과 공간으로 나누고, 행동을 바꿀 수 있는
-            환경을 실험합니다.
-          </p>
-          <p className="muted">공개할 프로젝트를 준비하고 있습니다.</p>
-        </div>
-      </main>
-    );
   if (page === "community")
     return (
       <main className="text-page" id="main">
@@ -128,35 +127,6 @@ function Page({ page }: { page: string }) {
         </div>
       </main>
     );
-  if (page === "link")
-    return (
-      <main className="text-page" id="main">
-        <span className="page-label">LINK</span>
-        <h1>
-          NEICA와
-          <br />
-          연결되는 곳.
-        </h1>
-        {officialLinks.length ? (
-          <ul className="official-links">
-            {officialLinks.map((link) => (
-              <li key={link.href}>
-                <a
-                  href={destination(link.href)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {link.label}
-                  <span>↗</span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <p className="muted">공식 채널을 준비하고 있습니다.</p>
-        )}
-      </main>
-    );
   return (
     <main className="text-page" id="main">
       <span className="page-label">404</span>
@@ -165,7 +135,7 @@ function Page({ page }: { page: string }) {
         <br />
         찾을 수 없습니다.
       </h1>
-      <a href={siteUrl()}>HOME으로 돌아가기 ↗</a>
+      <a href={siteUrl()}>LABS로 돌아가기 ↗</a>
     </main>
   );
 }
@@ -176,7 +146,7 @@ createRoot(document.getElementById("root")!).render(
       본문으로 이동
     </a>
     <SiteHeader page={page} />
-    {page === "home" ? <Home /> : <Page page={page} />}
+    {page === "labs" || page === "home" ? <Labs /> : <Page page={page} />}
     <footer className="site-footer">
       <span>NEICA</span>
       <span>for the immeasurable world</span>

@@ -237,7 +237,7 @@ try {
   await page.getByRole("button", { name: "다시 시도", exact: true }).click();
   await checkImage();
   await page.keyboard.press("Escape");
-  for (const route of ["about/", "labs/", "community/", "link/"]) {
+  for (const route of ["about/", "labs/", "community/"]) {
     await page.goto(base + route);
     await page.locator("main h1").waitFor();
     assert.equal(await page.locator("nav a[aria-current]").count(), 1);
