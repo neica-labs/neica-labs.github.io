@@ -1,258 +1,258 @@
 {
   "schemaVersion": "neica-catalog.v1",
   "mode": "publish",
-  "buildId": "b99c4f7bd373983b1618238059543528bfdebb1e4b9677495a597c8efdbd6194",
+  "buildId": "b8e20e5fef26db1877e03d06d19a3ed86f9523ff0fdd22e89c9c86b19fc9a0e0",
   "entries": [
     {
       "id": "special-edition-02-why-we-keep-thinking",
-      "revision": "afcfe600e803e4465ac4ecac4ab2d43bd78765ad5bc9488af0d9ec3f527f052c",
+      "revision": "c4e6437b898f5ede803c61f846596bcc3ae43671e61ab45e7e7333fc7fd91de8",
       "title": "SPECIAL EDITION 02 — 계속 고민해야 할 이유",
       "displayDate": "2026-09-18",
       "order": 0,
       "kind": "carousel",
       "cover": {
-        "path": "content/special-edition-02-why-we-keep-thinking/afcfe600e803e4465ac4ecac4ab2d43bd78765ad5bc9488af0d9ec3f527f052c/7064acf9cd90a4b5b581.png",
+        "path": "content/special-edition-02-why-we-keep-thinking/c4e6437b898f5ede803c61f846596bcc3ae43671e61ab45e7e7333fc7fd91de8/ab2bd7c685cb1cc88633.png",
         "width": 1080,
         "height": 1350,
         "alt": "한 사람이 고개를 숙이고 노트에 직접 글을 쓰고 있습니다. 빠른 답이 가능한 시대에도 생각을 구성하고 기록하는 행위를 보여 줍니다.",
         "variants": [
           {
-            "path": "content/special-edition-02-why-we-keep-thinking/afcfe600e803e4465ac4ecac4ab2d43bd78765ad5bc9488af0d9ec3f527f052c/cover-540.webp",
+            "path": "content/special-edition-02-why-we-keep-thinking/c4e6437b898f5ede803c61f846596bcc3ae43671e61ab45e7e7333fc7fd91de8/cover-540.webp",
             "width": 540
           },
           {
-            "path": "content/special-edition-02-why-we-keep-thinking/afcfe600e803e4465ac4ecac4ab2d43bd78765ad5bc9488af0d9ec3f527f052c/cover-1080.webp",
+            "path": "content/special-edition-02-why-we-keep-thinking/c4e6437b898f5ede803c61f846596bcc3ae43671e61ab45e7e7333fc7fd91de8/cover-1080.webp",
             "width": 1080
           }
         ]
       },
       "slideCount": 6,
-      "postPath": "content/special-edition-02-why-we-keep-thinking/afcfe600e803e4465ac4ecac4ab2d43bd78765ad5bc9488af0d9ec3f527f052c/post.json"
+      "postPath": "content/special-edition-02-why-we-keep-thinking/c4e6437b898f5ede803c61f846596bcc3ae43671e61ab45e7e7333fc7fd91de8/post.json"
     },
     {
       "id": "special-edition-01-thinking-cost-zero-era",
-      "revision": "af30bc0a2e6bef9f2f8f32d8554ce341c5ae966b326a6d8a739798cd4a5d810e",
+      "revision": "3bacf530237c7e53342e6fdfc6c9ac12e0555004fbd346928f775eadac29fea1",
       "title": "SPECIAL EDITION 01 — 고민 비용이 0이 된 시대",
       "displayDate": "2026-09-18",
       "order": 1,
       "kind": "carousel",
       "cover": {
-        "path": "content/special-edition-01-thinking-cost-zero-era/af30bc0a2e6bef9f2f8f32d8554ce341c5ae966b326a6d8a739798cd4a5d810e/5888d2f4d3bcc8d0e5cd.png",
+        "path": "content/special-edition-01-thinking-cost-zero-era/3bacf530237c7e53342e6fdfc6c9ac12e0555004fbd346928f775eadac29fea1/6564ecb3381c821ade8b.png",
         "width": 1080,
         "height": 1350,
         "alt": "어두운 공간에서 한 사람이 노트북 자판을 누르고 있습니다. 빠른 계산과 답의 생산이 성과 기준 자체를 바꾸는 상황을 상징합니다.",
         "variants": [
           {
-            "path": "content/special-edition-01-thinking-cost-zero-era/af30bc0a2e6bef9f2f8f32d8554ce341c5ae966b326a6d8a739798cd4a5d810e/cover-540.webp",
+            "path": "content/special-edition-01-thinking-cost-zero-era/3bacf530237c7e53342e6fdfc6c9ac12e0555004fbd346928f775eadac29fea1/cover-540.webp",
             "width": 540
           },
           {
-            "path": "content/special-edition-01-thinking-cost-zero-era/af30bc0a2e6bef9f2f8f32d8554ce341c5ae966b326a6d8a739798cd4a5d810e/cover-1080.webp",
+            "path": "content/special-edition-01-thinking-cost-zero-era/3bacf530237c7e53342e6fdfc6c9ac12e0555004fbd346928f775eadac29fea1/cover-1080.webp",
             "width": 1080
           }
         ]
       },
       "slideCount": 6,
-      "postPath": "content/special-edition-01-thinking-cost-zero-era/af30bc0a2e6bef9f2f8f32d8554ce341c5ae966b326a6d8a739798cd4a5d810e/post.json"
+      "postPath": "content/special-edition-01-thinking-cost-zero-era/3bacf530237c7e53342e6fdfc6c9ac12e0555004fbd346928f775eadac29fea1/post.json"
     },
     {
       "id": "calm-tech-series-05-remarkable-paper-pro",
-      "revision": "4e52ae10fe82adb6689933c678d236f0bad4842a631534a5c57bcfa1fb36edc4",
+      "revision": "a8421c4d0a49c01d53aa60dbd0792e3e6712edbafc76b7e46c8eb9871641415f",
       "title": "Calm Technology 05 — reMarkable Paper Pro",
       "displayDate": "2026-09-18",
       "order": 2,
       "kind": "carousel",
       "cover": {
-        "path": "content/calm-tech-series-05-remarkable-paper-pro/4e52ae10fe82adb6689933c678d236f0bad4842a631534a5c57bcfa1fb36edc4/20dfe79e9f40fe924ed2.png",
+        "path": "content/calm-tech-series-05-remarkable-paper-pro/a8421c4d0a49c01d53aa60dbd0792e3e6712edbafc76b7e46c8eb9871641415f/9981d58dfc183787af4b.png",
         "width": 1080,
         "height": 1350,
         "alt": "검은 옷을 입은 사람이 의자에 앉아 무릎 위의 reMarkable Paper Pro에 검은 펜으로 일정과 메모를 필기하고 있습니다. 태블릿의 알림 대신 읽고 쓰는 한 가지 행위에 집중하는 사용 장면을 보여줍니다.",
         "variants": [
           {
-            "path": "content/calm-tech-series-05-remarkable-paper-pro/4e52ae10fe82adb6689933c678d236f0bad4842a631534a5c57bcfa1fb36edc4/cover-540.webp",
+            "path": "content/calm-tech-series-05-remarkable-paper-pro/a8421c4d0a49c01d53aa60dbd0792e3e6712edbafc76b7e46c8eb9871641415f/cover-540.webp",
             "width": 540
           },
           {
-            "path": "content/calm-tech-series-05-remarkable-paper-pro/4e52ae10fe82adb6689933c678d236f0bad4842a631534a5c57bcfa1fb36edc4/cover-1080.webp",
+            "path": "content/calm-tech-series-05-remarkable-paper-pro/a8421c4d0a49c01d53aa60dbd0792e3e6712edbafc76b7e46c8eb9871641415f/cover-1080.webp",
             "width": 1080
           }
         ]
       },
       "slideCount": 7,
-      "postPath": "content/calm-tech-series-05-remarkable-paper-pro/4e52ae10fe82adb6689933c678d236f0bad4842a631534a5c57bcfa1fb36edc4/post.json"
+      "postPath": "content/calm-tech-series-05-remarkable-paper-pro/a8421c4d0a49c01d53aa60dbd0792e3e6712edbafc76b7e46c8eb9871641415f/post.json"
     },
     {
       "id": "calm-tech-series-04-mui-board-gen2",
-      "revision": "65b42f6b4b06192157e28316d07e3898c53a03bc483e8715408a7ff11d3ed9c1",
+      "revision": "1c06da9cdc4b9137794e0e168c3aacf118f8c99aff4c5b5f961264824d63526f",
       "title": "Calm Technology 04 — mui Board Gen 2",
       "displayDate": "2026-09-18",
       "order": 3,
       "kind": "carousel",
       "cover": {
-        "path": "content/calm-tech-series-04-mui-board-gen2/65b42f6b4b06192157e28316d07e3898c53a03bc483e8715408a7ff11d3ed9c1/d87e8f4c49da995e152e.png",
+        "path": "content/calm-tech-series-04-mui-board-gen2/1c06da9cdc4b9137794e0e168c3aacf118f8c99aff4c5b5f961264824d63526f/6cbca8a729d0dcfd7028.png",
         "width": 1080,
         "height": 1350,
         "alt": "흰 벽에 길게 설치된 천연 목재 mui Board 패널에 조명·음악·일정처럼 보이는 흰 아이콘이 나타나고, 한 손가락이 중앙의 아이콘을 누르고 있습니다. 평소에는 화면을 숨기는 인터페이스를 보여줍니다.",
         "variants": [
           {
-            "path": "content/calm-tech-series-04-mui-board-gen2/65b42f6b4b06192157e28316d07e3898c53a03bc483e8715408a7ff11d3ed9c1/cover-540.webp",
+            "path": "content/calm-tech-series-04-mui-board-gen2/1c06da9cdc4b9137794e0e168c3aacf118f8c99aff4c5b5f961264824d63526f/cover-540.webp",
             "width": 540
           },
           {
-            "path": "content/calm-tech-series-04-mui-board-gen2/65b42f6b4b06192157e28316d07e3898c53a03bc483e8715408a7ff11d3ed9c1/cover-1080.webp",
+            "path": "content/calm-tech-series-04-mui-board-gen2/1c06da9cdc4b9137794e0e168c3aacf118f8c99aff4c5b5f961264824d63526f/cover-1080.webp",
             "width": 1080
           }
         ]
       },
       "slideCount": 6,
-      "postPath": "content/calm-tech-series-04-mui-board-gen2/65b42f6b4b06192157e28316d07e3898c53a03bc483e8715408a7ff11d3ed9c1/post.json"
+      "postPath": "content/calm-tech-series-04-mui-board-gen2/1c06da9cdc4b9137794e0e168c3aacf118f8c99aff4c5b5f961264824d63526f/post.json"
     },
     {
       "id": "calm-tech-series-03-cti-81-criteria",
-      "revision": "e1c14a63205a5648a595aef6fe590f54767ca9afabac0b1fa5f302c95cf706b0",
+      "revision": "b7b4cfd5536eb81cd90526750109a66c5f57121a6caa69c4b391285e7d379103",
       "title": "Calm Technology 03 — Calm Tech Institute의 81-point criteria",
       "displayDate": "2026-09-18",
       "order": 4,
       "kind": "carousel",
       "cover": {
-        "path": "content/calm-tech-series-03-cti-81-criteria/e1c14a63205a5648a595aef6fe590f54767ca9afabac0b1fa5f302c95cf706b0/96e2c58f69de96f95d32.png",
+        "path": "content/calm-tech-series-03-cti-81-criteria/b7b4cfd5536eb81cd90526750109a66c5f57121a6caa69c4b391285e7d379103/d89668f0247f8c4459b9.png",
         "width": 1080,
         "height": 1350,
         "alt": "검은 배경 중앙에 흰색 Calm Tech Certified™ 인증 마크가 보입니다. Calm Tech Institute의 81개 평가 기준과 인증 프로그램을 소개하는 표지 이미지입니다.",
         "variants": [
           {
-            "path": "content/calm-tech-series-03-cti-81-criteria/e1c14a63205a5648a595aef6fe590f54767ca9afabac0b1fa5f302c95cf706b0/cover-540.webp",
+            "path": "content/calm-tech-series-03-cti-81-criteria/b7b4cfd5536eb81cd90526750109a66c5f57121a6caa69c4b391285e7d379103/cover-540.webp",
             "width": 540
           },
           {
-            "path": "content/calm-tech-series-03-cti-81-criteria/e1c14a63205a5648a595aef6fe590f54767ca9afabac0b1fa5f302c95cf706b0/cover-1080.webp",
+            "path": "content/calm-tech-series-03-cti-81-criteria/b7b4cfd5536eb81cd90526750109a66c5f57121a6caa69c4b391285e7d379103/cover-1080.webp",
             "width": 1080
           }
         ]
       },
       "slideCount": 8,
-      "postPath": "content/calm-tech-series-03-cti-81-criteria/e1c14a63205a5648a595aef6fe590f54767ca9afabac0b1fa5f302c95cf706b0/post.json"
+      "postPath": "content/calm-tech-series-03-cti-81-criteria/b7b4cfd5536eb81cd90526750109a66c5f57121a6caa69c4b391285e7d379103/post.json"
     },
     {
       "id": "calm-tech-series-02-people",
-      "revision": "ce64380e4ff3132c50b86684c89541d1f8596f36b66763e3c7db4134d469f771",
+      "revision": "e39d05dc37a5bbe4b5f32a2b735e3c7c19b7ae9dfac2c9bb0319a23c6bab7d57",
       "title": "Calm Technology 02 — 개념을 이어 온 사람들",
       "displayDate": "2026-09-18",
       "order": 5,
       "kind": "carousel",
       "cover": {
-        "path": "content/calm-tech-series-02-people/ce64380e4ff3132c50b86684c89541d1f8596f36b66763e3c7db4134d469f771/8d784a7c01dcc4e41bc6.png",
+        "path": "content/calm-tech-series-02-people/e39d05dc37a5bbe4b5f32a2b735e3c7c19b7ae9dfac2c9bb0319a23c6bab7d57/0dd127f5194d7cc72e7a.png",
         "width": 1080,
         "height": 1350,
         "alt": "분홍색 커튼과 민트색 타공 파티션으로 꾸며진 작업 공간에 키보드, 소형 화면, 스피커가 놓여 있습니다. 컴퓨터가 한 대의 책상을 넘어 공간과 사물 속으로 스며드는 유비쿼터스 컴퓨팅을 연상시키는 이미지입니다.",
         "variants": [
           {
-            "path": "content/calm-tech-series-02-people/ce64380e4ff3132c50b86684c89541d1f8596f36b66763e3c7db4134d469f771/cover-540.webp",
+            "path": "content/calm-tech-series-02-people/e39d05dc37a5bbe4b5f32a2b735e3c7c19b7ae9dfac2c9bb0319a23c6bab7d57/cover-540.webp",
             "width": 540
           },
           {
-            "path": "content/calm-tech-series-02-people/ce64380e4ff3132c50b86684c89541d1f8596f36b66763e3c7db4134d469f771/cover-1080.webp",
+            "path": "content/calm-tech-series-02-people/e39d05dc37a5bbe4b5f32a2b735e3c7c19b7ae9dfac2c9bb0319a23c6bab7d57/cover-1080.webp",
             "width": 1080
           }
         ]
       },
       "slideCount": 7,
-      "postPath": "content/calm-tech-series-02-people/ce64380e4ff3132c50b86684c89541d1f8596f36b66763e3c7db4134d469f771/post.json"
+      "postPath": "content/calm-tech-series-02-people/e39d05dc37a5bbe4b5f32a2b735e3c7c19b7ae9dfac2c9bb0319a23c6bab7d57/post.json"
     },
     {
       "id": "calm-tech-series-01-concept",
-      "revision": "fa90abd2c93fb5037e2b70c0a2489985fffd172e19eaf275b4ae11c629fa2fe5",
+      "revision": "747c2743aeded55ad5235f173bdb005d84d2bcbca54a22e90d8a284edb61d16c",
       "title": "Calm Technology 01 — 개념",
       "displayDate": "2026-09-18",
       "order": 6,
       "kind": "carousel",
       "cover": {
-        "path": "content/calm-tech-series-01-concept/fa90abd2c93fb5037e2b70c0a2489985fffd172e19eaf275b4ae11c629fa2fe5/7c39674aea79033ed59f.png",
+        "path": "content/calm-tech-series-01-concept/747c2743aeded55ad5235f173bdb005d84d2bcbca54a22e90d8a284edb61d16c/111c524e78c2406144be.png",
         "width": 1080,
         "height": 1350,
         "alt": "햇빛이 드는 집 안에서 노란 스웨터를 입은 사람이 노트북 앞에 앉아 있습니다. 카메라와 식물, 책상이 함께 보이며 기술이 일상 공간의 배경에 놓이는 Calm Technology의 도입 장면을 보여 줍니다.",
         "variants": [
           {
-            "path": "content/calm-tech-series-01-concept/fa90abd2c93fb5037e2b70c0a2489985fffd172e19eaf275b4ae11c629fa2fe5/cover-540.webp",
+            "path": "content/calm-tech-series-01-concept/747c2743aeded55ad5235f173bdb005d84d2bcbca54a22e90d8a284edb61d16c/cover-540.webp",
             "width": 540
           },
           {
-            "path": "content/calm-tech-series-01-concept/fa90abd2c93fb5037e2b70c0a2489985fffd172e19eaf275b4ae11c629fa2fe5/cover-1080.webp",
+            "path": "content/calm-tech-series-01-concept/747c2743aeded55ad5235f173bdb005d84d2bcbca54a22e90d8a284edb61d16c/cover-1080.webp",
             "width": 1080
           }
         ]
       },
       "slideCount": 6,
-      "postPath": "content/calm-tech-series-01-concept/fa90abd2c93fb5037e2b70c0a2489985fffd172e19eaf275b4ae11c629fa2fe5/post.json"
+      "postPath": "content/calm-tech-series-01-concept/747c2743aeded55ad5235f173bdb005d84d2bcbca54a22e90d8a284edb61d16c/post.json"
     }
   ],
   "files": {
-    "content/calm-tech-series-01-concept/fa90abd2c93fb5037e2b70c0a2489985fffd172e19eaf275b4ae11c629fa2fe5/7c39674aea79033ed59f.png": "7c39674aea79033ed59fc6370e93f702415126da67dca6b9006c85dee2dbe3ce",
-    "content/calm-tech-series-01-concept/fa90abd2c93fb5037e2b70c0a2489985fffd172e19eaf275b4ae11c629fa2fe5/36ab9d2da6cb31f868e5.png": "36ab9d2da6cb31f868e523b6730cd73af07cc544a56bea5ff7faa6c76882a579",
-    "content/calm-tech-series-01-concept/fa90abd2c93fb5037e2b70c0a2489985fffd172e19eaf275b4ae11c629fa2fe5/5772f516e771be191666.png": "5772f516e771be191666ac66ebbb260c7ed89a71462de4a4eff36244aee3f503",
-    "content/calm-tech-series-01-concept/fa90abd2c93fb5037e2b70c0a2489985fffd172e19eaf275b4ae11c629fa2fe5/be2543aa2e92661d9e23.png": "be2543aa2e92661d9e23f343253fdbc2196f6285cefbf1eeb364662b172d082b",
-    "content/calm-tech-series-01-concept/fa90abd2c93fb5037e2b70c0a2489985fffd172e19eaf275b4ae11c629fa2fe5/c3c2853a58eea4ee04f3.png": "c3c2853a58eea4ee04f3d938e9036600c71f9007c1866e90c619afa3c0c83792",
-    "content/calm-tech-series-01-concept/fa90abd2c93fb5037e2b70c0a2489985fffd172e19eaf275b4ae11c629fa2fe5/b39b5a9496dfd7de1059.png": "b39b5a9496dfd7de1059e9877ce479732b925d8169de877bc823ccbe732d746e",
-    "content/calm-tech-series-01-concept/fa90abd2c93fb5037e2b70c0a2489985fffd172e19eaf275b4ae11c629fa2fe5/cover-540.webp": "4c72f654bb3973278f5c0e097acc20900cd994ca0b3d13b996ba4d59fa4533cc",
-    "content/calm-tech-series-01-concept/fa90abd2c93fb5037e2b70c0a2489985fffd172e19eaf275b4ae11c629fa2fe5/cover-1080.webp": "d6fe3125e1459e4d9f837296b30eb5069e831c4daa81fe8843e036153304c5c6",
-    "content/calm-tech-series-01-concept/fa90abd2c93fb5037e2b70c0a2489985fffd172e19eaf275b4ae11c629fa2fe5/post.json": "6f82430d60be5a85f1bc6152ebfc2c71bdfa1641bf36bda1d2e7afc08a581854",
-    "content/calm-tech-series-02-people/ce64380e4ff3132c50b86684c89541d1f8596f36b66763e3c7db4134d469f771/8d784a7c01dcc4e41bc6.png": "8d784a7c01dcc4e41bc602ad633f0e4d66b7413f0bbbcb67a4e32d636dca9175",
-    "content/calm-tech-series-02-people/ce64380e4ff3132c50b86684c89541d1f8596f36b66763e3c7db4134d469f771/84aa0ea1692d893e7bae.png": "84aa0ea1692d893e7baeddd337beea00da9f22daab97bbee53af87d19f3ee4f0",
-    "content/calm-tech-series-02-people/ce64380e4ff3132c50b86684c89541d1f8596f36b66763e3c7db4134d469f771/bc91e490f64be7e71290.png": "bc91e490f64be7e7129026a521e8f09ecbdfb2340c8e080b6ab3c82fb25cfcb9",
-    "content/calm-tech-series-02-people/ce64380e4ff3132c50b86684c89541d1f8596f36b66763e3c7db4134d469f771/d78b4659775fa9f16c56.png": "d78b4659775fa9f16c56e9a4a83aad7686539438fe1d3436981a901cfd3c0693",
-    "content/calm-tech-series-02-people/ce64380e4ff3132c50b86684c89541d1f8596f36b66763e3c7db4134d469f771/a269bf7ad8fb571bf423.png": "a269bf7ad8fb571bf42325d4bfe377d3a60da5e50c37050210416f7e319f223c",
-    "content/calm-tech-series-02-people/ce64380e4ff3132c50b86684c89541d1f8596f36b66763e3c7db4134d469f771/8d1709bad4366d1899a2.png": "8d1709bad4366d1899a25130bf0fdba19718e51b789f9fece81e4c0107b82c5f",
-    "content/calm-tech-series-02-people/ce64380e4ff3132c50b86684c89541d1f8596f36b66763e3c7db4134d469f771/d103afb4db57d63ce07c.png": "d103afb4db57d63ce07c91b463cb7212521aa57ef3cc49a8c247d005415239a0",
-    "content/calm-tech-series-02-people/ce64380e4ff3132c50b86684c89541d1f8596f36b66763e3c7db4134d469f771/cover-540.webp": "d93f08677a9248a6be007079b81f67571e522b9ea961ff5268195805dc7ef6e9",
-    "content/calm-tech-series-02-people/ce64380e4ff3132c50b86684c89541d1f8596f36b66763e3c7db4134d469f771/cover-1080.webp": "ee6f4242d4508b59c2914452264855b05ec1183f4c6d3bf97a584cefd0bbbf9d",
-    "content/calm-tech-series-02-people/ce64380e4ff3132c50b86684c89541d1f8596f36b66763e3c7db4134d469f771/post.json": "b9ad9351988d527b1b2e48878ad9887c8481faf6c63c7c83a927938635f4e379",
-    "content/calm-tech-series-03-cti-81-criteria/e1c14a63205a5648a595aef6fe590f54767ca9afabac0b1fa5f302c95cf706b0/96e2c58f69de96f95d32.png": "96e2c58f69de96f95d32bcfa9fdc63423166b004816fa5cb67b8b3ba17a4fcc2",
-    "content/calm-tech-series-03-cti-81-criteria/e1c14a63205a5648a595aef6fe590f54767ca9afabac0b1fa5f302c95cf706b0/523849df7c8074329281.png": "523849df7c8074329281aee8bc96c4526a2cb14874b97b9e2c6e08c3aec15438",
-    "content/calm-tech-series-03-cti-81-criteria/e1c14a63205a5648a595aef6fe590f54767ca9afabac0b1fa5f302c95cf706b0/35182424d7e03effddc9.png": "35182424d7e03effddc9dd9d9ca287a7b1078037f4dc31e4e53a187180268bb2",
-    "content/calm-tech-series-03-cti-81-criteria/e1c14a63205a5648a595aef6fe590f54767ca9afabac0b1fa5f302c95cf706b0/82ec0c8738361a77658b.png": "82ec0c8738361a77658b0d726814eec6dbe31a3e631a5913df03fbc72a4388f1",
-    "content/calm-tech-series-03-cti-81-criteria/e1c14a63205a5648a595aef6fe590f54767ca9afabac0b1fa5f302c95cf706b0/1aeb2c058f7df94d42a4.png": "1aeb2c058f7df94d42a434bb1af43610c8f32255779a3c99bd74690250c8a430",
-    "content/calm-tech-series-03-cti-81-criteria/e1c14a63205a5648a595aef6fe590f54767ca9afabac0b1fa5f302c95cf706b0/7048d61c28e9c875539b.png": "7048d61c28e9c875539bb99ffb9364ac1fbc15dfbbec89120e30f01c7bd195d9",
-    "content/calm-tech-series-03-cti-81-criteria/e1c14a63205a5648a595aef6fe590f54767ca9afabac0b1fa5f302c95cf706b0/25571e4b0339a8bd3220.png": "25571e4b0339a8bd3220dba3c32da5529e3b081d6fce209af4f718a95fcb1021",
-    "content/calm-tech-series-03-cti-81-criteria/e1c14a63205a5648a595aef6fe590f54767ca9afabac0b1fa5f302c95cf706b0/dd720bcb685d7be7db52.png": "dd720bcb685d7be7db524a5fe2f256a15c448a1c5ac14563689cdaa94d7bc01a",
-    "content/calm-tech-series-03-cti-81-criteria/e1c14a63205a5648a595aef6fe590f54767ca9afabac0b1fa5f302c95cf706b0/cover-540.webp": "390e0bb9a9767ff92079e8a4a7360e8ba9c4a0a8ca4e153cbd8203a97bd9f167",
-    "content/calm-tech-series-03-cti-81-criteria/e1c14a63205a5648a595aef6fe590f54767ca9afabac0b1fa5f302c95cf706b0/cover-1080.webp": "0bff95cd4a24070dda57ff1b580b8661f38949d315e46030292f8df49f079d20",
-    "content/calm-tech-series-03-cti-81-criteria/e1c14a63205a5648a595aef6fe590f54767ca9afabac0b1fa5f302c95cf706b0/post.json": "7ec91c58a8092e8c2ff4be7403d1474c79fa79e5aef28f69edd7566b8887999f",
-    "content/calm-tech-series-04-mui-board-gen2/65b42f6b4b06192157e28316d07e3898c53a03bc483e8715408a7ff11d3ed9c1/d87e8f4c49da995e152e.png": "d87e8f4c49da995e152e2431718a5e91e77c9b58ffc83bd9d5e84b0c51aa0eea",
-    "content/calm-tech-series-04-mui-board-gen2/65b42f6b4b06192157e28316d07e3898c53a03bc483e8715408a7ff11d3ed9c1/487afcb09bf94e6e2169.png": "487afcb09bf94e6e2169d2bba89e1d39cd2a290b63b1399dbac13abe60588938",
-    "content/calm-tech-series-04-mui-board-gen2/65b42f6b4b06192157e28316d07e3898c53a03bc483e8715408a7ff11d3ed9c1/fa535895c5886ccee7c5.png": "fa535895c5886ccee7c5fbb0396d7cbb2c8c6380de5c5bfc452093e0b1318146",
-    "content/calm-tech-series-04-mui-board-gen2/65b42f6b4b06192157e28316d07e3898c53a03bc483e8715408a7ff11d3ed9c1/570e0d9049250ead5717.png": "570e0d9049250ead5717ad28add533076e9cfadf2d3b1a113820e44bcb7b6d4a",
-    "content/calm-tech-series-04-mui-board-gen2/65b42f6b4b06192157e28316d07e3898c53a03bc483e8715408a7ff11d3ed9c1/561545b3901f5723f475.png": "561545b3901f5723f475481e70f91cd8ef539a678cc88213329d409d92e82f22",
-    "content/calm-tech-series-04-mui-board-gen2/65b42f6b4b06192157e28316d07e3898c53a03bc483e8715408a7ff11d3ed9c1/7e192216b503a7a066ae.png": "7e192216b503a7a066aea5b272ef35bf0787744856e303926cca4e98bccca6df",
-    "content/calm-tech-series-04-mui-board-gen2/65b42f6b4b06192157e28316d07e3898c53a03bc483e8715408a7ff11d3ed9c1/cover-540.webp": "6e8352277dd071ffbc3b83c3ada311ca513830c55c56fa56b56ad251efa88da8",
-    "content/calm-tech-series-04-mui-board-gen2/65b42f6b4b06192157e28316d07e3898c53a03bc483e8715408a7ff11d3ed9c1/cover-1080.webp": "91edb0469cc95f54d5fda89d1ae6ed811d324782ace7eb31017715fbf879c420",
-    "content/calm-tech-series-04-mui-board-gen2/65b42f6b4b06192157e28316d07e3898c53a03bc483e8715408a7ff11d3ed9c1/post.json": "2d6dd04706c62687d79c7b242d03918bb3552b31e38f917d930ab736686ecd40",
-    "content/calm-tech-series-05-remarkable-paper-pro/4e52ae10fe82adb6689933c678d236f0bad4842a631534a5c57bcfa1fb36edc4/20dfe79e9f40fe924ed2.png": "20dfe79e9f40fe924ed2efc34f7a9e33d987aa5201cbcaa9701935cea35a82b7",
-    "content/calm-tech-series-05-remarkable-paper-pro/4e52ae10fe82adb6689933c678d236f0bad4842a631534a5c57bcfa1fb36edc4/c655d6e5745538c39a25.png": "c655d6e5745538c39a252e080b9cf8b466cf536262b3b0cbb5191637594eeefc",
-    "content/calm-tech-series-05-remarkable-paper-pro/4e52ae10fe82adb6689933c678d236f0bad4842a631534a5c57bcfa1fb36edc4/0b79c057160e06b66f99.png": "0b79c057160e06b66f9907bde35077f9f4cecba0181541710e81c9905457a6a0",
-    "content/calm-tech-series-05-remarkable-paper-pro/4e52ae10fe82adb6689933c678d236f0bad4842a631534a5c57bcfa1fb36edc4/ee1ddab08d1930ceedb3.png": "ee1ddab08d1930ceedb3fa13b3998319ce7876a04e094a76b94ddd1597241120",
-    "content/calm-tech-series-05-remarkable-paper-pro/4e52ae10fe82adb6689933c678d236f0bad4842a631534a5c57bcfa1fb36edc4/b218935a2f3c58de3d02.png": "b218935a2f3c58de3d02b419f3273777be033f3afa9da60684dd79a42dc60029",
-    "content/calm-tech-series-05-remarkable-paper-pro/4e52ae10fe82adb6689933c678d236f0bad4842a631534a5c57bcfa1fb36edc4/29c819012112c201ef9b.png": "29c819012112c201ef9b292a8b3c7e9aa5d4fae8e70aac05811c33ef3182d2da",
-    "content/calm-tech-series-05-remarkable-paper-pro/4e52ae10fe82adb6689933c678d236f0bad4842a631534a5c57bcfa1fb36edc4/9a31255412a94bb3e400.png": "9a31255412a94bb3e400fcb47d53e07f964658f564ec7cb4afd1be6eacd0bdcc",
-    "content/calm-tech-series-05-remarkable-paper-pro/4e52ae10fe82adb6689933c678d236f0bad4842a631534a5c57bcfa1fb36edc4/cover-540.webp": "0872faabf0202e8e861fadebecf762668570f1a1f0b80d184d385de24feea993",
-    "content/calm-tech-series-05-remarkable-paper-pro/4e52ae10fe82adb6689933c678d236f0bad4842a631534a5c57bcfa1fb36edc4/cover-1080.webp": "ba4fb82d2fe2e9c14c189ef0803216abf163ee98290127e8bdec20ab74ba7ade",
-    "content/calm-tech-series-05-remarkable-paper-pro/4e52ae10fe82adb6689933c678d236f0bad4842a631534a5c57bcfa1fb36edc4/post.json": "04c60ec582c101ebe29b75e00298949f7fb466a2d2c03a2dfb03d840ca864923",
-    "content/special-edition-01-thinking-cost-zero-era/af30bc0a2e6bef9f2f8f32d8554ce341c5ae966b326a6d8a739798cd4a5d810e/5888d2f4d3bcc8d0e5cd.png": "5888d2f4d3bcc8d0e5cd31060ede16dd7fd8812c3b9b565813df757f0189dce1",
-    "content/special-edition-01-thinking-cost-zero-era/af30bc0a2e6bef9f2f8f32d8554ce341c5ae966b326a6d8a739798cd4a5d810e/7389c4515c8b0885de22.png": "7389c4515c8b0885de22c4ae4b8e754551c6af0293494eb2a59109f55f2f2d0e",
-    "content/special-edition-01-thinking-cost-zero-era/af30bc0a2e6bef9f2f8f32d8554ce341c5ae966b326a6d8a739798cd4a5d810e/c9a6ac3e9e47a321b386.png": "c9a6ac3e9e47a321b3860f47aa0af86427e997a2fc8636c402a21b725a51668a",
-    "content/special-edition-01-thinking-cost-zero-era/af30bc0a2e6bef9f2f8f32d8554ce341c5ae966b326a6d8a739798cd4a5d810e/bec2956ded56b0e3d653.png": "bec2956ded56b0e3d653d6c29dc53f9232688b8578ecd7a630da9ca780d7503a",
-    "content/special-edition-01-thinking-cost-zero-era/af30bc0a2e6bef9f2f8f32d8554ce341c5ae966b326a6d8a739798cd4a5d810e/77310b7f008f021a60a9.png": "77310b7f008f021a60a9741b2867734e01d85921733eb4b73281d1c9ef044918",
-    "content/special-edition-01-thinking-cost-zero-era/af30bc0a2e6bef9f2f8f32d8554ce341c5ae966b326a6d8a739798cd4a5d810e/73913063eefc5a18cb1f.png": "73913063eefc5a18cb1f7fa16511dfd48d2ba5932f48b19627da91336dedaff2",
-    "content/special-edition-01-thinking-cost-zero-era/af30bc0a2e6bef9f2f8f32d8554ce341c5ae966b326a6d8a739798cd4a5d810e/cover-540.webp": "dc066998488ff13a9e5e66bb8195707c93c4a9dec0bf718d0578bc13284e18b6",
-    "content/special-edition-01-thinking-cost-zero-era/af30bc0a2e6bef9f2f8f32d8554ce341c5ae966b326a6d8a739798cd4a5d810e/cover-1080.webp": "d83280bd5b708f729779e2a068919a99109af5f48bea94d5d4e8421c3c3d38d1",
-    "content/special-edition-01-thinking-cost-zero-era/af30bc0a2e6bef9f2f8f32d8554ce341c5ae966b326a6d8a739798cd4a5d810e/post.json": "dad921b71ac25a4c2f554ca140cc3805b44e6cf1f948ee1dd9fe9b379961fc50",
-    "content/special-edition-02-why-we-keep-thinking/afcfe600e803e4465ac4ecac4ab2d43bd78765ad5bc9488af0d9ec3f527f052c/7064acf9cd90a4b5b581.png": "7064acf9cd90a4b5b581ec21d701690880bdd11f87f41447502bdc95f9b47d74",
-    "content/special-edition-02-why-we-keep-thinking/afcfe600e803e4465ac4ecac4ab2d43bd78765ad5bc9488af0d9ec3f527f052c/2f4a843ff627f5f17a55.png": "2f4a843ff627f5f17a55237f0176c0a1a7eacca48265ae2ae7f442a8fbc81d95",
-    "content/special-edition-02-why-we-keep-thinking/afcfe600e803e4465ac4ecac4ab2d43bd78765ad5bc9488af0d9ec3f527f052c/18c31b7c113585a8998b.png": "18c31b7c113585a8998bb3d89a422bf9531f790b3cae1e00c58e6a6bcfae138b",
-    "content/special-edition-02-why-we-keep-thinking/afcfe600e803e4465ac4ecac4ab2d43bd78765ad5bc9488af0d9ec3f527f052c/339d641f07e6dc828bca.png": "339d641f07e6dc828bca32c5ec62b84c79293dcfeec623a41a3f8544a700ca49",
-    "content/special-edition-02-why-we-keep-thinking/afcfe600e803e4465ac4ecac4ab2d43bd78765ad5bc9488af0d9ec3f527f052c/fb121a87db42a5937537.png": "fb121a87db42a5937537c2e1e92463915a397c748e04241fa8cab1bc11f0b6ce",
-    "content/special-edition-02-why-we-keep-thinking/afcfe600e803e4465ac4ecac4ab2d43bd78765ad5bc9488af0d9ec3f527f052c/082cf4b17069f23689da.png": "082cf4b17069f23689da816b447c6d420bc31b8a60c11b7f0526919568fc906d",
-    "content/special-edition-02-why-we-keep-thinking/afcfe600e803e4465ac4ecac4ab2d43bd78765ad5bc9488af0d9ec3f527f052c/cover-540.webp": "f716f72c059069e530f145d5fabc37b71e3ae56e59d82dd0e21a225fb03c5c58",
-    "content/special-edition-02-why-we-keep-thinking/afcfe600e803e4465ac4ecac4ab2d43bd78765ad5bc9488af0d9ec3f527f052c/cover-1080.webp": "83a48383ab2525fd67421f3241f430c3eca1b460978052762990e314148e0e37",
-    "content/special-edition-02-why-we-keep-thinking/afcfe600e803e4465ac4ecac4ab2d43bd78765ad5bc9488af0d9ec3f527f052c/post.json": "fa4c255b5cabae4739d3ddda8c8a8e667178bb5ba1b2a891aa43c60715d7de0e"
+    "content/calm-tech-series-01-concept/747c2743aeded55ad5235f173bdb005d84d2bcbca54a22e90d8a284edb61d16c/111c524e78c2406144be.png": "111c524e78c2406144be846cc9750a42fd4a583fb16268e0424a393953117303",
+    "content/calm-tech-series-01-concept/747c2743aeded55ad5235f173bdb005d84d2bcbca54a22e90d8a284edb61d16c/fe3553f7dd688200b7c2.png": "fe3553f7dd688200b7c2fe64f16959083371aa3ea60caef23215671b8e047bf9",
+    "content/calm-tech-series-01-concept/747c2743aeded55ad5235f173bdb005d84d2bcbca54a22e90d8a284edb61d16c/f224e13f5aab1982ca4d.png": "f224e13f5aab1982ca4d6ae78a448f1e2f72a33ac1811e77610f6bee4a16af0c",
+    "content/calm-tech-series-01-concept/747c2743aeded55ad5235f173bdb005d84d2bcbca54a22e90d8a284edb61d16c/cf30df8396dc1be7f9da.png": "cf30df8396dc1be7f9da662cc2443562c9235af8e09d10e6dfaaca1e12ddb5e1",
+    "content/calm-tech-series-01-concept/747c2743aeded55ad5235f173bdb005d84d2bcbca54a22e90d8a284edb61d16c/1f1c5818970717d4df09.png": "1f1c5818970717d4df0955374b767ea1a640950ca1f14c05ecafddb5089ca9c0",
+    "content/calm-tech-series-01-concept/747c2743aeded55ad5235f173bdb005d84d2bcbca54a22e90d8a284edb61d16c/dbef60fb3929de6873ad.png": "dbef60fb3929de6873ad3a23338d5934a0050a2cee0fddd4ee3c466dbc498529",
+    "content/calm-tech-series-01-concept/747c2743aeded55ad5235f173bdb005d84d2bcbca54a22e90d8a284edb61d16c/cover-540.webp": "42347097153be029654ebab04258ae7904e77f8d44001de06962dc6be0ed5aa3",
+    "content/calm-tech-series-01-concept/747c2743aeded55ad5235f173bdb005d84d2bcbca54a22e90d8a284edb61d16c/cover-1080.webp": "8f096ef40243f75f78ccbad2d502db8fd86f3452e1ba064a5cf3740017323d85",
+    "content/calm-tech-series-01-concept/747c2743aeded55ad5235f173bdb005d84d2bcbca54a22e90d8a284edb61d16c/post.json": "a4dcc4ebd9b97402fef598f5e79caa092d815636b313e2a313162b72ca06d1d6",
+    "content/calm-tech-series-02-people/e39d05dc37a5bbe4b5f32a2b735e3c7c19b7ae9dfac2c9bb0319a23c6bab7d57/0dd127f5194d7cc72e7a.png": "0dd127f5194d7cc72e7aca6f3d9e81aab6899e7f0e79b0d566d04778d99a9264",
+    "content/calm-tech-series-02-people/e39d05dc37a5bbe4b5f32a2b735e3c7c19b7ae9dfac2c9bb0319a23c6bab7d57/dc3c581fd7d1eea99eba.png": "dc3c581fd7d1eea99eba89f1f46265766756c046a7fad79ab4c7573bd45ee0c1",
+    "content/calm-tech-series-02-people/e39d05dc37a5bbe4b5f32a2b735e3c7c19b7ae9dfac2c9bb0319a23c6bab7d57/f6759b55f4c612ac0d38.png": "f6759b55f4c612ac0d3874cf802abd44713730c0be5e244f72ac877ee540278e",
+    "content/calm-tech-series-02-people/e39d05dc37a5bbe4b5f32a2b735e3c7c19b7ae9dfac2c9bb0319a23c6bab7d57/96c52e63f42675815fc2.png": "96c52e63f42675815fc2a743a13ce852819be20f10d530bca619ed944fbccbf8",
+    "content/calm-tech-series-02-people/e39d05dc37a5bbe4b5f32a2b735e3c7c19b7ae9dfac2c9bb0319a23c6bab7d57/06b56ad1bc1d1bb28687.png": "06b56ad1bc1d1bb28687bd3922c42807974e18d4d81961d448a75d5afee5ef05",
+    "content/calm-tech-series-02-people/e39d05dc37a5bbe4b5f32a2b735e3c7c19b7ae9dfac2c9bb0319a23c6bab7d57/dfd5324a2697f30e583c.png": "dfd5324a2697f30e583c6858474637b9c3888b2c96fdb7ce746afadffb9f1343",
+    "content/calm-tech-series-02-people/e39d05dc37a5bbe4b5f32a2b735e3c7c19b7ae9dfac2c9bb0319a23c6bab7d57/0ca5ca004c3c93a14bcc.png": "0ca5ca004c3c93a14bcc34e445e3f6754e6359196247db3152c2cd3b06c730da",
+    "content/calm-tech-series-02-people/e39d05dc37a5bbe4b5f32a2b735e3c7c19b7ae9dfac2c9bb0319a23c6bab7d57/cover-540.webp": "26f29800022cedd4fb31382cc5c66a6356d575f55a4a61ab85d5b8e4cda9e38c",
+    "content/calm-tech-series-02-people/e39d05dc37a5bbe4b5f32a2b735e3c7c19b7ae9dfac2c9bb0319a23c6bab7d57/cover-1080.webp": "2fc0bdc0733ee6349952fa3ed564a9b009c692c6ba37860bb4718156c722e0bb",
+    "content/calm-tech-series-02-people/e39d05dc37a5bbe4b5f32a2b735e3c7c19b7ae9dfac2c9bb0319a23c6bab7d57/post.json": "46dc52d83927926e3de907f6229aa92be53c53bf562e3a8144b1e7a2aeec79d0",
+    "content/calm-tech-series-03-cti-81-criteria/b7b4cfd5536eb81cd90526750109a66c5f57121a6caa69c4b391285e7d379103/d89668f0247f8c4459b9.png": "d89668f0247f8c4459b92e4ecd1b5b20506831a4696e7cba23754f8f48eeedb2",
+    "content/calm-tech-series-03-cti-81-criteria/b7b4cfd5536eb81cd90526750109a66c5f57121a6caa69c4b391285e7d379103/7feb4dba712c3d3ab74f.png": "7feb4dba712c3d3ab74f081dd3cade5a3833527c0c78a39007915ff9630eaf1d",
+    "content/calm-tech-series-03-cti-81-criteria/b7b4cfd5536eb81cd90526750109a66c5f57121a6caa69c4b391285e7d379103/42e53c3c95fa8dbe8728.png": "42e53c3c95fa8dbe8728fad52663143d63a920cb6ae9e42fd8a7dc3452089268",
+    "content/calm-tech-series-03-cti-81-criteria/b7b4cfd5536eb81cd90526750109a66c5f57121a6caa69c4b391285e7d379103/d46213394954df0f9d53.png": "d46213394954df0f9d534dda7559ed101f0eb3dd140306c5b55b5bdbfefef588",
+    "content/calm-tech-series-03-cti-81-criteria/b7b4cfd5536eb81cd90526750109a66c5f57121a6caa69c4b391285e7d379103/01586760bcfabb00d74c.png": "01586760bcfabb00d74c6de8310fcd4a0ebab544d6db47c682d003dc89f9f55d",
+    "content/calm-tech-series-03-cti-81-criteria/b7b4cfd5536eb81cd90526750109a66c5f57121a6caa69c4b391285e7d379103/8322d7c6eaf31bebbe9e.png": "8322d7c6eaf31bebbe9ee6aa7ffd94eed1231850aeff986cc9a82ecffd34ee29",
+    "content/calm-tech-series-03-cti-81-criteria/b7b4cfd5536eb81cd90526750109a66c5f57121a6caa69c4b391285e7d379103/06a787d20d87fec83957.png": "06a787d20d87fec8395752aa2003847c47096710e018a2f4f8c813aed1570987",
+    "content/calm-tech-series-03-cti-81-criteria/b7b4cfd5536eb81cd90526750109a66c5f57121a6caa69c4b391285e7d379103/1e18543314ef647a5733.png": "1e18543314ef647a573364e0c6ae040ae99f21492fbeaf638014552d1b3b03cd",
+    "content/calm-tech-series-03-cti-81-criteria/b7b4cfd5536eb81cd90526750109a66c5f57121a6caa69c4b391285e7d379103/cover-540.webp": "293158e404b2d93c8be9a979ed017879ec4058438878c1eb82b1f3e58cd40a26",
+    "content/calm-tech-series-03-cti-81-criteria/b7b4cfd5536eb81cd90526750109a66c5f57121a6caa69c4b391285e7d379103/cover-1080.webp": "e97152c3f18becac586f8da4eb449a8d443eb2c023636d4fe6cf914d1ab721c7",
+    "content/calm-tech-series-03-cti-81-criteria/b7b4cfd5536eb81cd90526750109a66c5f57121a6caa69c4b391285e7d379103/post.json": "e543e70f08c6292a93df3a42ac1e39072012b3c2874604cd6dc6afce1b9cb303",
+    "content/calm-tech-series-04-mui-board-gen2/1c06da9cdc4b9137794e0e168c3aacf118f8c99aff4c5b5f961264824d63526f/6cbca8a729d0dcfd7028.png": "6cbca8a729d0dcfd7028a514ab3eb381a6ced2a1f5bfdf91e5abd85d812326f4",
+    "content/calm-tech-series-04-mui-board-gen2/1c06da9cdc4b9137794e0e168c3aacf118f8c99aff4c5b5f961264824d63526f/b31d8fa8812839b14e97.png": "b31d8fa8812839b14e9712c086070bc383dbfc107ca5d9631fea7dfd5a841d4b",
+    "content/calm-tech-series-04-mui-board-gen2/1c06da9cdc4b9137794e0e168c3aacf118f8c99aff4c5b5f961264824d63526f/60df1270ee31ad4e3f5e.png": "60df1270ee31ad4e3f5e948e9b2ac5be394c2ca5838b3708d1558dad0d00e3e3",
+    "content/calm-tech-series-04-mui-board-gen2/1c06da9cdc4b9137794e0e168c3aacf118f8c99aff4c5b5f961264824d63526f/b3434f88e650d3c520e5.png": "b3434f88e650d3c520e56a02ce869482b1e05da44de268df5d703068d63966a7",
+    "content/calm-tech-series-04-mui-board-gen2/1c06da9cdc4b9137794e0e168c3aacf118f8c99aff4c5b5f961264824d63526f/07e1948bcd0b428f7b68.png": "07e1948bcd0b428f7b681344f35ecd7e4b89644f690dbec047428dff02575029",
+    "content/calm-tech-series-04-mui-board-gen2/1c06da9cdc4b9137794e0e168c3aacf118f8c99aff4c5b5f961264824d63526f/403350efcdc59dc64d4d.png": "403350efcdc59dc64d4d96c55d8dde0dc6d2847138fcfe3c94dcc73194e44b71",
+    "content/calm-tech-series-04-mui-board-gen2/1c06da9cdc4b9137794e0e168c3aacf118f8c99aff4c5b5f961264824d63526f/cover-540.webp": "b7c659b210a10c30f98baaa270a825508d7b7c96315541ccc8293bc3052f3bb5",
+    "content/calm-tech-series-04-mui-board-gen2/1c06da9cdc4b9137794e0e168c3aacf118f8c99aff4c5b5f961264824d63526f/cover-1080.webp": "7d7f90dd19d8dd94c2d751cb07a055a1bee3118833fa3641e67eefd6748b5eec",
+    "content/calm-tech-series-04-mui-board-gen2/1c06da9cdc4b9137794e0e168c3aacf118f8c99aff4c5b5f961264824d63526f/post.json": "6249519491ad22e7dfe25241521e633cbc16d0c771594106a279d94a0d8b4829",
+    "content/calm-tech-series-05-remarkable-paper-pro/a8421c4d0a49c01d53aa60dbd0792e3e6712edbafc76b7e46c8eb9871641415f/9981d58dfc183787af4b.png": "9981d58dfc183787af4b096973ed88f3dcbcaae3fafc932a8fc308f5027f21fb",
+    "content/calm-tech-series-05-remarkable-paper-pro/a8421c4d0a49c01d53aa60dbd0792e3e6712edbafc76b7e46c8eb9871641415f/c9e16fd98fbd6ac3da3e.png": "c9e16fd98fbd6ac3da3eeb80fef666c822a2818ff56740b458d29cb520c25264",
+    "content/calm-tech-series-05-remarkable-paper-pro/a8421c4d0a49c01d53aa60dbd0792e3e6712edbafc76b7e46c8eb9871641415f/80f0974b3bf90c6463d5.png": "80f0974b3bf90c6463d55db06743aa33d425213ae8c6cabc447519955a6b775f",
+    "content/calm-tech-series-05-remarkable-paper-pro/a8421c4d0a49c01d53aa60dbd0792e3e6712edbafc76b7e46c8eb9871641415f/b17c4020c3bf53591197.png": "b17c4020c3bf535911978a5b2b28920f2d7d378624f1e8825fbc0eaad0d6a7a7",
+    "content/calm-tech-series-05-remarkable-paper-pro/a8421c4d0a49c01d53aa60dbd0792e3e6712edbafc76b7e46c8eb9871641415f/c4fa8f5670672eef9d30.png": "c4fa8f5670672eef9d301b307fe42ce1adf0c6e4543d00f70cde88360af1ef24",
+    "content/calm-tech-series-05-remarkable-paper-pro/a8421c4d0a49c01d53aa60dbd0792e3e6712edbafc76b7e46c8eb9871641415f/019533a109a8f0e48682.png": "019533a109a8f0e48682ad3d631a0465a56768052df1576b6b18960eb94c6e34",
+    "content/calm-tech-series-05-remarkable-paper-pro/a8421c4d0a49c01d53aa60dbd0792e3e6712edbafc76b7e46c8eb9871641415f/079454befae24e9b8a90.png": "079454befae24e9b8a9030e5373e7f27f1ca5b3bc749a7fd66e66741a03051fb",
+    "content/calm-tech-series-05-remarkable-paper-pro/a8421c4d0a49c01d53aa60dbd0792e3e6712edbafc76b7e46c8eb9871641415f/cover-540.webp": "a495f106978832ac8bfb26d3d7aaeab41e36b1da6304602f0055c0d30d0eca87",
+    "content/calm-tech-series-05-remarkable-paper-pro/a8421c4d0a49c01d53aa60dbd0792e3e6712edbafc76b7e46c8eb9871641415f/cover-1080.webp": "f1d7fd58ade0ce5a50ec5e6a9e54903a5f5c5f10210a620593432136b359994d",
+    "content/calm-tech-series-05-remarkable-paper-pro/a8421c4d0a49c01d53aa60dbd0792e3e6712edbafc76b7e46c8eb9871641415f/post.json": "b07611c8d402c28f1c84adb7656aeab363e9ef31f4f7ab09f1971b9de8152da9",
+    "content/special-edition-01-thinking-cost-zero-era/3bacf530237c7e53342e6fdfc6c9ac12e0555004fbd346928f775eadac29fea1/6564ecb3381c821ade8b.png": "6564ecb3381c821ade8b3a2c49af19da245dd86869e75f3a8de1976d7b8c1bd1",
+    "content/special-edition-01-thinking-cost-zero-era/3bacf530237c7e53342e6fdfc6c9ac12e0555004fbd346928f775eadac29fea1/e1f224482ca2e5a7d139.png": "e1f224482ca2e5a7d13933d05ddb561aebf050b9d71d9f2f6b1135032f4d43f5",
+    "content/special-edition-01-thinking-cost-zero-era/3bacf530237c7e53342e6fdfc6c9ac12e0555004fbd346928f775eadac29fea1/63a8b3287c1403b8b1a9.png": "63a8b3287c1403b8b1a93a58bf34ba2a6f00923f43f4431bd64492db059eea36",
+    "content/special-edition-01-thinking-cost-zero-era/3bacf530237c7e53342e6fdfc6c9ac12e0555004fbd346928f775eadac29fea1/ced39b7389daf95310a9.png": "ced39b7389daf95310a9d156a2b6ef1780a5196cda4aa27530e8da04fc06437e",
+    "content/special-edition-01-thinking-cost-zero-era/3bacf530237c7e53342e6fdfc6c9ac12e0555004fbd346928f775eadac29fea1/c210590fad1bb0cfcb57.png": "c210590fad1bb0cfcb57458dbfcff4afd8ef84da3d1cb0b544c03b6494053569",
+    "content/special-edition-01-thinking-cost-zero-era/3bacf530237c7e53342e6fdfc6c9ac12e0555004fbd346928f775eadac29fea1/f8dc0a2f8d4b7f118362.png": "f8dc0a2f8d4b7f118362f5bcb9a382c9dba13a811e14319a99cb8d8df0cf19a6",
+    "content/special-edition-01-thinking-cost-zero-era/3bacf530237c7e53342e6fdfc6c9ac12e0555004fbd346928f775eadac29fea1/cover-540.webp": "acefd0831f0c446c594a7d9fb578074db3895288a6307a8f9b33ae17a21196ad",
+    "content/special-edition-01-thinking-cost-zero-era/3bacf530237c7e53342e6fdfc6c9ac12e0555004fbd346928f775eadac29fea1/cover-1080.webp": "01eed53b61ba3418657f6ec6ee1ce696704de5a18652e3072539f41b42f42bbb",
+    "content/special-edition-01-thinking-cost-zero-era/3bacf530237c7e53342e6fdfc6c9ac12e0555004fbd346928f775eadac29fea1/post.json": "914f110aea278c9775f0c05d8eb68dbb3c3807b1656020907ab8be097610bd40",
+    "content/special-edition-02-why-we-keep-thinking/c4e6437b898f5ede803c61f846596bcc3ae43671e61ab45e7e7333fc7fd91de8/ab2bd7c685cb1cc88633.png": "ab2bd7c685cb1cc886335267ef7b3cd1e7e35a873f21abcb848059e55980a7fd",
+    "content/special-edition-02-why-we-keep-thinking/c4e6437b898f5ede803c61f846596bcc3ae43671e61ab45e7e7333fc7fd91de8/9bf4b33e19916de19ff7.png": "9bf4b33e19916de19ff7d34fe93bee69afec33f664fb6804aa8b8146a86d6d2e",
+    "content/special-edition-02-why-we-keep-thinking/c4e6437b898f5ede803c61f846596bcc3ae43671e61ab45e7e7333fc7fd91de8/7b548b4081162b2a971d.png": "7b548b4081162b2a971d5efc4143630cb81e48feb65c6d7dd45e54bca3040ffc",
+    "content/special-edition-02-why-we-keep-thinking/c4e6437b898f5ede803c61f846596bcc3ae43671e61ab45e7e7333fc7fd91de8/769a180ccfb138fa80e4.png": "769a180ccfb138fa80e4d100554773dd6dbba124ea250683b8cf9f6f983d1f34",
+    "content/special-edition-02-why-we-keep-thinking/c4e6437b898f5ede803c61f846596bcc3ae43671e61ab45e7e7333fc7fd91de8/6e880ddfe00fd8aeb9c0.png": "6e880ddfe00fd8aeb9c0610ab4451c660a86eed0bb83325af0f246dfa577f4b2",
+    "content/special-edition-02-why-we-keep-thinking/c4e6437b898f5ede803c61f846596bcc3ae43671e61ab45e7e7333fc7fd91de8/9c1367eb658a8b19e72c.png": "9c1367eb658a8b19e72caba386d16b8ad2685f78c8710bff81da3adbb6d4bdcf",
+    "content/special-edition-02-why-we-keep-thinking/c4e6437b898f5ede803c61f846596bcc3ae43671e61ab45e7e7333fc7fd91de8/cover-540.webp": "fe65904ea715dea318fbb4f0ea6a83c419e11abf1296bd1cb6dd7ac04d8e6d50",
+    "content/special-edition-02-why-we-keep-thinking/c4e6437b898f5ede803c61f846596bcc3ae43671e61ab45e7e7333fc7fd91de8/cover-1080.webp": "b7558970e42f851dd735e012e0f258fc313768d9ed45156397c2f64ccbce3f6c",
+    "content/special-edition-02-why-we-keep-thinking/c4e6437b898f5ede803c61f846596bcc3ae43671e61ab45e7e7333fc7fd91de8/post.json": "55249d3b69c666e56c6fd65fcec3eda48ab4bc32a48a59ad54cbb3685f7b048c"
   }
 }
