@@ -1,21 +1,25 @@
 import { useEffect, useRef, useState } from "react";
-import type { Card, Post } from "../types";
+import type { Card, Locale, Post } from "../types";
 import { assetUrl, destination, isSafeLink } from "../lib/urls";
 import Icon from "../components/Icon";
+import { copy } from "../app/i18n";
 import SlideImage, { preloadImage } from "./SlideImage";
 import useZoomPan from "./useZoomPan";
 
 export default function CarouselViewer({
   card,
   index,
+  locale,
   onGo,
   onClose,
 }: {
   card: Card | undefined;
   index: number;
+  locale: Locale;
   onGo: (index: number) => void;
   onClose: () => void;
 }) {
+  const text = copy[locale].viewer;
   const dialog = useRef<HTMLDialogElement>(null),
     closeButton = useRef<HTMLButtonElement>(null);
   const [loaded, setLoaded] = useState<{ key: string; post: Post } | null>(
@@ -135,29 +139,29 @@ export default function CarouselViewer({
       }}
     >
       <h2 id="viewer-title" className="sr-only">
-        {card?.title || "콘텐츠를 찾을 수 없습니다"}
+        {card?.title || text.untitled}
       </h2>
       <button
         className="viewer-button viewer-close"
         ref={closeButton}
         onClick={onClose}
-        aria-label="닫기"
+        aria-label={text.close}
       >
         <Icon name="close" />
       </button>
       {!card ? (
         <div className="viewer-message">
-          <p>콘텐츠를 찾을 수 없습니다.</p>
-          <button onClick={onClose}>LABS로 돌아가기</button>
+          <p>{text.missing}</p>
+          <button onClick={onClose}>{text.back}</button>
         </div>
       ) : error ? (
         <div className="viewer-message">
-          <p>콘텐츠를 불러오지 못했습니다.</p>
-          <button onClick={() => setAttempt((n) => n + 1)}>다시 시도</button>
+          <p>{text.loadError}</p>
+          <button onClick={() => setAttempt((n) => n + 1)}>{text.retry}</button>
         </div>
       ) : !slide ? (
         <div className="viewer-message">
-          <span className="loading-dot" aria-label="콘텐츠 불러오는 중" />
+          <span className="loading-dot" aria-label={text.loading} />
         </div>
       ) : (
         <>
@@ -173,7 +177,7 @@ export default function CarouselViewer({
             className="viewer-button viewer-prev"
             disabled={index === 0}
             onClick={() => onGo(index - 1)}
-            aria-label="이전 슬라이드"
+            aria-label={text.previous}
           >
             <Icon name="left" />
           </button>
@@ -181,7 +185,7 @@ export default function CarouselViewer({
             className="viewer-button viewer-next"
             disabled={index === post!.slides.length - 1}
             onClick={() => onGo(index + 1)}
-            aria-label="다음 슬라이드"
+            aria-label={text.next}
           >
             <Icon name="right" />
           </button>
@@ -195,14 +199,14 @@ export default function CarouselViewer({
               className="viewer-button"
               disabled={zoom <= 0.5}
               onClick={() => pan.zoomBy(-0.25)}
-              aria-label="축소"
+              aria-label={text.zoomOut}
             >
               <Icon name="minus" />
             </button>
             <button
               className="zoom-value"
               onClick={pan.reset}
-              aria-label="화면에 맞춤"
+              aria-label={text.fit}
             >
               {Math.round(zoom * 100)}%
             </button>
@@ -210,14 +214,14 @@ export default function CarouselViewer({
               className="viewer-button"
               disabled={zoom >= 4}
               onClick={() => pan.zoomBy(0.25)}
-              aria-label="확대"
+              aria-label={text.zoomIn}
             >
               <Icon name="plus" />
             </button>
             <button
               className="viewer-button"
               onClick={pan.reset}
-              aria-label="화면 맞춤 복귀"
+              aria-label={text.reset}
             >
               <Icon name="fit" />
             </button>
@@ -225,14 +229,14 @@ export default function CarouselViewer({
             <button
               className="viewer-button"
               onClick={() => setInfo((x) => !x)}
-              aria-label="캡션과 출처"
+              aria-label={text.info}
               aria-expanded={info}
             >
               <Icon name="info" />
             </button>
           </div>
           {info && (
-            <section className="post-info" aria-label="캡션과 출처">
+            <section className="post-info" aria-label={text.info}>
               <h3>{post!.title}</h3>
               <p>{post!.caption.body}</p>
               {post!.caption.cta && <p>{post!.caption.cta}</p>}
@@ -242,18 +246,18 @@ export default function CarouselViewer({
                   .join(" ")}
               </p>
               <details>
-                <summary>현재 슬라이드 내용</summary>
+                <summary>{text.currentSlide}</summary>
                 <p>{slide.text}</p>
               </details>
               {post!.caption.attributions.length > 0 && (
-                <ul aria-label="크레딧">
+                <ul aria-label={text.credits}>
                   {post!.caption.attributions.map((credit, i) => (
                     <li key={i}>{credit}</li>
                   ))}
                 </ul>
               )}
               {post!.sources.length > 0 && (
-                <ul aria-label="출처 링크">
+                <ul aria-label={text.sources}>
                   {post!.sources
                     .filter((s) => isSafeLink(s.url))
                     .map((s, i) => (

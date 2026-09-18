@@ -1,21 +1,25 @@
 import { useState, type MouseEvent } from "react";
-import type { Card } from "../types";
-import { assetUrl, destination, siteUrl } from "../lib/urls";
+import type { Card, Locale } from "../types";
+import { assetUrl, destination, localizedSiteUrl } from "../lib/urls";
 import Icon from "../components/Icon";
+import { copy } from "../app/i18n";
 export default function ContentCard({
   card,
   index,
+  locale,
   onOpen,
 }: {
   card: Card;
   index: number;
+  locale: Locale;
   onOpen: (card: Card) => void;
 }) {
   const [failed, setFailed] = useState(false);
+  const text = copy[locale].card;
   const href =
     card.kind === "link"
       ? destination(card.href)
-      : `${siteUrl()}?post=${encodeURIComponent(card.id)}&slide=1`;
+      : localizedSiteUrl("", locale, { post: card.id, slide: 1 });
   function click(event: MouseEvent<HTMLAnchorElement>) {
     if (
       card.kind === "carousel" &&
@@ -41,12 +45,18 @@ export default function ContentCard({
             ? "noopener noreferrer"
             : undefined
         }
-        aria-label={`${card.title}${card.kind === "carousel" ? `, ${card.slideCount}장 슬라이드 열기` : card.external ? ", 새 탭에서 열기" : ", 페이지로 이동"}`}
+        aria-label={`${card.title}, ${
+          card.kind === "carousel"
+            ? text.slides(card.slideCount)
+            : card.external
+              ? text.external
+              : text.internal
+        }`}
       >
         {failed ? (
           <span className="cover-error">
             {card.title}
-            <span>이미지를 불러오지 못했습니다</span>
+            <span>{text.imageError}</span>
           </span>
         ) : (
           <img

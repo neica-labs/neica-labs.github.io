@@ -147,6 +147,55 @@ test("identical PNGs warn without deleting slide; withdrawal excludes post", asy
   );
   assert.equal((await f.bundle("review")).entries.length, 0);
 });
+test("localized bundles keep Korean and English posts and paths separate", async (t) => {
+  const f = await fixture(t);
+  const english = path.join(f.contents, "series", "english");
+  await fs.mkdir(path.join(english, "output"), { recursive: true });
+  await fs.writeFile(
+    path.join(english, "content.json"),
+    JSON.stringify({ locale: "en", id: "english-story" }),
+  );
+  await fs.writeFile(
+    path.join(english, "project.json"),
+    JSON.stringify({
+      title: "English story",
+      slides: [{ id: "cover", headline: "A different relationship" }],
+    }),
+  );
+  await sharp({
+    create: { width: 108, height: 135, channels: 3, background: "#eee" },
+  })
+    .png()
+    .toFile(path.join(english, "output", "01.png"));
+  const korean = await createBundle({
+    contentRoot: f.contents,
+    destination: path.join(f.root, "localized-ko"),
+    mode: "review",
+    locale: "ko",
+    publicPrefix: "content",
+  });
+  const englishCatalog = await createBundle({
+    contentRoot: f.contents,
+    destination: path.join(f.root, "localized-en"),
+    mode: "review",
+    locale: "en",
+    publicPrefix: "content-en",
+    catalogFilename: "catalog.en.json",
+  });
+  assert.deepEqual(
+    korean.entries.map((entry) => entry.id),
+    ["series-one"],
+  );
+  assert.deepEqual(
+    englishCatalog.entries.map((entry) => entry.id),
+    ["english-story"],
+  );
+  assert.ok(
+    englishCatalog.entries[0].cover.path.startsWith(
+      "content-en/english-story/",
+    ),
+  );
+});
 test("path traversal, symlink escape and executable URL denied", async (t) => {
   const f = await fixture(t);
   await assert.rejects(() => safeFile(f.post, "../project.json"), /Unsafe/);

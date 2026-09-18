@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
-import { siteUrl } from "../lib/urls";
+import { localizedSiteUrl } from "../lib/urls";
+import type { Locale } from "../types";
 function read() {
   const params = new URLSearchParams(location.search);
   const raw = Number(params.get("slide") || 1);
@@ -8,21 +9,24 @@ function read() {
     index: Number.isFinite(raw) ? Math.max(0, Math.floor(raw) - 1) : 0,
   };
 }
-export default function useViewerUrl() {
+export default function useViewerUrl(locale: Locale) {
   const [route, setRoute] = useState(read);
   useEffect(() => {
     const update = () => setRoute(read());
     window.addEventListener("popstate", update);
     return () => window.removeEventListener("popstate", update);
   }, []);
-  const open = useCallback((id: string) => {
-    history.pushState(
-      { neicaViewer: true },
-      "",
-      `${siteUrl()}?post=${encodeURIComponent(id)}&slide=1`,
-    );
-    setRoute(read());
-  }, []);
+  const open = useCallback(
+    (id: string) => {
+      history.pushState(
+        { neicaViewer: true },
+        "",
+        localizedSiteUrl("", locale, { post: id, slide: 1 }),
+      );
+      setRoute(read());
+    },
+    [locale],
+  );
   const go = useCallback((index: number) => {
     const url = new URL(location.href);
     url.searchParams.set("slide", String(index + 1));
@@ -32,9 +36,9 @@ export default function useViewerUrl() {
   const close = useCallback(() => {
     if (history.state?.neicaViewer) history.back();
     else {
-      history.replaceState(null, "", siteUrl());
+      history.replaceState(null, "", localizedSiteUrl("", locale));
       setRoute(read());
     }
-  }, []);
+  }, [locale]);
   return { ...route, open, go, close };
 }

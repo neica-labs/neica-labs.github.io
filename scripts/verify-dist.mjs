@@ -3,15 +3,17 @@ import path from "node:path";
 import { appRoot, readJson, checkBundle } from "./content.mjs";
 
 const dist = path.join(appRoot, "dist");
-const catalog = await readJson(
-  path.join(appRoot, "src/generated/catalog.json"),
-);
-await checkBundle(catalog, dist);
+const catalogs = {
+  ko: await readJson(path.join(appRoot, "src/generated/catalog.json")),
+  en: await readJson(path.join(appRoot, "src/generated/catalog.en.json")),
+};
+for (const catalog of Object.values(catalogs)) await checkBundle(catalog, dist);
 for (const route of [
   "index.html",
   "about/index.html",
   "labs/index.html",
   "community/index.html",
+  "contact/index.html",
   "404.html",
 ]) {
   const html = await fs.readFile(path.join(dist, route), "utf8");
@@ -40,12 +42,15 @@ await fs.writeFile(
   path.join(dist, "build.json"),
   JSON.stringify({
     schemaVersion: "neica-build.v1",
-    buildId: catalog.buildId,
-    posts: catalog.entries.length,
+    buildId: `${catalogs.ko.buildId}:${catalogs.en.buildId}`,
+    posts: {
+      ko: catalogs.ko.entries.length,
+      en: catalogs.en.entries.length,
+    },
     builtAt: new Date().toISOString(),
   }) + "\n",
 );
 await fs.writeFile(path.join(dist, ".nojekyll"), "");
 console.log(
-  `정적 배포 검사 통과 · 콘텐츠 ${catalog.entries.length}개 · ${(size / 1024 / 1024).toFixed(2)} MB`,
+  `정적 배포 검사 통과 · 콘텐츠 ko ${catalogs.ko.entries.length}개 / en ${catalogs.en.entries.length}개 · ${(size / 1024 / 1024).toFixed(2)} MB`,
 );

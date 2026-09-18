@@ -92,6 +92,28 @@ button {
   justify-content: space-between;
   gap: 24px;
 }
+.header-start {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-width: 0;
+}
+.language-switch {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #aaa;
+  font: 11px var(--mono);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.language-switch a {
+  padding: 8px 0;
+}
+.language-switch a:hover,
+.language-switch a[aria-current] {
+  color: #111;
+}
 .wordmark {
   font-size: 28px;
   letter-spacing: 0.095em;
@@ -573,6 +595,10 @@ button {
     padding-bottom: 20px;
     align-items: flex-start;
     flex-direction: column;
+    gap: 18px;
+  }
+  .header-start {
+    width: 100%;
     gap: 18px;
   }
   .wordmark {

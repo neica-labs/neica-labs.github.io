@@ -1,18 +1,31 @@
 import { createRoot } from "react-dom/client";
-import catalog from "virtual:neica-catalog";
+import catalogs from "virtual:neica-catalog";
 import SiteHeader from "./app/SiteHeader";
 import ContentCard from "./content/ContentCard";
 import CarouselViewer from "./viewer/CarouselViewer";
 import useViewerUrl from "./viewer/useViewerUrl";
-import { siteUrl } from "./lib/urls";
+import { localizedSiteUrl } from "./lib/urls";
+import { applyDocumentLocale, copy, readLocale } from "./app/i18n";
+import type { Catalog, Locale } from "./types";
 import "./styles.css";
 
-function Labs() {
-  const viewer = useViewerUrl();
+function Lines({ children }: { children: string }) {
+  const lines = children.split("\n");
+  return lines.map((line, index) => (
+    <span key={`${line}-${index}`}>
+      {line}
+      {index < lines.length - 1 && <br />}
+    </span>
+  ));
+}
+
+function Labs({ locale, catalog }: { locale: Locale; catalog: Catalog }) {
+  const viewer = useViewerUrl(locale);
+  const text = copy[locale];
   return (
     <>
       <main id="main" className="home-content">
-        <h1 className="sr-only">NEICA LABS 콘텐츠</h1>
+        <h1 className="sr-only">{text.labs.srTitle}</h1>
         {catalog.entries.length ? (
           <div className="content-grid">
             {catalog.entries.map((card, index) => (
@@ -20,14 +33,15 @@ function Labs() {
                 key={card.id}
                 card={card}
                 index={index}
+                locale={locale}
                 onOpen={(card) => viewer.open(card.id)}
               />
             ))}
           </div>
         ) : (
           <div className="empty-state">
-            <p>첫 번째 이야기를 준비하고 있습니다.</p>
-            <a href={siteUrl("about/")}>NEICA 알아보기 ↗</a>
+            <p>{text.labs.empty}</p>
+            <a href={localizedSiteUrl("about/", locale)}>{text.labs.about}</a>
           </div>
         )}
         <section
@@ -36,19 +50,11 @@ function Labs() {
         >
           <span className="page-label">LABS</span>
           <h2 id="labs-statement-title">
-            기술의 자리를
-            <br />
-            다시 생각합니다.
+            <Lines>{text.labs.heading}</Lines>
           </h2>
           <div className="prose">
-            <p className="lead">
-              손에 닿는 도구, 생활 속의 작은 경계, 함께 만드는 습관을
-              연구합니다.
-            </p>
-            <p>
-              스마트폰에 모인 기능을 사물과 공간으로 나누고, 행동을 바꿀 수 있는
-              환경을 실험합니다.
-            </p>
+            <p className="lead">{text.labs.lead}</p>
+            <p>{text.labs.body}</p>
           </div>
         </section>
       </main>
@@ -58,6 +64,7 @@ function Labs() {
             (card) => card.id === viewer.id && card.kind === "carousel",
           )}
           index={viewer.index}
+          locale={locale}
           onGo={viewer.go}
           onClose={viewer.close}
         />
@@ -83,83 +90,50 @@ function ContactIcon({ type }: { type: "email" | "instagram" }) {
   );
 }
 
-function Page({ page }: { page: string }) {
+const nameWords = [
+  ["N", "noise"],
+  ["E", "error"],
+  ["I", "inefficient"],
+  ["C", "constraint"],
+  ["A", "ambiguous"],
+] as const;
+
+function Page({ page, locale }: { page: string; locale: Locale }) {
+  const text = copy[locale];
   if (page === "about")
     return (
       <main className="text-page" id="main">
         <span className="page-label">ABOUT</span>
         <h1>
-          측정할 수 없는
-          <br />
-          세계를 위해.
+          <Lines>{text.about.heading}</Lines>
         </h1>
         <div className="prose">
-          <p className="lead">
-            NEICA labs는 효율과 최적화만으로 설명되지 않는 인간의 선택을 지키며,
-            기술이 삶에서 차지하는 자리를 다시 설계합니다.
-          </p>
-          <p>
-            기술을 덜 쓰는 것 자체가 목적은 아닙니다. 기술이 사람의
-            주의·시간·행동을 대신 결정하지 않도록, 필요한 기능은 가까이 두고
-            불필요한 요구는 주변으로 물러나게 하는 도구와 환경을 연구합니다.
-          </p>
+          <p className="lead">{text.about.lead}</p>
+          <p>{text.about.intro}</p>
           <section>
-            <h2>NEICA가 기억하는 다섯 단어</h2>
-            <div className="name-meaning" aria-label="NEICA 이름의 의미">
-              <div>
-                <strong>N</strong>
-                <span>noise</span>
-                <small>소음</small>
-              </div>
-              <div>
-                <strong>E</strong>
-                <span>error</span>
-                <small>오류</small>
-              </div>
-              <div>
-                <strong>I</strong>
-                <span>inefficient</span>
-                <small>비효율적인 것</small>
-              </div>
-              <div>
-                <strong>C</strong>
-                <span>constraint</span>
-                <small>제약</small>
-              </div>
-              <div>
-                <strong>A</strong>
-                <span>ambiguous</span>
-                <small>모호함</small>
-              </div>
+            <h2>{text.about.wordsHeading}</h2>
+            <div className="name-meaning" aria-label={text.about.wordsHeading}>
+              {nameWords.map(([letter, word], index) => (
+                <div key={letter}>
+                  <strong>{letter}</strong>
+                  <span>{word}</span>
+                  <small>{text.about.wordMeanings[index]}</small>
+                </div>
+              ))}
             </div>
-            <p>
-              최적화의 언어에서는 제거해야 할 값처럼 보이지만, 인간의 삶에서는
-              탐색·학습·숙련·책임·해석이 시작되는 조건이기도 합니다. NEICA는 이
-              다섯 단어를 기술이 함부로 지워서는 안 될 인간적 영역을 기억하는
-              이름으로 사용합니다.
-            </p>
+            <p>{text.about.wordsBody}</p>
           </section>
           <section>
-            <h2>기술의 자리를 다시 설계합니다</h2>
-            <p>
-              스마트폰에 집중된 기능을 사물과 공간으로 나누고, Calm Technology와
-              물리적 인터페이스를 통해 필요한 기능이 필요한 순간에만 앞으로
-              나오게 합니다. 기술이 계속 주의를 요구하는 대신 사람이 무엇에
-              집중할지 선택할 수 있어야 합니다.
-            </p>
+            <h2>{text.about.technologyHeading}</h2>
+            <p>{text.about.technologyBody}</p>
           </section>
           <section>
-            <h2>삶의 선택지를 다시 늘립니다</h2>
-            <p>
-              화면을 덜 본 시간을 하나의 숫자로 끝내지 않습니다. 그 자리에
-              활동·관계·공간·창작과 직접 부딪히는 경험이 돌아오도록 돕습니다.
-              편리함을 포기하는 일이 아니라, 편리함 때문에 사라진 선택권을 다시
-              만드는 일입니다.
-            </p>
+            <h2>{text.about.choiceHeading}</h2>
+            <p>{text.about.choiceBody}</p>
           </section>
           <p className="brand-line">
             NEICA: for the immeasurable world
-            <span>측정할 수 없는 세계를 위해.</span>
+            <span>{text.about.translation}</span>
           </p>
         </div>
       </main>
@@ -169,19 +143,12 @@ function Page({ page }: { page: string }) {
       <main className="text-page" id="main">
         <span className="page-label">COMMUNITY</span>
         <h1>
-          화면 밖에서
-          <br />
-          함께하는 시간.
+          <Lines>{text.community.heading}</Lines>
         </h1>
         <div className="prose">
-          <p className="lead">
-            활동과 관계, 새로운 경험을 통해 일상의 선택지를 넓힙니다.
-          </p>
-          <p>
-            기술을 사용하는 방식을 함께 생각하고, 각자의 일상에서 시도한 변화를
-            나눌 수 있는 자리를 준비합니다.
-          </p>
-          <p className="muted">참여 소식은 이곳에서 안내하겠습니다.</p>
+          <p className="lead">{text.community.lead}</p>
+          <p>{text.community.body}</p>
+          <p className="muted">{text.community.note}</p>
         </div>
       </main>
     );
@@ -190,14 +157,12 @@ function Page({ page }: { page: string }) {
       <main className="text-page contact-page" id="main">
         <span className="page-label">CONTACT</span>
         <h1>
-          연결되는
-          <br />
-          곳.
+          <Lines>{text.contact.heading}</Lines>
         </h1>
-        <div className="contact-list" aria-label="NEICA labs 연락처">
+        <div className="contact-list" aria-label={text.contact.listLabel}>
           <a className="contact-link" href="mailto:neica.labs@gmail.com">
             <span className="contact-copy">
-              <span className="contact-meta">이메일주소</span>
+              <span className="contact-meta">{text.contact.email}</span>
               <span className="contact-address">neica.labs@gmail.com</span>
             </span>
             <span className="contact-icon">
@@ -211,7 +176,7 @@ function Page({ page }: { page: string }) {
             rel="noreferrer"
           >
             <span className="contact-copy">
-              <span className="contact-meta">인스타주소</span>
+              <span className="contact-meta">{text.contact.instagram}</span>
               <span className="contact-address">instagram.com/neica.labs</span>
             </span>
             <span className="contact-icon">
@@ -225,32 +190,35 @@ function Page({ page }: { page: string }) {
     <main className="text-page" id="main">
       <span className="page-label">404</span>
       <h1>
-        페이지를
-        <br />
-        찾을 수 없습니다.
+        <Lines>{text.notFound.heading}</Lines>
       </h1>
-      <a href={siteUrl()}>LABS로 돌아가기 ↗</a>
+      <a href={localizedSiteUrl("", locale)}>{text.notFound.back}</a>
     </main>
   );
 }
+
 const page = document.body.dataset.page || "home";
+const locale = readLocale();
+const catalog = catalogs[locale];
+const text = copy[locale];
+applyDocumentLocale(page, locale);
+
 createRoot(document.getElementById("root")!).render(
   <>
     <a className="skip-link" href="#main">
-      본문으로 이동
+      {text.skip}
     </a>
-    <SiteHeader page={page} />
-    {page === "labs" || page === "home" ? <Labs /> : <Page page={page} />}
+    <SiteHeader page={page} locale={locale} />
+    {page === "labs" || page === "home" ? (
+      <Labs locale={locale} catalog={catalog} />
+    ) : (
+      <Page page={page} locale={locale} />
+    )}
     <footer className="site-footer">
       <span>NEICA</span>
       <span>for the immeasurable world</span>
       {catalog.mode === "review" && (
-        <span
-          className="review-label"
-          title="로컬 검수용입니다. 공개 사이트에 반영되지 않습니다."
-        >
-          검수 미리보기
-        </span>
+        <span className="review-label">{text.review}</span>
       )}
     </footer>
   </>,

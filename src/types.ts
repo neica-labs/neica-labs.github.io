@@ -5,8 +5,10 @@ export type ImageAsset = {
   alt: string;
   variants?: { path: string; width: number }[];
 };
+export type Locale = "ko" | "en";
 export type CardBase = {
   id: string;
+  locale?: Locale;
   revision: string;
   title: string;
   cover: ImageAsset;
@@ -20,10 +22,13 @@ export type Card = CardBase &
 export type Catalog = {
   schemaVersion: string;
   mode: "publish" | "review";
+  locale?: Locale;
+  publicPrefix?: string;
   buildId: string;
   entries: Card[];
   warnings?: string[];
 };
+export type LocalizedCatalog = Record<Locale, Catalog>;
 export type Slide = { id: string; image: ImageAsset; text: string };
 export type Post = {
   schemaVersion: string;

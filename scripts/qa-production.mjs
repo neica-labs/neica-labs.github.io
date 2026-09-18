@@ -28,6 +28,7 @@ try {
     "about",
     "labs",
     "community",
+    "contact",
     "link",
     "vite.config.ts",
     "tsconfig.json",
@@ -87,9 +88,20 @@ try {
     contentRoot: contents,
     destination: path.join(app, "public"),
   });
+  const englishCatalog = await createBundle({
+    contentRoot: contents,
+    destination: path.join(app, "public"),
+    locale: "en",
+    publicPrefix: "content-en",
+    catalogFilename: "catalog.en.json",
+  });
   await fs.writeFile(
     path.join(app, "src/generated/catalog.json"),
     JSON.stringify(catalog),
+  );
+  await fs.writeFile(
+    path.join(app, "src/generated/catalog.en.json"),
+    JSON.stringify(englishCatalog),
   );
   const build = spawnSync("npm", ["run", "build"], {
     cwd: app,
@@ -165,7 +177,7 @@ try {
     .click();
   assert.equal(page.url(), base + "labs/");
   assert.equal(await page.locator("dialog").count(), 0);
-  for (const route of ["about/", "labs/", "community/"]) {
+  for (const route of ["about/", "labs/", "community/", "contact/"]) {
     await page.goto(base + route);
     await page.locator("main h1").waitFor();
     await page.reload();
@@ -175,7 +187,7 @@ try {
   assert.equal(notFound.status(), 404);
   await page.getByRole("link", { name: "LABS로 돌아가기 ↗" }).waitFor();
   const version = await (await page.request.get(base + "build.json")).json();
-  assert.equal(version.buildId, catalog.buildId);
+  assert.equal(version.buildId, `${catalog.buildId}:${englishCatalog.buildId}`);
   assert.deepEqual(failures, []);
   assert.deepEqual(errors, []);
   console.log(

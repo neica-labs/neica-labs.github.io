@@ -1,10 +1,13 @@
 {
   "schemaVersion": "neica-catalog.v1",
   "mode": "publish",
-  "buildId": "b8e20e5fef26db1877e03d06d19a3ed86f9523ff0fdd22e89c9c86b19fc9a0e0",
+  "locale": "ko",
+  "publicPrefix": "content",
+  "buildId": "f6c9b238b49b387babc0264760d630ee76fffb7abc2b9e609b0da53ccc1e3f20",
   "entries": [
     {
       "id": "special-edition-02-why-we-keep-thinking",
+      "locale": "ko",
       "revision": "c4e6437b898f5ede803c61f846596bcc3ae43671e61ab45e7e7333fc7fd91de8",
       "title": "SPECIAL EDITION 02 — 계속 고민해야 할 이유",
       "displayDate": "2026-09-18",
@@ -31,6 +34,7 @@
     },
     {
       "id": "special-edition-01-thinking-cost-zero-era",
+      "locale": "ko",
       "revision": "3bacf530237c7e53342e6fdfc6c9ac12e0555004fbd346928f775eadac29fea1",
       "title": "SPECIAL EDITION 01 — 고민 비용이 0이 된 시대",
       "displayDate": "2026-09-18",
@@ -57,6 +61,7 @@
     },
     {
       "id": "calm-tech-series-05-remarkable-paper-pro",
+      "locale": "ko",
       "revision": "a8421c4d0a49c01d53aa60dbd0792e3e6712edbafc76b7e46c8eb9871641415f",
       "title": "Calm Technology 05 — reMarkable Paper Pro",
       "displayDate": "2026-09-18",
@@ -83,6 +88,7 @@
     },
     {
       "id": "calm-tech-series-04-mui-board-gen2",
+      "locale": "ko",
       "revision": "1c06da9cdc4b9137794e0e168c3aacf118f8c99aff4c5b5f961264824d63526f",
       "title": "Calm Technology 04 — mui Board Gen 2",
       "displayDate": "2026-09-18",
@@ -109,6 +115,7 @@
     },
     {
       "id": "calm-tech-series-03-cti-81-criteria",
+      "locale": "ko",
       "revision": "b7b4cfd5536eb81cd90526750109a66c5f57121a6caa69c4b391285e7d379103",
       "title": "Calm Technology 03 — Calm Tech Institute의 81-point criteria",
       "displayDate": "2026-09-18",
@@ -135,6 +142,7 @@
     },
     {
       "id": "calm-tech-series-02-people",
+      "locale": "ko",
       "revision": "e39d05dc37a5bbe4b5f32a2b735e3c7c19b7ae9dfac2c9bb0319a23c6bab7d57",
       "title": "Calm Technology 02 — 개념을 이어 온 사람들",
       "displayDate": "2026-09-18",
@@ -161,6 +169,7 @@
     },
     {
       "id": "calm-tech-series-01-concept",
+      "locale": "ko",
       "revision": "747c2743aeded55ad5235f173bdb005d84d2bcbca54a22e90d8a284edb61d16c",
       "title": "Calm Technology 01 — 개념",
       "displayDate": "2026-09-18",

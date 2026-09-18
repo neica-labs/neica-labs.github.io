@@ -247,10 +247,76 @@ try {
     path: path.join(output, "about-desktop.png"),
     fullPage: true,
   });
+  // The English edition is a separate content catalog, not only translated UI.
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto(`${base}?lang=en`);
+  assert.equal(await page.locator("html").getAttribute("lang"), "en");
+  assert.equal(
+    await page.locator('.language-switch a[aria-current="true"]').textContent(),
+    "EN",
+  );
+  const englishCount = await page.locator(".card-link").count();
+  assert.equal(englishCount, count);
+  let englishSlidesChecked = 0;
+  for (let card = 0; card < englishCount; card++) {
+    const item = page.locator(".card-link").nth(card);
+    await item.scrollIntoViewIfNeeded();
+    const response = page.waitForResponse((r) =>
+      r.url().endsWith("/post.json"),
+    );
+    await item.click();
+    const post = await (await response).json();
+    for (let i = 0; i < post.slides.length; i++) {
+      await checkImage();
+      assert.ok(
+        (await page.locator(".slide-image").getAttribute("src")).endsWith(
+          post.slides[i].image.path,
+        ),
+      );
+      englishSlidesChecked++;
+      if (i < post.slides.length - 1)
+        await page
+          .getByRole("button", { name: "Next slide", exact: true })
+          .click();
+    }
+    await page.keyboard.press("Escape");
+    await page.locator("dialog").waitFor({ state: "detached" });
+  }
+  await page.screenshot({
+    path: path.join(output, "home-english-desktop.png"),
+    fullPage: true,
+  });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(`${base}?lang=en`);
+  await page.locator(".card-link img").evaluateAll((images) => {
+    for (const image of images) image.loading = "eager";
+  });
+  await page.locator(".card-link").last().scrollIntoViewIfNeeded();
+  await page.waitForFunction(() =>
+    [...document.querySelectorAll(".card-link img")].every(
+      (image) => image.complete && image.naturalWidth > 0,
+    ),
+  );
+  await page.evaluate(() => {
+    document.activeElement?.blur();
+    window.scrollTo(0, 0);
+  });
+  assert.ok(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+    "English edition has horizontal overflow",
+  );
+  await page.screenshot({
+    path: path.join(output, "home-english-mobile.png"),
+    fullPage: true,
+  });
   assert.deepEqual(errors, []);
   const report = {
     postsChecked: count,
     slidesChecked,
+    englishPostsChecked: englishCount,
+    englishSlidesChecked,
     viewports: [320, 390, 768, 1440],
     checks: [
       "exact PNG source and dimensions",

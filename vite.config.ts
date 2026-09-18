@@ -22,11 +22,24 @@ export default defineConfig(({ command, mode }) => {
     const destination = path.join(root, ".cache/review", String(++serial));
     const contentRoot =
       process.env.NEICA_CONTENT_ROOT || (await defaultContentRoot());
-    const catalog = await createBundle({
-      contentRoot,
-      destination,
-      mode: "review",
-    });
+    const catalog = {
+      ko: await createBundle({
+        contentRoot,
+        destination,
+        mode: "review",
+        locale: "ko",
+        publicPrefix: "content",
+        catalogFilename: "catalog.ko.json",
+      }),
+      en: await createBundle({
+        contentRoot,
+        destination,
+        mode: "review",
+        locale: "en",
+        publicPrefix: "content-en",
+        catalogFilename: "catalog.en.json",
+      }),
+    };
     currentReviewRoot = destination;
     reviewCatalog = catalog;
   }
@@ -49,7 +62,12 @@ export default defineConfig(({ command, mode }) => {
               if (!reviewCatalog) await prepare();
               return `export default ${JSON.stringify(reviewCatalog)}`;
             }
-            return `export default ${JSON.stringify(await readJson(path.join(root, "src/generated/catalog.json")))}`;
+            return `export default ${JSON.stringify({
+              ko: await readJson(path.join(root, "src/generated/catalog.json")),
+              en: await readJson(
+                path.join(root, "src/generated/catalog.en.json"),
+              ),
+            })}`;
           }
         },
         async configureServer(server) {

@@ -120,6 +120,7 @@ export async function describeLegacy(folder) {
   const meta = (await exists(path.join(folder, "content.json")))
     ? await readJson(path.join(folder, "content.json"))
     : {};
+  const locale = meta.locale === "en" ? "en" : "ko";
   if (meta.type === "link") {
     assert(safeUrl(meta.href), "Link URL is invalid");
     const file = await safeFile(folder, meta.cover.path),
@@ -127,6 +128,7 @@ export async function describeLegacy(folder) {
       info = await sharp(bytes).metadata();
     const payload = {
       id: slug(meta.id),
+      locale,
       kind: "link",
       title: meta.title,
       displayDate: meta.displayDate || "2026-09-01",
@@ -190,6 +192,7 @@ export async function describeLegacy(folder) {
   assert(cover, "Unknown coverSlideId");
   const payload = {
     id,
+    locale,
     kind: "carousel",
     title: meta.title || source.title || source.project?.title || id,
     displayDate: meta.displayDate || source.updatedAt || "2026-09-01",
@@ -298,13 +301,17 @@ export async function createBundle({
   contentRoot,
   destination,
   mode = "publish",
+  locale = "ko",
+  publicPrefix = locale === "en" ? "content-en" : "content",
+  catalogFilename = locale === "en" ? "catalog.en.json" : "catalog.json",
 }) {
   assert(["publish", "review"].includes(mode), "Invalid mode");
+  assert(["ko", "en"].includes(locale), "Invalid locale");
   const folders = await findPostFolders(contentRoot);
   const entries = [],
     files = {},
     warnings = [];
-  const root = path.join(destination, "content");
+  const root = path.join(destination, publicPrefix);
   await fs.mkdir(root, { recursive: true });
   async function emit(relative, bytes) {
     const out = path.join(destination, relative);
@@ -315,6 +322,8 @@ export async function createBundle({
   for (const folder of folders) {
     const metaPath = path.join(folder, "content.json");
     const meta = (await exists(metaPath)) ? await readJson(metaPath) : {};
+    const folderLocale = meta.locale === "en" ? "en" : "ko";
+    if (folderLocale !== locale) continue;
     if (meta.homepageWithdrawn === true) continue;
     let release, assetRoot;
     if (meta.approvedRevision && mode === "publish") {
@@ -348,7 +357,7 @@ export async function createBundle({
       );
     } else continue;
     const p = release.payload,
-      prefix = `content/${p.id}/${release.revision}`;
+      prefix = `${publicPrefix}/${p.id}/${release.revision}`;
     assert(
       !entries.some((e) => e.id === p.id),
       `Duplicate content ID: ${p.id}`,
@@ -394,6 +403,7 @@ export async function createBundle({
     }
     const entry = {
       id: p.id,
+      locale,
       revision: release.revision,
       title: p.title,
       displayDate: p.displayDate,
@@ -436,12 +446,14 @@ export async function createBundle({
   const catalog = {
     schemaVersion: "neica-catalog.v1",
     mode,
+    locale,
+    publicPrefix,
     buildId: hash(canonical({ entries, files })),
     entries,
     files,
     ...(mode === "review" ? { warnings } : {}),
   };
-  await writeJson(path.join(destination, "catalog.json"), catalog);
+  await writeJson(path.join(destination, catalogFilename), catalog);
   await checkBundle(catalog, destination, mode);
   return catalog;
 }
@@ -464,16 +476,17 @@ export async function checkBundle(catalog, root, expectedMode = "publish") {
         hash(canonical({ entries: catalog.entries, files: catalog.files })),
       "Catalog was changed manually",
     );
+  const publicPrefix = catalog.publicPrefix || "content";
   const seen = new Set();
   const requireFile = (relative) =>
     assert(
       typeof relative === "string" &&
-        relative.startsWith("content/") &&
+        relative.startsWith(`${publicPrefix}/`) &&
         catalog.files[relative],
       `Asset missing from manifest: ${relative}`,
     );
   for (const [file, digest] of Object.entries(catalog.files)) {
-    assert(file.startsWith("content/"), "Unexpected bundle file");
+    assert(file.startsWith(`${publicPrefix}/`), "Unexpected bundle file");
     assert(
       hash(await fs.readFile(await safeFile(root, file))) === digest,
       `Bundle file changed: ${file}`,
@@ -511,40 +524,74 @@ export async function checkBundle(catalog, root, expectedMode = "publish") {
 export async function syncPublic(contentRoot) {
   const stage = await fs.mkdtemp(path.join(os.tmpdir(), "neica-publish-"));
   try {
-    const catalog = await createBundle({ contentRoot, destination: stage });
+    const catalogs = {
+      ko: await createBundle({
+        contentRoot,
+        destination: stage,
+        locale: "ko",
+        publicPrefix: "content",
+        catalogFilename: "catalog.ko.json",
+      }),
+      en: await createBundle({
+        contentRoot,
+        destination: stage,
+        locale: "en",
+        publicPrefix: "content-en",
+        catalogFilename: "catalog.en.json",
+      }),
+    };
     const publicRoot = path.join(appRoot, "public");
-    const current = path.join(publicRoot, "content");
-    const previous = await readJson(
-      path.join(appRoot, "src/generated/catalog.json"),
-    );
+    const previous = {
+      ko: await readJson(path.join(appRoot, "src/generated/catalog.json")),
+      en: (await exists(path.join(appRoot, "src/generated/catalog.en.json")))
+        ? await readJson(path.join(appRoot, "src/generated/catalog.en.json"))
+        : { files: {} },
+    };
     // Retain exactly the previous catalog's files for already-open tabs.
-    for (const file of Object.keys(previous.files || {}))
-      if (!catalog.files[file] && (await exists(path.join(publicRoot, file)))) {
-        const dest = path.join(stage, file);
-        await fs.mkdir(path.dirname(dest), { recursive: true });
-        await fs.copyFile(await safeFile(publicRoot, file), dest);
-      }
+    for (const locale of ["ko", "en"])
+      for (const file of Object.keys(previous[locale].files || {}))
+        if (
+          !catalogs[locale].files[file] &&
+          (await exists(path.join(publicRoot, file)))
+        ) {
+          const dest = path.join(stage, file);
+          await fs.mkdir(path.dirname(dest), { recursive: true });
+          await fs.copyFile(await safeFile(publicRoot, file), dest);
+        }
     await fs.mkdir(publicRoot, { recursive: true });
-    const incoming = path.join(publicRoot, `.content-${Date.now()}`);
-    await fs.cp(path.join(stage, "content"), incoming, { recursive: true });
-    const old = path.join(appRoot, ".cache", `previous-${Date.now()}`);
-    await fs.mkdir(path.dirname(old), { recursive: true });
-    if (await exists(current)) await fs.rename(current, old);
+    const timestamp = Date.now();
+    const swaps = [];
+    for (const name of ["content", "content-en"]) {
+      const current = path.join(publicRoot, name);
+      const incoming = path.join(publicRoot, `.${name}-${timestamp}`);
+      const old = path.join(appRoot, ".cache", `previous-${name}-${timestamp}`);
+      await fs.cp(path.join(stage, name), incoming, { recursive: true });
+      await fs.mkdir(path.dirname(old), { recursive: true });
+      if (await exists(current)) await fs.rename(current, old);
+      swaps.push({ current, incoming, old });
+    }
     try {
-      await fs.rename(incoming, current);
+      for (const { current, incoming } of swaps)
+        await fs.rename(incoming, current);
       await writeJson(
         path.join(appRoot, "src/generated/catalog.json"),
-        catalog,
+        catalogs.ko,
+      );
+      await writeJson(
+        path.join(appRoot, "src/generated/catalog.en.json"),
+        catalogs.en,
       );
     } catch (error) {
-      if (await exists(old)) {
+      for (const { current, incoming, old } of swaps.reverse()) {
         if (await exists(current)) await fs.rename(current, incoming);
-        await fs.rename(old, current);
+        if (await exists(old)) await fs.rename(old, current);
       }
       throw error;
     }
-    console.log(`공개 콘텐츠 ${catalog.entries.length}개 준비 완료`);
-    return catalog;
+    console.log(
+      `공개 콘텐츠 ko ${catalogs.ko.entries.length}개 · en ${catalogs.en.entries.length}개 준비 완료`,
+    );
+    return catalogs;
   } finally {
     await fs.rm(stage, { recursive: true, force: true });
   }
@@ -620,11 +667,12 @@ if (
         ),
       );
     else if (command === "check") {
-      await checkBundle(
-        await readJson(path.join(appRoot, "src/generated/catalog.json")),
-        path.join(appRoot, "public"),
-      );
-      console.log("공개 콘텐츠 검사 통과");
+      for (const filename of ["catalog.json", "catalog.en.json"])
+        await checkBundle(
+          await readJson(path.join(appRoot, "src/generated", filename)),
+          path.join(appRoot, "public"),
+        );
+      console.log("공개 콘텐츠 ko/en 검사 통과");
     } else if (command === "prepare") {
       assert(option("--post"), "--post is required");
       const result = await prepareRelease(path.resolve(option("--post")));
