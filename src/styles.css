@@ -92,10 +92,10 @@ button {
   justify-content: space-between;
   gap: 24px;
 }
-.header-start {
+.header-end {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 30px;
   min-width: 0;
 }
 .language-switch {
@@ -597,20 +597,24 @@ button {
     flex-direction: column;
     gap: 18px;
   }
-  .header-start {
+  .header-end {
     width: 100%;
-    gap: 18px;
+    gap: 16px;
   }
   .wordmark {
     font-size: 24px;
   }
   .site-header nav {
-    align-self: stretch;
+    flex: 1;
     justify-content: space-between;
-    gap: 14px;
+    gap: 12px;
     font-size: 11px;
     overflow-x: auto;
     white-space: nowrap;
+  }
+  .language-switch {
+    flex: none;
+    font-size: 10px;
   }
   .site-header nav a {
     padding: 8px 0;

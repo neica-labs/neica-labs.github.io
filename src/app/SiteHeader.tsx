@@ -13,7 +13,25 @@ export default function SiteHeader({
   return (
     <header className="site-header">
       <div className="header-inner">
-        <div className="header-start">
+        <a
+          className="wordmark"
+          href={localizedSiteUrl("", locale)}
+          aria-label={text.homeLabel}
+        >
+          NEICA
+        </a>
+        <div className="header-end">
+          <nav aria-label={text.mainLabel}>
+            {navigation.map((item) => (
+              <a
+                key={item.id}
+                href={localizedSiteUrl(item.path, locale)}
+                aria-current={page === item.id ? "page" : undefined}
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
           <div className="language-switch" aria-label={text.language}>
             <a
               href={languageUrl("ko")}
@@ -31,25 +49,7 @@ export default function SiteHeader({
               EN
             </a>
           </div>
-          <a
-            className="wordmark"
-            href={localizedSiteUrl("", locale)}
-            aria-label={text.homeLabel}
-          >
-            NEICA
-          </a>
         </div>
-        <nav aria-label={text.mainLabel}>
-          {navigation.map((item) => (
-            <a
-              key={item.id}
-              href={localizedSiteUrl(item.path, locale)}
-              aria-current={page === item.id ? "page" : undefined}
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
       </div>
     </header>
   );
