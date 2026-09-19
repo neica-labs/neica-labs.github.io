@@ -205,5 +205,6 @@ createRoot(document.getElementById("root")!).render(
     ) : (
       <Page page={page} locale={locale} />
     )}
+    <footer className="site-copyright">©2026 NEICA. All rights reserved.</footer>
   </>,
 );

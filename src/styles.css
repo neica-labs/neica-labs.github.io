@@ -23,6 +23,23 @@ body {
   margin: 0;
   font-family: var(--analog);
 }
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+#root > main {
+  width: 100%;
+}
+.site-copyright {
+  width: 100%;
+  max-width: calc(var(--max) + var(--gutter) * 2);
+  margin: auto auto 0;
+  padding: 24px var(--gutter) clamp(40px, 5vw, 72px);
+  color: #686868;
+  font: 12px/1.6 var(--mono);
+}
 html:lang(en) body {
   font-family: var(--system-sans);
 }
