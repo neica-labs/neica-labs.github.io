@@ -4,7 +4,7 @@ import SiteHeader from "./app/SiteHeader";
 import ContentCard from "./content/ContentCard";
 import CarouselViewer from "./viewer/CarouselViewer";
 import useViewerUrl from "./viewer/useViewerUrl";
-import { localizedSiteUrl, siteUrl } from "./lib/urls";
+import { localizedSiteUrl } from "./lib/urls";
 import { applyDocumentLocale, copy, readLocale } from "./app/i18n";
 import type { Catalog, Locale } from "./types";
 import "./styles.css";
@@ -53,8 +53,9 @@ function Labs({ locale, catalog }: { locale: Locale; catalog: Catalog }) {
             <Lines>{text.labs.heading}</Lines>
           </h2>
           <div className="prose">
-            <p className="lead">{text.labs.lead}</p>
-            <p>{text.labs.body}</p>
+            <p>
+              {text.labs.lead} {text.labs.body}
+            </p>
           </div>
         </section>
       </main>
@@ -108,7 +109,7 @@ function Page({ page, locale }: { page: string; locale: Locale }) {
           <Lines>{text.about.heading}</Lines>
         </h1>
         <div className="prose">
-          <p className="lead">{text.about.lead}</p>
+          <p>{text.about.lead}</p>
           <p>{text.about.intro}</p>
           <section>
             <h2>{text.about.wordsHeading}</h2>
@@ -131,10 +132,6 @@ function Page({ page, locale }: { page: string; locale: Locale }) {
             <h2>{text.about.choiceHeading}</h2>
             <p>{text.about.choiceBody}</p>
           </section>
-          <p className="brand-line">
-            NEICA: for the immeasurable world
-            <span>{text.about.translation}</span>
-          </p>
         </div>
       </main>
     );
@@ -146,9 +143,9 @@ function Page({ page, locale }: { page: string; locale: Locale }) {
           <Lines>{text.community.heading}</Lines>
         </h1>
         <div className="prose">
-          <p className="lead">{text.community.lead}</p>
-          <p>{text.community.body}</p>
-          <p className="muted">{text.community.note}</p>
+          <p>
+            {text.community.lead} {text.community.body}
+          </p>
         </div>
       </main>
     );
@@ -214,16 +211,5 @@ createRoot(document.getElementById("root")!).render(
     ) : (
       <Page page={page} locale={locale} />
     )}
-    <footer className="site-footer">
-      <img
-        className="footer-wordmark"
-        src={siteUrl("brand/neica-wordmark-source.png")}
-        alt="NEICA"
-      />
-      <span>for the immeasurable world</span>
-      {catalog.mode === "review" && (
-        <span className="review-label">{text.review}</span>
-      )}
-    </footer>
   </>,
 );

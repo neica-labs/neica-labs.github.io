@@ -13,13 +13,19 @@ export default function SiteHeader({
   return (
     <header className="site-header">
       <div className="header-inner">
-        <a
-          className="wordmark"
-          href={localizedSiteUrl("", locale)}
-          aria-label={text.homeLabel}
-        >
-          <img src={siteUrl("brand/neica-wordmark-source.png")} alt="NEICA" />
-        </a>
+        <div className="brand-identity">
+          <a
+            className="wordmark"
+            href={localizedSiteUrl("", locale)}
+            aria-label={text.homeLabel}
+          >
+            <img
+              src={siteUrl("brand/neica-wordmark-source.png")}
+              alt="NEICA"
+            />
+          </a>
+          <span className="brand-tagline">for the immeasurable world</span>
+        </div>
         <div className="header-end">
           <nav aria-label={text.mainLabel}>
             {navigation.map((item) => (
