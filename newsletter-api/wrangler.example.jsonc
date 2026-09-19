@@ -1,0 +1,17 @@
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "neica-early-access",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-09-19",
+  "vars": {
+    "ALLOWED_ORIGIN": "https://neica-labs.github.io"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "neica-early-access",
+      "database_id": "REPLACE_WITH_CLOUDFLARE_DATABASE_ID",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import SiteHeader from "./app/SiteHeader";
 import ContentCard from "./content/ContentCard";
 import CarouselViewer from "./viewer/CarouselViewer";
 import SubmissionViewer from "./viewer/SubmissionViewer";
+import EarlyAccessForm from "./community/EarlyAccessForm";
 import useViewerUrl from "./viewer/useViewerUrl";
 import { localizedSiteUrl } from "./lib/urls";
 import { applyDocumentLocale, copy, readLocale } from "./app/i18n";
@@ -130,16 +131,16 @@ function Page({ page, locale }: { page: string; locale: Locale }) {
     );
   if (page === "community")
     return (
-      <main className="text-page" id="main">
+      <main className="text-page community-page" id="main">
         <span className="page-label">COMMUNITY</span>
         <h1>
           <Lines>{text.community.heading}</Lines>
         </h1>
         <div className="prose">
-          <p>
-            {text.community.lead} {text.community.body}
-          </p>
+          <p>{text.community.lead}</p>
+          <p>{text.community.body}</p>
         </div>
+        <EarlyAccessForm locale={locale} />
       </main>
     );
   if (page === "contact")

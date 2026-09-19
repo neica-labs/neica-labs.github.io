@@ -26,6 +26,7 @@ jobs:
       - run: npm run build
         env:
           NEICA_BASE: ${{ steps.pages.outputs.base_path }}/
+          VITE_NEICA_SIGNUP_API: ${{ vars.NEICA_SIGNUP_API }}
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist

@@ -1,6 +1,6 @@
 # NEICA Homepage
 
-React·TypeScript·Vite 정적 홈페이지. 기존 편집기와 독립적으로 실행합니다. 개인 서버·데이터베이스·유료 API 없이 GitHub Pages에 배포하는 구성입니다.
+React·TypeScript·Vite 정적 홈페이지. 기존 편집기와 독립적으로 실행하며 GitHub Pages에 배포합니다. COMMUNITY 이메일 사전 등록은 별도의 Cloudflare Worker·비공개 D1에 저장하도록 준비되어 있습니다. [저장 구조와 연결 절차](newsletter-api/README.md)를 참고하세요.
 
 - [홈페이지 기획서](../planner/homepage/PLAN.md): 화면, 여백, 메뉴, 캐러셀 동작, 운영 흐름.
 - [코드 아키텍처](ARCHITECTURE.md): 모듈 책임, 콘텐츠 계약, 검수·공개 분리, 빌드·배포와 검증.
