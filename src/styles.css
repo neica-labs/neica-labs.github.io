@@ -104,7 +104,7 @@ button {
 }
 .brand-identity {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 18px;
   min-width: 0;
 }
@@ -132,7 +132,8 @@ button {
 }
 .wordmark {
   display: inline-flex;
-  width: 132px;
+  width: 112px;
+  flex: 0 0 auto;
   line-height: 0;
 }
 .wordmark img {
@@ -142,7 +143,8 @@ button {
 }
 .brand-tagline {
   color: #747474;
-  font: 11px/1.2 var(--mono);
+  font: 12px/1 var(--mono);
+  padding-bottom: 1px;
   letter-spacing: 0.015em;
   white-space: nowrap;
 }
@@ -185,17 +187,20 @@ button {
   row-gap: var(--row-gap);
 }
 .labs-statement {
-  margin-top: clamp(120px, 14vw, 210px);
-  padding-top: clamp(52px, 7vw, 92px);
+  margin-top: 80px;
+  padding: 40px 0 96px;
   border-top: 1px solid #dedede;
-  max-width: 720px;
+  width: 100%;
 }
-.labs-statement h2 {
-  margin: 28px 0 50px;
-  font-size: clamp(36px, 4.2vw, 62px);
-  line-height: 1.3;
+.labs-statement h2,
+.text-page h1 {
+  max-width: 760px;
+  margin: 16px 0 28px;
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.4;
   font-weight: 500;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
 }
 .content-card {
   min-width: 0;
@@ -252,21 +257,13 @@ button {
 }
 .text-page {
   max-width: calc(var(--max) + var(--gutter) * 2);
-  margin: 50px auto 0;
-  padding: 0 var(--gutter);
-  min-height: 65vh;
+  margin: 64px auto 0;
+  padding: 0 var(--gutter) 96px;
 }
 .page-label {
   font: 12px var(--mono);
   color: #777;
   letter-spacing: 0.05em;
-}
-.text-page h1 {
-  font-size: clamp(36px, 4.2vw, 62px);
-  line-height: 1.3;
-  font-weight: 500;
-  letter-spacing: -0.045em;
-  margin: 32px 0 56px;
 }
 .prose {
   max-width: 660px;
@@ -312,16 +309,13 @@ button {
   font-size: 14px;
   color: #777;
 }
-.contact-page {
-  max-width: calc(1040px + var(--gutter) * 2);
-}
 .contact-list {
-  max-width: 1040px;
-  border-top: 1px solid #111;
+  max-width: 660px;
+  border-top: 1px solid #dedede;
 }
 .contact-link {
-  min-height: 150px;
-  padding: 30px 0;
+  min-height: 96px;
+  padding: 24px 0;
   border-bottom: 1px solid #dedede;
   display: flex;
   align-items: center;
@@ -335,7 +329,7 @@ button {
 .contact-copy {
   min-width: 0;
   display: grid;
-  gap: 14px;
+  gap: 8px;
 }
 .contact-meta {
   font: 12px var(--mono);
@@ -343,19 +337,16 @@ button {
   letter-spacing: 0.025em;
 }
 .contact-address {
-  font-size: clamp(22px, 3.1vw, 42px);
-  line-height: 1.25;
-  letter-spacing: -0.035em;
+  font: 16px/1.5 var(--mono);
+  letter-spacing: -0.02em;
   overflow-wrap: anywhere;
 }
 .contact-icon {
-  width: 56px;
-  height: 56px;
+  width: 32px;
+  height: 32px;
   flex: 0 0 auto;
   display: grid;
   place-items: center;
-  border: 1px solid #111;
-  border-radius: 50%;
 }
 .contact-icon svg {
   width: 24px;
@@ -563,6 +554,10 @@ button {
   }
 }
 @media (max-width: 1099px) {
+  .header-inner {
+    flex-wrap: wrap;
+    row-gap: 22px;
+  }
   :root {
     --gutter: 48px;
     --gap: 32px;
@@ -595,10 +590,12 @@ button {
     gap: 16px;
   }
   .wordmark {
-    width: 116px;
+    width: 100px;
   }
   .brand-tagline {
-    font-size: 9.5px;
+    font-size: 11px;
+    white-space: nowrap;
+    line-height: 1;
   }
   .site-header nav {
     flex: 1;
@@ -625,19 +622,19 @@ button {
     margin-top: 32px;
   }
   .text-page h1 {
-    margin-bottom: 36px;
+    margin-bottom: 24px;
   }
   .prose {
     font-size: 16px;
   }
   .contact-link {
-    min-height: 124px;
+    min-height: 96px;
     padding: 24px 0;
     gap: 18px;
   }
   .contact-icon {
-    width: 48px;
-    height: 48px;
+    width: 32px;
+    height: 32px;
   }
   .contact-icon svg {
     width: 21px;
@@ -677,6 +674,13 @@ button {
     right: 12px;
     width: calc(100% - 24px);
   }
+}
+@media (max-width: 360px) {
+  .brand-identity { gap: 10px; }
+  .wordmark { width: 84px; }
+  .header-end { gap: 10px; }
+  .site-header nav { gap: 8px; font-size: 10px; }
+  .contact-address { font-size: 14px; }
 }
 @media (prefers-reduced-motion: reduce) {
   *,

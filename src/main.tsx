@@ -10,13 +10,7 @@ import type { Catalog, Locale } from "./types";
 import "./styles.css";
 
 function Lines({ children }: { children: string }) {
-  const lines = children.split("\n");
-  return lines.map((line, index) => (
-    <span key={`${line}-${index}`}>
-      {line}
-      {index < lines.length - 1 && <br />}
-    </span>
-  ));
+  return <>{children.replaceAll("\n", " ")}</>;
 }
 
 function Labs({ locale, catalog }: { locale: Locale; catalog: Catalog }) {
