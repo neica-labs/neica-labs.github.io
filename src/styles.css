@@ -306,6 +306,12 @@ button {
 .prose section p {
   margin-top: 0;
 }
+.about-principles p {
+  margin: 0 0 8px;
+}
+.about-name-words {
+  font: 14px/1.8 var(--mono);
+}
 .name-meaning {
   margin: 24px 0 30px;
   border-top: 1px solid #111;

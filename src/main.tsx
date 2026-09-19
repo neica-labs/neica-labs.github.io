@@ -104,24 +104,14 @@ function Page({ page, locale }: { page: string; locale: Locale }) {
         </h1>
         <div className="prose">
           <p>{text.about.lead}</p>
-          <p>{text.about.intro}</p>
-          {text.about.principles.map((principle) => (
-            <section key={principle.heading}>
-              <h2>{principle.heading}</h2>
-              <p>{principle.body}</p>
-            </section>
-          ))}
+          <section className="about-principles">
+            {text.about.principles.map((principle) => (
+              <p key={principle.heading}>{principle.heading}.</p>
+            ))}
+          </section>
           <section>
             <h2>{text.about.wordsHeading}</h2>
-            <div className="name-meaning" aria-label={text.about.wordsHeading}>
-              {nameWords.map(([letter, word], index) => (
-                <div key={letter}>
-                  <strong>{letter}</strong>
-                  <span>{word}</span>
-                  <small>{text.about.wordMeanings[index]}</small>
-                </div>
-              ))}
-            </div>
+            <p className="about-name-words" lang="en">{nameWords.map(([, word]) => word).join(" · ")}</p>
             <p>{text.about.wordsBody}</p>
           </section>
           <section>

@@ -16,7 +16,7 @@ export const copy = {
     },
     about: {
       heading: "측정할 수 없는\n세계를 위해.",
-      lead: "삶의 가치는 숫자와 효율만으로 다 설명되지 않습니다. NEICA는 그 너머의 인간다운 삶을 지키고 넓혀 가는 프로젝트입니다.",
+      lead: "NEICA는 숫자와 효율만으로 설명되지 않는 인간다운 삶을 지키는 프로젝트입니다.",
       intro:
         "For the immeasurable world. 우리가 하는 연구와 실천은 이 문장에서 시작합니다.",
       principles: [
@@ -27,13 +27,13 @@ export const copy = {
       wordsHeading: "NEICA가 기억하는 다섯 단어",
       wordMeanings: ["소음", "오류", "비효율적인 것", "제약", "모호함"],
       wordsBody:
-        "NEICA는 이 다섯 단어의 첫 글자에서 시작된 이름입니다. 매끄럽게 정리되지 않는 삶 속에도 배움과 발견, 자기만의 해석이 있습니다. 우리는 그 가능성을 기억합니다.",
+        "다섯 단어의 첫 글자에서 시작된 이름입니다.",
       technologyHeading: "NEICA labs",
       technologyBody:
-        "우리가 꿈꾸는 세상을 위한 연구 자료와 생각의 재료를 나눕니다. 사람과 기술의 관계를 함께 이해하고 다시 생각하는 공간입니다.",
+        "사람과 기술의 관계를 다시 생각하는 연구와 자료를 공유합니다.",
       choiceHeading: "NEICA community",
       choiceBody:
-        "같은 방향을 추구하는 사람들이 모여 경험을 나누고, 그 뜻을 일상에서 실천합니다. 서로의 시도를 통해 함께 나아갑니다.",
+        "같은 뜻을 가진 사람들이 모여 경험을 나누고 일상에서 실천합니다.",
       translation: "측정할 수 없는 세계를 위해.",
     },
     community: {
@@ -94,7 +94,7 @@ export const copy = {
     },
     about: {
       heading: "For the\nimmeasurable world.",
-      lead: "The value of life cannot be fully captured by numbers or efficiency. NEICA is a project that protects and makes room for what makes life human.",
+      lead: "NEICA protects what makes life human, beyond numbers and efficiency.",
       intro:
         "For the immeasurable world. Our research and practice begin with these words.",
       principles: [
@@ -111,13 +111,13 @@ export const copy = {
         "room for interpretation",
       ],
       wordsBody:
-        "NEICA takes its name from the first letters of these five words. Life does not always resolve neatly; it still holds possibilities for learning, discovery, and personal interpretation. Our name keeps those possibilities in view.",
+        "NEICA takes its name from the first letters of these five words.",
       technologyHeading: "NEICA labs",
       technologyBody:
-        "We share research and ideas for the world we imagine—a space to understand and rethink the relationship between people and technology together.",
+        "We share research and ideas that rethink the relationship between people and technology.",
       choiceHeading: "NEICA community",
       choiceBody:
-        "People who share this vision come together, exchange experiences, and put it into practice in daily life. We move forward by learning from each other’s attempts.",
+        "People who share this vision exchange experiences and put it into practice in daily life.",
       translation: "For the immeasurable world.",
     },
     community: {
