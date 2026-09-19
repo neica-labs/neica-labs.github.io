@@ -205,6 +205,66 @@ button {
   column-gap: var(--gap);
   row-gap: var(--row-gap);
 }
+.submission-card {
+  aspect-ratio: 4 / 5;
+  min-width: 0;
+  padding: clamp(24px, 3vw, 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #171917;
+  color: #fff;
+}
+.submission-card:hover,
+.submission-card:focus-visible {
+  background: #30342f;
+}
+.submission-card-label,
+.submission-card-action {
+  font: 13px/1.4 var(--mono);
+  letter-spacing: 0.015em;
+}
+.submission-card-content {
+  display: grid;
+  gap: 24px;
+}
+.submission-card-content strong {
+  font-size: clamp(29px, 3vw, 43px);
+  line-height: 1.28;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  white-space: pre-line;
+  word-break: keep-all;
+}
+.submission-card-content > span {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.submission-page .prose {
+  max-width: 660px;
+}
+.submission-page .prose > p + p {
+  margin-top: 22px;
+}
+.submission-email {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  margin-top: 44px;
+  padding: 14px 0;
+  min-width: 250px;
+  border-bottom: 1px solid currentColor;
+  font-weight: 600;
+}
+.submission-email:hover {
+  border-bottom-width: 2px;
+}
+.submission-page .submission-address {
+  margin-top: 16px;
+  color: #686868;
+  font: 14px/1.6 var(--mono);
+}
 .labs-statement {
   margin-top: 80px;
   padding: 40px 0 96px;

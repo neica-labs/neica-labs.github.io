@@ -27,24 +27,25 @@ function Labs({ locale, catalog }: { locale: Locale; catalog: Catalog }) {
     <>
       <main id="main" className="home-content">
         <h1 className="sr-only">{text.labs.srTitle}</h1>
-        {catalog.entries.length ? (
-          <div className="content-grid">
-            {catalog.entries.map((card, index) => (
-              <ContentCard
-                key={card.id}
-                card={card}
-                index={index}
-                locale={locale}
-                onOpen={(card) => viewer.open(card.id)}
-              />
-            ))}
-          </div>
-        ) : (
-          <div className="empty-state">
-            <p>{text.labs.empty}</p>
-            <a href={localizedSiteUrl("about/", locale)}>{text.labs.about}</a>
-          </div>
-        )}
+        <div className="content-grid">
+          <a className="submission-card" href={localizedSiteUrl("submit/", locale)}>
+            <span className="submission-card-label">WHAT’S NEXT?</span>
+            <span className="submission-card-content">
+              <strong>{text.submit.cardTitle}</strong>
+              <span>{text.submit.cardBody}</span>
+            </span>
+            <span className="submission-card-action">{text.submit.cardAction} ↗</span>
+          </a>
+          {catalog.entries.map((card, index) => (
+            <ContentCard
+              key={card.id}
+              card={card}
+              index={index}
+              locale={locale}
+              onOpen={(card) => viewer.open(card.id)}
+            />
+          ))}
+        </div>
         <section
           className="labs-statement"
           aria-labelledby="labs-statement-title"
@@ -94,6 +95,24 @@ function ContactIcon({ type }: { type: "email" | "instagram" }) {
 
 function Page({ page, locale }: { page: string; locale: Locale }) {
   const text = copy[locale];
+  if (page === "submit") {
+    const mailto = `mailto:neica.labs@gmail.com?subject=${encodeURIComponent(text.submit.emailSubject)}&body=${encodeURIComponent(text.submit.emailBody)}`;
+    return (
+      <main className="text-page submission-page" id="main">
+        <span className="page-label">WHAT’S NEXT? / {text.submit.label}</span>
+        <h1>{text.submit.heading}</h1>
+        <div className="prose">
+          <p>{text.submit.lead}</p>
+          <p>{text.submit.body}</p>
+          <p>{text.submit.process}</p>
+          <a className="submission-email" href={mailto}>
+            {text.submit.emailAction} <span aria-hidden="true">↗</span>
+          </a>
+          <p className="submission-address">neica.labs@gmail.com</p>
+        </div>
+      </main>
+    );
+  }
   if (page === "about")
     return (
       <main className="text-page" id="main">

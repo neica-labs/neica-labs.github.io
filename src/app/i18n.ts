@@ -14,6 +14,19 @@ export const copy = {
       lead: "손에 닿는 도구, 생활 속의 작은 경계, 함께 만드는 습관을 연구합니다.",
       body: "스마트폰에 모인 기능을 사물과 공간으로 나누고, 행동을 바꿀 수 있는 환경을 실험합니다.",
     },
+    submit: {
+      label: "투고",
+      cardTitle: "당신의 고민을\n투고해 주세요.",
+      cardBody: "누구나 보낼 수 있습니다. 아직 답이 없는 질문도 좋습니다.",
+      cardAction: "투고하기",
+      heading: "다음 이야기는 당신의 질문에서 시작됩니다.",
+      lead: "누구나 투고할 수 있습니다. 기술과 삶의 관계에서 직접 겪은 일, 오래 붙잡고 있는 질문, 함께 생각해 보고 싶은 이야기를 보내주세요.",
+      body: "완성된 글이 아니어도 좋습니다. 무엇이 마음에 남았는지, 왜 그 문제를 고민하게 되었는지를 편한 길이로 적어주세요.",
+      process: "더 이야기하고 싶은 투고에는 인터뷰를 제안할 수 있습니다. 글이나 인터뷰를 게시할 때는 내용과 이름 표기 방식을 먼저 함께 확인합니다.",
+      emailAction: "이메일로 투고하기",
+      emailSubject: "[NEICA 투고] 함께 생각하고 싶은 이야기",
+      emailBody: "안녕하세요.\n\n함께 생각하고 싶은 질문이나 경험:\n\n이 이야기를 보내는 이유:\n\n연락받을 이름 또는 호칭:\n",
+    },
     about: {
       heading: "측정할 수 없는\n세계를 위해.",
       emphasis: ["인간다운 삶", "스스로 고민하고", "그 선택에 책임지는", "자기만의 기준", "사람이 직접 판단하고 경험할 자리", "주의·시간·행동을 스스로 선택", "연구 공간", "생각의 재료를 나눕니다", "같은 방향을 추구하는 사람들의 모임", "일상에서 실천"] as const,
@@ -97,6 +110,19 @@ export const copy = {
       heading: "Rethinking where\ntechnology belongs.",
       lead: "We study tangible tools, small boundaries in daily life, and habits built together.",
       body: "We distribute functions concentrated in the smartphone across objects and spaces, then test environments that can support different behavior.",
+    },
+    submit: {
+      label: "CONTRIBUTE",
+      cardTitle: "Share the question\nyou carry.",
+      cardBody: "Open to everyone. Unfinished thoughts are welcome.",
+      cardAction: "Contribute",
+      heading: "The next story begins with your question.",
+      lead: "Anyone can contribute. Tell us about an experience, a question you keep returning to, or something you want to explore about technology and human life.",
+      body: "Your thought does not need to be a finished essay. Write as much or as little as you need about what stayed with you and why it matters.",
+      process: "We may invite contributors to a conversation. Before sharing a story or interview, we will check the text and how you would like to be credited.",
+      emailAction: "Contribute by email",
+      emailSubject: "[NEICA contribution] A question to explore",
+      emailBody: "Hello,\n\nA question or experience I would like to share:\n\nWhy this matters to me:\n\nName or preferred form of address:\n",
     },
     about: {
       heading: "For the\nimmeasurable world.",
@@ -193,6 +219,10 @@ const metadata: Record<
       description:
         "기술과 인간의 관계를 다시 설계합니다. NEICA의 콘텐츠와 프로젝트를 만나보세요.",
     },
+    submit: {
+      title: "투고 — NEICA",
+      description: "당신의 질문과 경험에서 다음 이야기가 시작됩니다. NEICA labs에 이야기를 보내주세요.",
+    },
     about: {
       title: "ABOUT — NEICA",
       description:
@@ -212,6 +242,10 @@ const metadata: Record<
       title: "NEICA — for the immeasurable world",
       description:
         "NEICA redesigns the relationship between technology and human life.",
+    },
+    submit: {
+      title: "Contribute — NEICA",
+      description: "Share a question or experience with NEICA labs. The next story may start with you.",
     },
     about: {
       title: "ABOUT — NEICA",
