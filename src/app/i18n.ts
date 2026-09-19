@@ -16,19 +16,24 @@ export const copy = {
     },
     about: {
       heading: "측정할 수 없는\n세계를 위해.",
-      lead: "NEICA labs는 효율과 최적화만으로 설명되지 않는 인간의 선택을 지키며, 기술이 삶에서 차지하는 자리를 다시 설계합니다.",
+      lead: "삶의 가치는 숫자와 효율만으로 다 설명되지 않습니다. NEICA는 그 너머의 인간다운 삶을 지키고 넓혀 가는 프로젝트입니다.",
       intro:
-        "기술을 덜 쓰는 것 자체가 목적은 아닙니다. 기술이 사람의 주의·시간·행동을 대신 결정하지 않도록, 필요한 기능은 가까이 두고 불필요한 요구는 주변으로 물러나게 하는 도구와 환경을 연구합니다.",
+        "For the immeasurable world. 우리가 하는 연구와 실천은 이 문장에서 시작합니다.",
+      principles: [
+        { heading: "지키고 싶은 가치에 기준을 둡니다", body: "더 빠르고, 더 크고, 더 많은 것이 언제나 더 좋은 것은 아닙니다. 오래 고민하고 정성을 들이는 과정, 관계를 쌓는 시간, 자신만의 기준으로 완성한 일에는 가격과 성과로 환산되지 않는 가치가 있습니다. 우리는 그 가치를 지키는 고집을 존중합니다." },
+        { heading: "고민하고 결정하는 주체로 남습니다", body: "답을 쉽게 얻을 수 있어도, 무엇을 중요하게 여길지는 스스로 판단해야 합니다. 고민하고 선택하며 그 결과를 책임지는 과정은 자기 삶을 만드는 일입니다. 우리는 기술의 도움 속에서도 이 역할을 놓지 않습니다." },
+        { heading: "기술의 자리를 사람이 정합니다", body: "사람이 자신의 주의·시간·행동을 선택할 수 있어야 합니다. 기술은 그 선택을 돕고, 직접 경험하고 만들며 타인과 관계 맺을 여지를 남겨야 합니다. 우리는 이 원칙을 바탕으로 사람과 기술의 관계를 다시 생각합니다." },
+      ],
       wordsHeading: "NEICA가 기억하는 다섯 단어",
       wordMeanings: ["소음", "오류", "비효율적인 것", "제약", "모호함"],
       wordsBody:
-        "최적화의 언어에서는 제거해야 할 값처럼 보이지만, 인간의 삶에서는 탐색·학습·숙련·책임·해석이 시작되는 조건이기도 합니다. NEICA는 이 다섯 단어를 기술이 함부로 지워서는 안 될 인간적 영역을 기억하는 이름으로 사용합니다.",
-      technologyHeading: "기술의 자리를 다시 설계합니다",
+        "NEICA는 이 다섯 단어의 첫 글자에서 시작된 이름입니다. 매끄럽게 정리되지 않는 삶 속에도 배움과 발견, 자기만의 해석이 있습니다. 우리는 그 가능성을 기억합니다.",
+      technologyHeading: "NEICA labs",
       technologyBody:
-        "스마트폰에 집중된 기능을 사물과 공간으로 나누고, Calm Technology와 물리적 인터페이스를 통해 필요한 기능이 필요한 순간에만 앞으로 나오게 합니다. 기술이 계속 주의를 요구하는 대신 사람이 무엇에 집중할지 선택할 수 있어야 합니다.",
-      choiceHeading: "삶의 선택지를 다시 늘립니다",
+        "우리가 꿈꾸는 세상을 위한 연구 자료와 생각의 재료를 나눕니다. 사람과 기술의 관계를 함께 이해하고 다시 생각하는 공간입니다.",
+      choiceHeading: "NEICA community",
       choiceBody:
-        "화면을 덜 본 시간을 하나의 숫자로 끝내지 않습니다. 그 자리에 활동·관계·공간·창작과 직접 부딪히는 경험이 돌아오도록 돕습니다. 편리함을 포기하는 일이 아니라, 편리함 때문에 사라진 선택권을 다시 만드는 일입니다.",
+        "같은 방향을 추구하는 사람들이 모여 경험을 나누고, 그 뜻을 일상에서 실천합니다. 서로의 시도를 통해 함께 나아갑니다.",
       translation: "측정할 수 없는 세계를 위해.",
     },
     community: {
@@ -89,9 +94,14 @@ export const copy = {
     },
     about: {
       heading: "For the\nimmeasurable world.",
-      lead: "NEICA labs protects human choices that cannot be explained by efficiency and optimization alone, redesigning the place technology occupies in life.",
+      lead: "The value of life cannot be fully captured by numbers or efficiency. NEICA is a project that protects and makes room for what makes life human.",
       intro:
-        "Using less technology is not the goal in itself. We study tools and environments that keep necessary functions close while moving needless demands to the periphery, so technology does not decide our attention, time, and actions on our behalf.",
+        "For the immeasurable world. Our research and practice begin with these words.",
+      principles: [
+        { heading: "Hold to what matters", body: "Faster, bigger, and more are not always better. Careful thought, time spent building relationships, and work shaped by personal standards have value beyond price and performance. We respect the resolve to protect that value." },
+        { heading: "Keep thinking and choosing for ourselves", body: "Even when answers come easily, we must decide what matters. Thinking, choosing, and taking responsibility for the consequences are how we shape our own lives. We hold on to that role while accepting the help technology offers." },
+        { heading: "Let people decide where technology belongs", body: "People should be able to choose how they direct their attention, time, and actions. Technology should support those choices and leave room for direct experience, making, and relationships. This principle guides how we rethink the relationship between people and technology." },
+      ],
       wordsHeading: "Five words NEICA remembers",
       wordMeanings: [
         "what resists a clean signal",
@@ -101,13 +111,13 @@ export const copy = {
         "room for interpretation",
       ],
       wordsBody:
-        "The language of optimization treats these as values to remove. In human life, however, they are also conditions from which exploration, learning, skill, responsibility, and interpretation begin. NEICA uses these five words to remember the human territory technology should not erase without question.",
-      technologyHeading: "Redesigning the place of technology",
+        "NEICA takes its name from the first letters of these five words. Life does not always resolve neatly; it still holds possibilities for learning, discovery, and personal interpretation. Our name keeps those possibilities in view.",
+      technologyHeading: "NEICA labs",
       technologyBody:
-        "We distribute functions concentrated in the smartphone across objects and spaces. Through Calm Technology and physical interfaces, useful functions move forward only when they are needed. Technology should not continually demand attention; people should remain able to choose what deserves their focus.",
-      choiceHeading: "Restoring more ways to live",
+        "We share research and ideas for the world we imagine—a space to understand and rethink the relationship between people and technology together.",
+      choiceHeading: "NEICA community",
       choiceBody:
-        "Time away from a screen should not end as another metric. We work to return activity, relationships, places, making, and direct experience to that space. This is not a rejection of convenience, but the recovery of choices that convenience has quietly removed.",
+        "People who share this vision come together, exchange experiences, and put it into practice in daily life. We move forward by learning from each other’s attempts.",
       translation: "For the immeasurable world.",
     },
     community: {

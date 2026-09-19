@@ -105,6 +105,12 @@ function Page({ page, locale }: { page: string; locale: Locale }) {
         <div className="prose">
           <p>{text.about.lead}</p>
           <p>{text.about.intro}</p>
+          {text.about.principles.map((principle) => (
+            <section key={principle.heading}>
+              <h2>{principle.heading}</h2>
+              <p>{principle.body}</p>
+            </section>
+          ))}
           <section>
             <h2>{text.about.wordsHeading}</h2>
             <div className="name-meaning" aria-label={text.about.wordsHeading}>
