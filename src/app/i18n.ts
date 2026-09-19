@@ -35,7 +35,7 @@ export const copy = {
       humanBody: "인간은 스스로 고민하고, 무엇을 소중히 여길지 선택하며, 그 선택에 책임지는 존재입니다. 몸으로 부딪히고 시행착오를 겪으며 자기만의 기준을 만듭니다. 오래 몰두하는 즐거움, 관계를 쌓는 시간, 무언가를 지키려는 고집은 삶을 이루는 가치입니다.",
       focusHeading: "NEICA가 집중하는 것",
       focusBody: "기술이 더 많은 일을 대신할수록, 사람이 직접 판단하고 경험할 자리를 지키는 데 집중합니다. 자신의 주의·시간·행동을 스스로 선택하고, 몸으로 만들고 배우며 타인과 관계 맺을 수 있도록 기술과 일상의 환경을 다시 설계합니다. ‘측정할 수 없는 세계를 위해’는 우리가 지키려는 삶의 방향입니다.",
-      nameBody: "NEICA는 noise, error, inefficient, constraint, ambiguous의 첫 글자에서 시작된 이름입니다. 최적화의 과정에서 지워지기 쉬운 인간의 삶을 기억합니다.",
+      nameBody: "NEICA는 noise, error, inefficiency, constraint, ambiguity의 첫 글자에서 시작된 이름입니다. 최적화의 과정에서 지워지기 쉬운 인간의 삶을 기억합니다.",
       intro:
         "For the immeasurable world. 우리가 하는 연구와 실천은 이 문장에서 시작합니다.",
       principles: [
@@ -44,7 +44,7 @@ export const copy = {
         { heading: "기술의 자리를 사람이 정합니다", body: "사람이 자신의 주의·시간·행동을 선택할 수 있어야 합니다. 기술은 그 선택을 돕고, 직접 경험하고 만들며 타인과 관계 맺을 여지를 남겨야 합니다. 우리는 이 원칙을 바탕으로 사람과 기술의 관계를 다시 생각합니다." },
       ],
       wordsHeading: "NEICA가 기억하는 다섯 단어",
-      wordMeanings: ["소음", "오류", "비효율적인 것", "제약", "모호함"],
+      wordMeanings: ["잡음", "오류", "비효율", "제약", "모호함"],
       wordsBody:
         "다섯 단어의 첫 글자에서 시작된 이름입니다.",
       technologyHeading: "NEICA labs",
@@ -153,7 +153,7 @@ export const copy = {
       humanBody: "Being human means thinking for ourselves, choosing what matters, and taking responsibility for those choices. Through hands-on experience and trial and error, we develop our own standards. The joy of deep engagement, time spent building relationships, and the resolve to protect what matters all give life value.",
       focusHeading: "What NEICA focuses on",
       focusBody: "As technology takes on more of our tasks, we focus on preserving room for human judgment and direct experience. We redesign technology and everyday environments so people can choose how to direct their attention, time, and actions—and have room to make, learn, and connect with others. ‘For the immeasurable world’ expresses the kind of life we seek to protect.",
-      nameBody: "NEICA takes its name from noise, error, inefficient, constraint, and ambiguous. It reminds us of the human dimensions of life that optimization can erase.",
+      nameBody: "NEICA takes its name from noise, error, inefficiency, constraint, and ambiguity. It reminds us of the human dimensions of life that optimization can erase.",
       intro:
         "For the immeasurable world. Our research and practice begin with these words.",
       principles: [
@@ -264,7 +264,7 @@ const metadata: Record<
     about: {
       title: "ABOUT — NEICA",
       description:
-        "Noise, Error, Inefficient, Constraint, Ambiguous. 측정할 수 없는 인간의 선택을 위해 기술의 자리를 다시 설계합니다.",
+        "Noise, Error, Inefficiency, Constraint, Ambiguity. 측정할 수 없는 인간의 선택을 위해 기술의 자리를 다시 설계합니다.",
     },
     community: {
       title: "COMMUNITY — NEICA",
@@ -288,7 +288,7 @@ const metadata: Record<
     about: {
       title: "ABOUT — NEICA",
       description:
-        "Noise, Error, Inefficient, Constraint, Ambiguous. Redesigning technology for the immeasurable parts of human life.",
+        "Noise, Error, Inefficiency, Constraint, Ambiguity. Redesigning technology for the immeasurable parts of human life.",
     },
     community: {
       title: "COMMUNITY — NEICA",
