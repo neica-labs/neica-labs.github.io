@@ -17,6 +17,11 @@ export const copy = {
     about: {
       heading: "측정할 수 없는\n세계를 위해.",
       lead: "NEICA는 숫자와 효율만으로 설명되지 않는 인간다운 삶을 지키는 프로젝트입니다.",
+      humanHeading: "우리가 생각하는 인간",
+      humanBody: "인간은 스스로 고민하고, 무엇을 소중히 여길지 선택하며, 그 선택에 책임지는 존재입니다. 몸으로 부딪히고 시행착오를 겪으며 자기만의 기준을 만듭니다. 오래 몰두하는 즐거움, 관계를 쌓는 시간, 무언가를 지키려는 고집은 삶을 이루는 가치입니다.",
+      focusHeading: "NEICA가 집중하는 것",
+      focusBody: "기술이 더 많은 일을 대신할수록, 사람이 직접 판단하고 경험할 자리를 지키는 데 집중합니다. 자신의 주의·시간·행동을 스스로 선택하고, 몸으로 만들고 배우며 타인과 관계 맺을 수 있도록 기술과 일상의 환경을 다시 설계합니다. ‘측정할 수 없는 세계를 위해’는 우리가 지키려는 삶의 방향입니다.",
+      nameBody: "NEICA는 noise, error, inefficient, constraint, ambiguous의 첫 글자에서 시작된 이름입니다. 최적화의 과정에서 지워지기 쉬운 인간의 삶을 기억합니다.",
       intro:
         "For the immeasurable world. 우리가 하는 연구와 실천은 이 문장에서 시작합니다.",
       principles: [
@@ -30,10 +35,10 @@ export const copy = {
         "다섯 단어의 첫 글자에서 시작된 이름입니다.",
       technologyHeading: "NEICA labs",
       technologyBody:
-        "사람과 기술의 관계를 다시 생각하는 연구와 자료를 공유합니다.",
+        "이 방향을 탐구하는 연구 공간입니다. 사람과 기술의 관계를 살피는 자료와 관점, 사례를 공유합니다. 우리가 어떤 삶을 원하는지 스스로 판단할 수 있도록 생각의 재료를 나눕니다.",
       choiceHeading: "NEICA community",
       choiceBody:
-        "같은 뜻을 가진 사람들이 모여 경험을 나누고 일상에서 실천합니다.",
+        "같은 방향을 추구하는 사람들의 모임입니다. 각자의 경험과 시도를 나누고, 함께 활동하며 그 생각을 일상에서 실천합니다. 서로의 삶을 통해 새로운 선택지를 발견합니다.",
       translation: "측정할 수 없는 세계를 위해.",
     },
     community: {
@@ -95,6 +100,11 @@ export const copy = {
     about: {
       heading: "For the\nimmeasurable world.",
       lead: "NEICA protects what makes life human, beyond numbers and efficiency.",
+      humanHeading: "How we understand being human",
+      humanBody: "Being human means thinking for ourselves, choosing what matters, and taking responsibility for those choices. Through hands-on experience and trial and error, we develop our own standards. The joy of deep engagement, time spent building relationships, and the resolve to protect what matters all give life value.",
+      focusHeading: "What NEICA focuses on",
+      focusBody: "As technology takes on more of our tasks, we focus on preserving room for human judgment and direct experience. We redesign technology and everyday environments so people can choose how to direct their attention, time, and actions—and have room to make, learn, and connect with others. ‘For the immeasurable world’ expresses the kind of life we seek to protect.",
+      nameBody: "NEICA takes its name from noise, error, inefficient, constraint, and ambiguous. It reminds us of the human dimensions of life that optimization can erase.",
       intro:
         "For the immeasurable world. Our research and practice begin with these words.",
       principles: [
@@ -114,10 +124,10 @@ export const copy = {
         "NEICA takes its name from the first letters of these five words.",
       technologyHeading: "NEICA labs",
       technologyBody:
-        "We share research and ideas that rethink the relationship between people and technology.",
+        "A research space that explores this direction. We share research, perspectives, and examples concerning the relationship between people and technology, giving people material to think with as they decide what kind of life they want.",
       choiceHeading: "NEICA community",
       choiceBody:
-        "People who share this vision exchange experiences and put it into practice in daily life.",
+        "A gathering of people who share this direction. We exchange experiences, try things together, and put our ideas into everyday practice. Through one another’s lives, we discover new possibilities for our own.",
       translation: "For the immeasurable world.",
     },
     community: {

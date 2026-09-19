@@ -85,14 +85,6 @@ function ContactIcon({ type }: { type: "email" | "instagram" }) {
   );
 }
 
-const nameWords = [
-  ["N", "noise"],
-  ["E", "error"],
-  ["I", "inefficient"],
-  ["C", "constraint"],
-  ["A", "ambiguous"],
-] as const;
-
 function Page({ page, locale }: { page: string; locale: Locale }) {
   const text = copy[locale];
   if (page === "about")
@@ -104,15 +96,14 @@ function Page({ page, locale }: { page: string; locale: Locale }) {
         </h1>
         <div className="prose">
           <p>{text.about.lead}</p>
-          <section className="about-principles">
-            {text.about.principles.map((principle) => (
-              <p key={principle.heading}>{principle.heading}.</p>
-            ))}
+          <section>
+            <h2>{text.about.humanHeading}</h2>
+            <p>{text.about.humanBody}</p>
           </section>
           <section>
-            <h2>{text.about.wordsHeading}</h2>
-            <p className="about-name-words" lang="en">{nameWords.map(([, word]) => word).join(" · ")}</p>
-            <p>{text.about.wordsBody}</p>
+            <h2>{text.about.focusHeading}</h2>
+            <p>{text.about.focusBody}</p>
+            <p>{text.about.nameBody}</p>
           </section>
           <section>
             <h2>{text.about.technologyHeading}</h2>
