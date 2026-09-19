@@ -28,6 +28,15 @@ export default {
     if (Number(request.headers.get("Content-Length") || 0) > 4096)
       return response(413, { error: "Request too large" }, origin);
 
+    try {
+      const { success } = await env.SIGNUP_RATE_LIMIT.limit({
+        key: request.headers.get("CF-Connecting-IP") || "unknown",
+      });
+      if (!success) return response(429, { error: "Too many requests" }, origin);
+    } catch {
+      return response(503, { error: "Temporarily unavailable" }, origin);
+    }
+
     let data;
     try {
       const raw = await request.text();

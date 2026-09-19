@@ -2,7 +2,7 @@
 
 홈페이지(GitHub Pages)에서 `POST /subscribe` → Cloudflare Worker → 비공개 D1 데이터베이스의 `early_access_signups`로 저장합니다. 이메일은 공개 GitHub 저장소, 브라우저 저장소, 빌드 파일에 넣지 않습니다. Worker는 이메일을 읽어 되돌려주거나 명단 조회 API를 제공하지 않습니다.
 
-현재 상태: 화면·API·DB 스키마의 소스만 준비했습니다. Cloudflare 계정에서 실제 D1을 만들고 Worker를 배포한 다음, GitHub 저장소의 `NEICA_SIGNUP_API` 변수에 `https://…workers.dev/subscribe`를 설정해야 입력 폼이 활성화됩니다. 그 전에는 폼이 비활성화되고 접수 준비 중이라고 표시됩니다. **연결·실접수 전까지는 등록된 이메일이 없습니다.**
+Cloudflare의 NEICA 계정에 `neica-early-access` D1을 별도로 만들었습니다. Ritmus의 데이터베이스와 연결하지 않습니다. Worker는 배포했고 GitHub 저장소의 `NEICA_SIGNUP_API` 변수도 설정했습니다. 홈페이지 빌드에 이 변수가 전달되면 입력 폼이 활성화됩니다.
 
 ## 저장 필드
 
@@ -16,11 +16,10 @@
 
 ## Cloudflare 연결 절차
 
-1. NEICA가 관리할 Cloudflare 계정으로 로그인합니다.
-2. `wrangler d1 create neica-early-access`로 D1을 만들고, 반환된 database ID를 `wrangler.example.jsonc`를 복사한 `wrangler.jsonc`에 기록합니다. 실제 설정 파일은 Git에서 제외됩니다.
-3. `wrangler d1 migrations apply neica-early-access --remote`로 `0001_early_access.sql`을 적용합니다.
-4. `wrangler deploy`로 API를 배포합니다. 출처는 `https://neica-labs.github.io`만 허용합니다. 홈페이지 주소가 바뀌면 `ALLOWED_ORIGIN`도 함께 변경합니다.
-5. GitHub 저장소 변수 `NEICA_SIGNUP_API`에 배포된 API 주소의 `/subscribe`까지 설정하고 홈페이지를 다시 배포합니다.
-6. 실제 주소로 시험 등록하고 D1에서 저장을 확인한 뒤 공개합니다. 수신·삭제·중복·오류 동작도 함께 확인합니다.
+1. NEICA가 관리할 Cloudflare 계정으로 로그인합니다. `wrangler.jsonc`의 DB ID는 이 계정의 전용 D1을 가리키며 비밀번호는 아닙니다.
+2. 새 환경에서는 `wrangler d1 migrations apply neica-early-access --remote`로 아직 적용되지 않은 스키마를 적용합니다.
+3. `wrangler deploy`로 API를 배포합니다. 출처는 `https://neica-labs.github.io`만 허용합니다. 홈페이지 주소가 바뀌면 `ALLOWED_ORIGIN`도 함께 변경합니다.
+4. GitHub 저장소 변수 `NEICA_SIGNUP_API`에 배포된 API 주소의 `/subscribe`까지 설정하고 홈페이지를 다시 배포합니다.
+5. 실제 주소로 시험 등록하고 D1에서 저장을 확인한 뒤 공개합니다. 수신·삭제·중복·오류 동작도 함께 확인합니다.
 
-공개 폼이므로 배포 전에는 남용 방지(예: Cloudflare Turnstile 또는 rate limiting)를 더하고, 뉴스레터 발송 전에는 이메일 소유 확인을 구현해야 합니다. 관리 명단은 Cloudflare 계정에서만 확인·내보냅니다.
+공개 폼에는 Cloudflare의 요청 제한(동일 접속지에서 분당 10회)과 봇용 숨김 필드를 적용했습니다. 뉴스레터 발송 전에는 이메일 소유 확인과 메일 내 구독 취소 수단을 구현해야 합니다. 관리 명단은 Cloudflare 계정에서만 확인·내보냅니다.

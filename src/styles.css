@@ -33,13 +33,24 @@ body {
   width: 100%;
 }
 .site-copyright {
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
   width: 100%;
   max-width: calc(var(--max) + var(--gutter) * 2);
   margin: auto auto 0;
   padding: 24px var(--gutter) clamp(40px, 5vw, 72px);
   color: #686868;
   font: 12px/1.6 var(--mono);
+}
+.site-copyright a:hover,
+.early-access-privacy:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.site-copyright span {
+  text-align: right;
 }
 html:lang(en) body {
   font-family: var(--system-sans);
@@ -508,6 +519,20 @@ button {
   font-size: 14px;
   line-height: 1.6;
 }
+.early-access-privacy {
+  display: inline-block;
+  margin-top: 12px;
+  color: #555;
+  font-size: 14px;
+}
+.privacy-page .prose {
+  max-width: 760px;
+}
+.privacy-effective {
+  margin-top: 48px !important;
+  color: #666;
+  font: 14px/1.6 var(--mono);
+}
 .about-principles p {
   margin: 0 0 8px;
 }
@@ -808,6 +833,10 @@ button {
     align-items: flex-start;
     flex-direction: column;
     gap: 18px;
+  }
+  .site-copyright {
+    align-items: flex-end;
+    font-size: 11px;
   }
   .brand-identity {
     gap: 14px;

@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { copy } from "../app/i18n";
 import type { Locale } from "../types";
+import { localizedSiteUrl } from "../lib/urls";
 
 const signupApi = import.meta.env.VITE_NEICA_SIGNUP_API?.trim();
 const consentVersion = "newsletter-early-access-2026-09";
@@ -63,6 +64,7 @@ export default function EarlyAccessForm({ locale }: { locale: Locale }) {
           <input type="checkbox" name="consent" required disabled={!signupApi || state === "submitting"} />
           <span>{text.consent}</span>
         </label>
+        <a className="early-access-privacy" href={localizedSiteUrl("privacy/", locale)}>{text.privacyLink} ↗</a>
         <p className="early-access-status" aria-live="polite">
           {!signupApi ? text.unavailable : state === "success" ? text.success : state === "error" ? text.error : ""}
         </p>

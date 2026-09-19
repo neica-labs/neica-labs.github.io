@@ -70,6 +70,18 @@ export const copy = {
       success: "등록 요청을 받았습니다. 뉴스레터가 시작되면 이메일로 알려드리겠습니다.",
       error: "지금은 등록되지 않았습니다. 잠시 후 다시 시도해 주세요.",
       unavailable: "사전 등록 접수 준비 중입니다.",
+      privacyLink: "개인정보 처리 안내",
+    },
+    privacy: {
+      heading: "개인정보 처리 안내",
+      intro: "NEICA labs는 COMMUNITY 뉴스레터 사전 등록에 필요한 정보만 수집합니다.",
+      sections: [
+        { heading: "수집 항목과 목적", body: "이메일 주소, 선택한 언어, 동의 문구의 버전과 동의 시점을 저장합니다. 뉴스레터 시작 안내와 NEICA의 글·모임 소식을 전하는 데 사용합니다." },
+        { heading: "보관과 삭제", body: "구독 취소나 삭제 요청 시까지 보관합니다. 발송 전에는 이메일 주소 확인 절차를 마련합니다. 삭제를 요청하면 해당 등록 정보를 제거합니다." },
+        { heading: "외부 서비스 이용", body: "접수와 보관을 위해 Cloudflare, Inc.(미국)의 Worker와 D1 데이터베이스를 이용합니다. 등록 시 이메일이 Cloudflare 인프라로 전송되며, D1의 주 저장 위치는 아시아·태평양 지역으로 설정되어 있습니다. 보관 기간은 위와 같습니다." },
+        { heading: "문의와 권리 행사", body: "열람·정정·삭제 또는 처리 중지를 원하면 neica.labs@gmail.com으로 연락해 주세요. 운영자: NEICA labs." },
+      ],
+      effective: "시행일 2026.09.19",
     },
     contact: {
       heading: "연결되는\n곳.",
@@ -183,6 +195,18 @@ export const copy = {
       success: "We received your request. We'll email you when the newsletter begins.",
       error: "Registration was not completed. Please try again shortly.",
       unavailable: "Early registration is being prepared.",
+      privacyLink: "Privacy notice",
+    },
+    privacy: {
+      heading: "Privacy notice",
+      intro: "NEICA labs collects only the information needed for COMMUNITY newsletter early registration.",
+      sections: [
+        { heading: "What we collect and why", body: "We store your email address, selected language, and the version and time of your consent. We use them to announce the newsletter launch and send NEICA writing and gathering updates." },
+        { heading: "Retention and deletion", body: "We retain your details until you unsubscribe or request deletion. We will establish email-address verification before sending the newsletter. On request, we remove the registration record." },
+        { heading: "External service", body: "We use Cloudflare, Inc. (United States) Workers and D1 to receive and store registrations. Your email is transferred to Cloudflare infrastructure when you register. The D1 primary is set to the Asia-Pacific region. The retention period is stated above." },
+        { heading: "Your choices and contact", body: "To access, correct, delete, or stop processing your details, write to neica.labs@gmail.com. Operator: NEICA labs." },
+      ],
+      effective: "Effective 19 September 2026",
     },
     contact: {
       heading: "Ways to\nconnect.",
@@ -252,6 +276,10 @@ const metadata: Record<
       title: "CONTACT — NEICA",
       description: "NEICA labs의 이메일과 인스타그램입니다.",
     },
+    privacy: {
+      title: "개인정보 처리 안내 — NEICA",
+      description: "NEICA community 뉴스레터 사전 등록 개인정보 처리 안내입니다.",
+    },
   },
   en: {
     labs: {
@@ -272,6 +300,10 @@ const metadata: Record<
     contact: {
       title: "CONTACT — NEICA",
       description: "Email and Instagram links for NEICA labs.",
+    },
+    privacy: {
+      title: "Privacy notice — NEICA",
+      description: "How NEICA handles newsletter early-registration details.",
     },
   },
 };

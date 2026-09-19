@@ -143,6 +143,23 @@ function Page({ page, locale }: { page: string; locale: Locale }) {
         <EarlyAccessForm locale={locale} />
       </main>
     );
+  if (page === "privacy")
+    return (
+      <main className="text-page privacy-page" id="main">
+        <span className="page-label">PRIVACY</span>
+        <h1>{text.privacy.heading}</h1>
+        <div className="prose">
+          <p>{text.privacy.intro}</p>
+          {text.privacy.sections.map((section) => (
+            <section key={section.heading}>
+              <h2>{section.heading}</h2>
+              <p>{section.body}</p>
+            </section>
+          ))}
+          <p className="privacy-effective">{text.privacy.effective}</p>
+        </div>
+      </main>
+    );
   if (page === "contact")
     return (
       <main className="text-page contact-page" id="main">
@@ -205,6 +222,9 @@ createRoot(document.getElementById("root")!).render(
     ) : (
       <Page page={page} locale={locale} />
     )}
-    <footer className="site-copyright">©2026 NEICA. All rights reserved.</footer>
+    <footer className="site-copyright">
+      <a href={localizedSiteUrl("privacy/", locale)}>{text.privacy.heading}</a>
+      <span>©2026 NEICA. All rights reserved.</span>
+    </footer>
   </>,
 );

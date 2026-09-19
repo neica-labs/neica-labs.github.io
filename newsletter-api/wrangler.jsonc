@@ -6,11 +6,18 @@
   "vars": {
     "ALLOWED_ORIGIN": "https://neica-labs.github.io"
   },
+  "ratelimits": [
+    {
+      "name": "SIGNUP_RATE_LIMIT",
+      "namespace_id": "2026091901",
+      "simple": { "limit": 10, "period": 60 }
+    }
+  ],
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "neica-early-access",
-      "database_id": "REPLACE_WITH_CLOUDFLARE_DATABASE_ID",
+      "database_id": "0c547ded-3407-4682-8863-b12b10d281ec",
       "migrations_dir": "migrations"
     }
   ]
