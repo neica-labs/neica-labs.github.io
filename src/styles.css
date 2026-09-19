@@ -161,7 +161,8 @@ button {
 .brand-tagline {
   color: #747474;
   font: 12px/1 var(--mono);
-  padding-bottom: 1px;
+  /* Align the visible text baseline with the wordmark, not the line box. */
+  transform: translateY(0.14em);
   letter-spacing: 0.015em;
   white-space: nowrap;
 }
