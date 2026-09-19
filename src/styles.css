@@ -292,6 +292,9 @@ button {
 .prose > p {
   margin: 0;
 }
+.prose strong {
+  font-weight: 700;
+}
 .prose > p + p {
   margin-top: 22px;
 }

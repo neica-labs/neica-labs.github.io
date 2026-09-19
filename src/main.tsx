@@ -13,6 +13,13 @@ function Lines({ children }: { children: string }) {
   return <>{children.replaceAll("\n", " ")}</>;
 }
 
+function Emphasis({ children, phrases }: { children: string; phrases: readonly string[] }) {
+  const pattern = new RegExp(`(${phrases.map((phrase) => phrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})`, "g");
+  return <>{children.split(pattern).map((part, index) =>
+    phrases.includes(part) ? <strong key={index}>{part}</strong> : part
+  )}</>;
+}
+
 function Labs({ locale, catalog }: { locale: Locale; catalog: Catalog }) {
   const viewer = useViewerUrl(locale);
   const text = copy[locale];
@@ -95,23 +102,23 @@ function Page({ page, locale }: { page: string; locale: Locale }) {
           <Lines>{text.about.heading}</Lines>
         </h1>
         <div className="prose">
-          <p>{text.about.lead}</p>
+          <p><Emphasis phrases={text.about.emphasis}>{text.about.lead}</Emphasis></p>
           <section>
             <h2>{text.about.humanHeading}</h2>
-            <p>{text.about.humanBody}</p>
+            <p><Emphasis phrases={text.about.emphasis}>{text.about.humanBody}</Emphasis></p>
           </section>
           <section>
             <h2>{text.about.focusHeading}</h2>
-            <p>{text.about.focusBody}</p>
+            <p><Emphasis phrases={text.about.emphasis}>{text.about.focusBody}</Emphasis></p>
             <p>{text.about.nameBody}</p>
           </section>
           <section>
             <h2>{text.about.technologyHeading}</h2>
-            <p>{text.about.technologyBody}</p>
+            <p><Emphasis phrases={text.about.emphasis}>{text.about.technologyBody}</Emphasis></p>
           </section>
           <section>
             <h2>{text.about.choiceHeading}</h2>
-            <p>{text.about.choiceBody}</p>
+            <p><Emphasis phrases={text.about.emphasis}>{text.about.choiceBody}</Emphasis></p>
           </section>
         </div>
       </main>

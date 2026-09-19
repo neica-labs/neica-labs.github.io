@@ -16,6 +16,7 @@ export const copy = {
     },
     about: {
       heading: "측정할 수 없는\n세계를 위해.",
+      emphasis: ["인간다운 삶", "스스로 고민하고", "그 선택에 책임지는", "자기만의 기준", "사람이 직접 판단하고 경험할 자리", "주의·시간·행동을 스스로 선택", "연구 공간", "생각의 재료를 나눕니다", "같은 방향을 추구하는 사람들의 모임", "일상에서 실천"] as const,
       lead: "NEICA는 숫자와 효율만으로 설명되지 않는 인간다운 삶을 지키는 프로젝트입니다.",
       humanHeading: "우리가 생각하는 인간",
       humanBody: "인간은 스스로 고민하고, 무엇을 소중히 여길지 선택하며, 그 선택에 책임지는 존재입니다. 몸으로 부딪히고 시행착오를 겪으며 자기만의 기준을 만듭니다. 오래 몰두하는 즐거움, 관계를 쌓는 시간, 무언가를 지키려는 고집은 삶을 이루는 가치입니다.",
@@ -99,6 +100,7 @@ export const copy = {
     },
     about: {
       heading: "For the\nimmeasurable world.",
+      emphasis: ["what makes life human", "thinking for ourselves", "taking responsibility", "our own standards", "human judgment and direct experience", "choose how to direct their attention, time, and actions", "research space", "material to think with", "people who share this direction", "everyday practice"] as const,
       lead: "NEICA protects what makes life human, beyond numbers and efficiency.",
       humanHeading: "How we understand being human",
       humanBody: "Being human means thinking for ourselves, choosing what matters, and taking responsibility for those choices. Through hands-on experience and trial and error, we develop our own standards. The joy of deep engagement, time spent building relationships, and the resolve to protect what matters all give life value.",
