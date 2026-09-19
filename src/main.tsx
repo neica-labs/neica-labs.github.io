@@ -4,7 +4,7 @@ import SiteHeader from "./app/SiteHeader";
 import ContentCard from "./content/ContentCard";
 import CarouselViewer from "./viewer/CarouselViewer";
 import useViewerUrl from "./viewer/useViewerUrl";
-import { localizedSiteUrl } from "./lib/urls";
+import { localizedSiteUrl, siteUrl } from "./lib/urls";
 import { applyDocumentLocale, copy, readLocale } from "./app/i18n";
 import type { Catalog, Locale } from "./types";
 import "./styles.css";
@@ -215,7 +215,11 @@ createRoot(document.getElementById("root")!).render(
       <Page page={page} locale={locale} />
     )}
     <footer className="site-footer">
-      <span>NEICA</span>
+      <img
+        className="footer-wordmark"
+        src={siteUrl("brand/neica-wordmark-source.png")}
+        alt="NEICA"
+      />
       <span>for the immeasurable world</span>
       {catalog.mode === "review" && (
         <span className="review-label">{text.review}</span>

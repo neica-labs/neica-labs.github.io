@@ -1,5 +1,5 @@
 import { navigation } from "./siteConfig";
-import { languageUrl, localizedSiteUrl } from "../lib/urls";
+import { languageUrl, localizedSiteUrl, siteUrl } from "../lib/urls";
 import { copy } from "./i18n";
 import type { Locale } from "../types";
 export default function SiteHeader({
@@ -18,7 +18,7 @@ export default function SiteHeader({
           href={localizedSiteUrl("", locale)}
           aria-label={text.homeLabel}
         >
-          NEICA
+          <img src={siteUrl("brand/neica-wordmark-source.png")} alt="NEICA" />
         </a>
         <div className="header-end">
           <nav aria-label={text.mainLabel}>

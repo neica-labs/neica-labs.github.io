@@ -1,11 +1,16 @@
 :root {
-  font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --analog: "Apple SD Gothic Neo", "Apple SD 산돌고딕 Neo", -apple-system,
+    BlinkMacSystemFont, system-ui, sans-serif;
+  --system-sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial,
+    sans-serif;
+  --mono: "SFMono-Regular", "SF Mono", ui-monospace, Menlo, Consolas,
+    monospace;
+  font-family: var(--analog);
   color: #111;
   background: #fff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
   --gutter: clamp(80px, 10vw, 160px);
   --gap: 48px;
   --row-gap: 80px;
@@ -16,6 +21,10 @@
 }
 body {
   margin: 0;
+  font-family: var(--analog);
+}
+html:lang(en) body {
+  font-family: var(--system-sans);
 }
 button,
 a {
@@ -82,11 +91,12 @@ button {
   top: 0;
   z-index: 5;
   background: #fff;
+  border-bottom: 1px solid #ededed;
 }
 .header-inner {
   max-width: calc(var(--max) + var(--gutter) * 2);
   margin: 0 auto;
-  padding: 40px var(--gutter) 32px;
+  padding: 28px var(--gutter) 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -115,18 +125,22 @@ button {
   color: #111;
 }
 .wordmark {
-  font-size: 28px;
-  letter-spacing: 0.095em;
-  font-weight: 650;
-  line-height: 1.2;
+  display: inline-flex;
+  width: 132px;
+  line-height: 0;
+}
+.wordmark img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .site-header nav {
   display: flex;
   align-items: center;
   gap: 30px;
   font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: 0.025em;
+  font-size: 11px;
+  letter-spacing: 0.04em;
 }
 .site-header nav a {
   padding: 10px 0;
@@ -140,7 +154,7 @@ button {
 .site-header nav a[aria-current]::after {
   content: "";
   position: absolute;
-  bottom: 4px;
+  bottom: 2px;
   left: 0;
   right: 0;
   height: 1px;
@@ -231,14 +245,16 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  align-items: center;
   color: #777;
   font-family: var(--mono);
   font-size: 11px;
   line-height: 1.8;
 }
-.site-footer > span:first-child {
-  color: #111;
-  letter-spacing: 0.08em;
+.footer-wordmark {
+  display: block;
+  width: 58px;
+  height: auto;
 }
 .review-label {
   margin-left: auto;
@@ -264,12 +280,12 @@ button {
 }
 .prose {
   max-width: 660px;
-  font-size: 17px;
-  line-height: 1.85;
+  font-size: 18px;
+  line-height: 1.8;
 }
 .prose .lead {
-  font-size: 23px;
-  line-height: 1.65;
+  font-size: 24px;
+  line-height: 1.6;
   letter-spacing: -0.025em;
   margin-bottom: 30px;
 }
@@ -296,7 +312,7 @@ button {
 .brand-line span {
   display: block;
   margin-top: 10px;
-  font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-family: var(--analog);
   font-size: 16px;
   color: #555;
 }
@@ -591,8 +607,8 @@ button {
     --row-gap: 40px;
   }
   .header-inner {
-    padding-top: 25px;
-    padding-bottom: 20px;
+    padding-top: 22px;
+    padding-bottom: 18px;
     align-items: flex-start;
     flex-direction: column;
     gap: 18px;
@@ -602,7 +618,7 @@ button {
     gap: 16px;
   }
   .wordmark {
-    font-size: 24px;
+    width: 116px;
   }
   .site-header nav {
     flex: 1;
