@@ -1,8 +1,10 @@
 import { createRoot } from "react-dom/client";
+import { useState } from "react";
 import catalogs from "virtual:neica-catalog";
 import SiteHeader from "./app/SiteHeader";
 import ContentCard from "./content/ContentCard";
 import CarouselViewer from "./viewer/CarouselViewer";
+import SubmissionViewer from "./viewer/SubmissionViewer";
 import useViewerUrl from "./viewer/useViewerUrl";
 import { localizedSiteUrl } from "./lib/urls";
 import { applyDocumentLocale, copy, readLocale } from "./app/i18n";
@@ -23,19 +25,20 @@ function Emphasis({ children, phrases }: { children: string; phrases: readonly s
 function Labs({ locale, catalog }: { locale: Locale; catalog: Catalog }) {
   const viewer = useViewerUrl(locale);
   const text = copy[locale];
+  const [submissionOpen, setSubmissionOpen] = useState(false);
   return (
     <>
       <main id="main" className="home-content">
         <h1 className="sr-only">{text.labs.srTitle}</h1>
         <div className="content-grid">
-          <a className="submission-card" href={localizedSiteUrl("submit/", locale)}>
+          <button className="submission-card" type="button" onClick={() => setSubmissionOpen(true)}>
             <span className="submission-card-label">WHAT’S NEXT?</span>
             <span className="submission-card-content">
               <strong>{text.submit.cardTitle}</strong>
               <span>{text.submit.cardBody}</span>
             </span>
             <span className="submission-card-action">{text.submit.cardAction} ↗</span>
-          </a>
+          </button>
           {catalog.entries.map((card, index) => (
             <ContentCard
               key={card.id}
@@ -72,6 +75,7 @@ function Labs({ locale, catalog }: { locale: Locale; catalog: Catalog }) {
           onClose={viewer.close}
         />
       )}
+      {submissionOpen && <SubmissionViewer locale={locale} onClose={() => setSubmissionOpen(false)} />}
     </>
   );
 }
@@ -95,24 +99,6 @@ function ContactIcon({ type }: { type: "email" | "instagram" }) {
 
 function Page({ page, locale }: { page: string; locale: Locale }) {
   const text = copy[locale];
-  if (page === "submit") {
-    const mailto = `mailto:neica.labs@gmail.com?subject=${encodeURIComponent(text.submit.emailSubject)}&body=${encodeURIComponent(text.submit.emailBody)}`;
-    return (
-      <main className="text-page submission-page" id="main">
-        <span className="page-label">WHAT’S NEXT? / {text.submit.label}</span>
-        <h1>{text.submit.heading}</h1>
-        <div className="prose">
-          <p>{text.submit.lead}</p>
-          <p>{text.submit.body}</p>
-          <p>{text.submit.process}</p>
-          <a className="submission-email" href={mailto}>
-            {text.submit.emailAction} <span aria-hidden="true">↗</span>
-          </a>
-          <p className="submission-address">neica.labs@gmail.com</p>
-        </div>
-      </main>
-    );
-  }
   if (page === "about")
     return (
       <main className="text-page" id="main">

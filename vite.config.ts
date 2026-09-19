@@ -152,7 +152,6 @@ export default defineConfig(({ command, mode }) => {
             "labs/index",
             "community/index",
             "contact/index",
-            "submit/index",
             "404",
           ].map((name) => [name, path.join(root, `${name}.html`)]),
         ),

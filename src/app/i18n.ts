@@ -219,10 +219,6 @@ const metadata: Record<
       description:
         "기술과 인간의 관계를 다시 설계합니다. NEICA의 콘텐츠와 프로젝트를 만나보세요.",
     },
-    submit: {
-      title: "투고 — NEICA",
-      description: "당신의 질문과 경험에서 다음 이야기가 시작됩니다. NEICA labs에 이야기를 보내주세요.",
-    },
     about: {
       title: "ABOUT — NEICA",
       description:
@@ -242,10 +238,6 @@ const metadata: Record<
       title: "NEICA — for the immeasurable world",
       description:
         "NEICA redesigns the relationship between technology and human life.",
-    },
-    submit: {
-      title: "Contribute — NEICA",
-      description: "Share a question or experience with NEICA labs. The next story may start with you.",
     },
     about: {
       title: "ABOUT — NEICA",
