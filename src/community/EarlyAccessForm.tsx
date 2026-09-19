@@ -39,7 +39,6 @@ export default function EarlyAccessForm({ locale }: { locale: Locale }) {
 
   return (
     <section className="early-access" aria-labelledby="early-access-heading">
-      <span className="page-label">{text.earlyLabel}</span>
       <h2 id="early-access-heading">{text.earlyHeading}</h2>
       <p>{text.earlyBody}</p>
       <form onSubmit={submit}>
@@ -60,11 +59,13 @@ export default function EarlyAccessForm({ locale }: { locale: Locale }) {
           </button>
         </div>
         <input className="sr-only" type="text" name="company" tabIndex={-1} autoComplete="off" aria-hidden="true" />
-        <label className="early-access-consent">
-          <input type="checkbox" name="consent" required disabled={!signupApi || state === "submitting"} />
-          <span>{text.consent}</span>
-        </label>
-        <a className="early-access-privacy" href={localizedSiteUrl("privacy/", locale)}>{text.privacyLink} ↗</a>
+        <div className="early-access-disclosure">
+          <label className="early-access-consent">
+            <input type="checkbox" name="consent" required disabled={!signupApi || state === "submitting"} />
+            <span>{text.consent}</span>
+          </label>
+          <a className="early-access-privacy" href={localizedSiteUrl("privacy/", locale)}>{text.privacyLink}</a>
+        </div>
         <p className="early-access-status" aria-live="polite">
           {!signupApi ? text.unavailable : state === "success" ? text.success : state === "error" ? text.error : ""}
         </p>
