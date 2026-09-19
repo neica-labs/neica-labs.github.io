@@ -33,6 +33,7 @@ body {
   width: 100%;
 }
 .site-copyright {
+  text-align: right;
   width: 100%;
   max-width: calc(var(--max) + var(--gutter) * 2);
   margin: auto auto 0;
