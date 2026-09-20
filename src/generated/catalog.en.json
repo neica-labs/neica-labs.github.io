@@ -3,8 +3,35 @@
   "mode": "publish",
   "locale": "en",
   "publicPrefix": "content-en",
-  "buildId": "bcfe3edcf813086ccaf475b0d5a8e266f639d30027cf487939c0d55be57fb799",
+  "buildId": "3bff305c99bee827ea71ee1450e1e81cee25a8598320914408aa6972c1d61a79",
   "entries": [
+    {
+      "id": "ritmus-first-app",
+      "locale": "en",
+      "revision": "bfcd5e31caf95e170bdab64022445870614206ac36039ae531c4dbe5caaeeb2b",
+      "title": "RITMUS — NEICA's First App",
+      "displayDate": "2026-09-20",
+      "order": -1,
+      "kind": "carousel",
+      "cover": {
+        "path": "content-en/ritmus-first-app/bfcd5e31caf95e170bdab64022445870614206ac36039ae531c4dbe5caaeeb2b/b138f7be8feeacbb8aea.png",
+        "width": 1080,
+        "height": 1350,
+        "alt": "NEICA의 고민이 첫 번째 앱이 되었습니다. / NEICA's questions led to its first app.",
+        "variants": [
+          {
+            "path": "content-en/ritmus-first-app/bfcd5e31caf95e170bdab64022445870614206ac36039ae531c4dbe5caaeeb2b/cover-540.webp",
+            "width": 540
+          },
+          {
+            "path": "content-en/ritmus-first-app/bfcd5e31caf95e170bdab64022445870614206ac36039ae531c4dbe5caaeeb2b/cover-1080.webp",
+            "width": 1080
+          }
+        ]
+      },
+      "slideCount": 8,
+      "postPath": "content-en/ritmus-first-app/bfcd5e31caf95e170bdab64022445870614206ac36039ae531c4dbe5caaeeb2b/post.json"
+    },
     {
       "id": "special-edition-02-why-we-keep-thinking",
       "locale": "en",
@@ -196,6 +223,17 @@
     }
   ],
   "files": {
+    "content-en/ritmus-first-app/bfcd5e31caf95e170bdab64022445870614206ac36039ae531c4dbe5caaeeb2b/b138f7be8feeacbb8aea.png": "b138f7be8feeacbb8aea38a39d0b2c40e30423702dacf69382d174f54fb78478",
+    "content-en/ritmus-first-app/bfcd5e31caf95e170bdab64022445870614206ac36039ae531c4dbe5caaeeb2b/a5cebc80d096642fd84f.png": "a5cebc80d096642fd84f99fa256ec4c9c84f3eda3900cf09207845cb7c703206",
+    "content-en/ritmus-first-app/bfcd5e31caf95e170bdab64022445870614206ac36039ae531c4dbe5caaeeb2b/5e010fb920eced061519.png": "5e010fb920eced061519d6d4b721ac0a068b85a27cc236df791e83397fb27882",
+    "content-en/ritmus-first-app/bfcd5e31caf95e170bdab64022445870614206ac36039ae531c4dbe5caaeeb2b/71cb54de097f7e8a4ac4.png": "71cb54de097f7e8a4ac460471e7a9218052994dc858f260c6e276e448bd41d81",
+    "content-en/ritmus-first-app/bfcd5e31caf95e170bdab64022445870614206ac36039ae531c4dbe5caaeeb2b/840fb838c4a248b421cf.png": "840fb838c4a248b421cf9c29c03486606bb96d827a48f0d3a985ff2f24cc53b0",
+    "content-en/ritmus-first-app/bfcd5e31caf95e170bdab64022445870614206ac36039ae531c4dbe5caaeeb2b/76b2306684c5d5f055e6.png": "76b2306684c5d5f055e6a4c5a428c3ebb87fdfbd0f5b587e02ac1badccaa5087",
+    "content-en/ritmus-first-app/bfcd5e31caf95e170bdab64022445870614206ac36039ae531c4dbe5caaeeb2b/8b1b86860f1618626157.png": "8b1b86860f1618626157cfb384d9a03493755d741755e303929bcb8e6b694f7a",
+    "content-en/ritmus-first-app/bfcd5e31caf95e170bdab64022445870614206ac36039ae531c4dbe5caaeeb2b/73fafe94b8c060c1bbe3.png": "73fafe94b8c060c1bbe3a4054511b2447621749ca6b3a9ee3933ab46f4d2219e",
+    "content-en/ritmus-first-app/bfcd5e31caf95e170bdab64022445870614206ac36039ae531c4dbe5caaeeb2b/cover-540.webp": "78cdc0ce66c276f1d4090554a300035f0fd45cfa5f746e0af11fec9cbd7e630e",
+    "content-en/ritmus-first-app/bfcd5e31caf95e170bdab64022445870614206ac36039ae531c4dbe5caaeeb2b/cover-1080.webp": "c856fa17169b38cd814f830769eab8e536aec46ea4364d5cc2fc9f34b32c6ad1",
+    "content-en/ritmus-first-app/bfcd5e31caf95e170bdab64022445870614206ac36039ae531c4dbe5caaeeb2b/post.json": "06c82edd717f9497f8773acfb0b4731f5fdbd7d8d38d1c3b0dfea02fd2ee1b8e",
     "content-en/calm-tech-series-01-concept/d66b81f14c0fd30f1aa321f3f29936b2972596058335137549a72403e3a625d8/3f59fd6618e6a31cc914.png": "3f59fd6618e6a31cc9143ba103175c650346da671c448a67cdd61c5fcd2162e5",
     "content-en/calm-tech-series-01-concept/d66b81f14c0fd30f1aa321f3f29936b2972596058335137549a72403e3a625d8/c977d505f79aafd8d547.png": "c977d505f79aafd8d5477241bb135d7105efb8c8a8b3feecac9db1d72ae16b35",
     "content-en/calm-tech-series-01-concept/d66b81f14c0fd30f1aa321f3f29936b2972596058335137549a72403e3a625d8/1e0573afe05576e11918.png": "1e0573afe05576e11918ee2371a2ad33b15fcaa7987279c436b706838e674807",
