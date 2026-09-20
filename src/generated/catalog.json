@@ -3,34 +3,34 @@
   "mode": "publish",
   "locale": "ko",
   "publicPrefix": "content",
-  "buildId": "7fb54ab47cce66fd3fe0665f8dbd2d006321f5e6710202ab80b74aabdc32774d",
+  "buildId": "a0208339330cec504d74506b7b052960b6d51244580219d5d92943a736f48f5e",
   "entries": [
     {
       "id": "ritmus-first-app",
       "locale": "ko",
-      "revision": "4d8483f90e9e1f8679e8ff88d2edfc42d601f77ad5a5e51cbe89e9983cfe6998",
+      "revision": "9ccb41ae0c1b20b11a8bc2dbc3b90817497dd4ceaa032832d4868b0e1199cde2",
       "title": "RITMUS — NEICA의 첫 번째 앱",
       "displayDate": "2026-09-20",
       "order": -1,
       "kind": "carousel",
       "cover": {
-        "path": "content/ritmus-first-app/4d8483f90e9e1f8679e8ff88d2edfc42d601f77ad5a5e51cbe89e9983cfe6998/e1b2e73d502b45d74a5c.png",
+        "path": "content/ritmus-first-app/9ccb41ae0c1b20b11a8bc2dbc3b90817497dd4ceaa032832d4868b0e1199cde2/968d06cd21b9d74cd585.png",
         "width": 1080,
         "height": 1350,
         "alt": "NEICA의 고민이 첫 번째 앱이 되었습니다.",
         "variants": [
           {
-            "path": "content/ritmus-first-app/4d8483f90e9e1f8679e8ff88d2edfc42d601f77ad5a5e51cbe89e9983cfe6998/cover-540.webp",
+            "path": "content/ritmus-first-app/9ccb41ae0c1b20b11a8bc2dbc3b90817497dd4ceaa032832d4868b0e1199cde2/cover-540.webp",
             "width": 540
           },
           {
-            "path": "content/ritmus-first-app/4d8483f90e9e1f8679e8ff88d2edfc42d601f77ad5a5e51cbe89e9983cfe6998/cover-1080.webp",
+            "path": "content/ritmus-first-app/9ccb41ae0c1b20b11a8bc2dbc3b90817497dd4ceaa032832d4868b0e1199cde2/cover-1080.webp",
             "width": 1080
           }
         ]
       },
       "slideCount": 8,
-      "postPath": "content/ritmus-first-app/4d8483f90e9e1f8679e8ff88d2edfc42d601f77ad5a5e51cbe89e9983cfe6998/post.json"
+      "postPath": "content/ritmus-first-app/9ccb41ae0c1b20b11a8bc2dbc3b90817497dd4ceaa032832d4868b0e1199cde2/post.json"
     },
     {
       "id": "special-edition-02-why-we-keep-thinking",
@@ -223,17 +223,17 @@
     }
   ],
   "files": {
-    "content/ritmus-first-app/4d8483f90e9e1f8679e8ff88d2edfc42d601f77ad5a5e51cbe89e9983cfe6998/e1b2e73d502b45d74a5c.png": "e1b2e73d502b45d74a5cd860ebfc837addfd0883a8edb5c9e2765bb7254ec3ba",
-    "content/ritmus-first-app/4d8483f90e9e1f8679e8ff88d2edfc42d601f77ad5a5e51cbe89e9983cfe6998/36d5803f38a1fbedabf8.png": "36d5803f38a1fbedabf8f9fe09e61af68eff08484441eaa535e4d15c018ed5f7",
-    "content/ritmus-first-app/4d8483f90e9e1f8679e8ff88d2edfc42d601f77ad5a5e51cbe89e9983cfe6998/f5554dc0919c2100d32f.png": "f5554dc0919c2100d32f6d54c10a87a68963535633b9b664d92af712f4ebdb67",
-    "content/ritmus-first-app/4d8483f90e9e1f8679e8ff88d2edfc42d601f77ad5a5e51cbe89e9983cfe6998/ccc458bc35688f5f7b04.png": "ccc458bc35688f5f7b0488e7bd49b0c1cf8c699f55825e0a8b198cf6c0af68da",
-    "content/ritmus-first-app/4d8483f90e9e1f8679e8ff88d2edfc42d601f77ad5a5e51cbe89e9983cfe6998/8f4a7c95c636fb3fd53e.png": "8f4a7c95c636fb3fd53efcabe8fded784aea814afe91c63b84cc4426dd5239c1",
-    "content/ritmus-first-app/4d8483f90e9e1f8679e8ff88d2edfc42d601f77ad5a5e51cbe89e9983cfe6998/5ef0f0bd9ef48e07870d.png": "5ef0f0bd9ef48e07870d3b8eadf43f91187b58b743f512d3de0010246484b7bd",
-    "content/ritmus-first-app/4d8483f90e9e1f8679e8ff88d2edfc42d601f77ad5a5e51cbe89e9983cfe6998/bafea1ec02c702f55b91.png": "bafea1ec02c702f55b91ccb03a6e0dea758a92b3c915c3a623196e8290fb2971",
-    "content/ritmus-first-app/4d8483f90e9e1f8679e8ff88d2edfc42d601f77ad5a5e51cbe89e9983cfe6998/b2c6e35ca6c7f1b5e236.png": "b2c6e35ca6c7f1b5e23651a00fa3d6fbcc78aff724b37b2195ef7da03c0a0f20",
-    "content/ritmus-first-app/4d8483f90e9e1f8679e8ff88d2edfc42d601f77ad5a5e51cbe89e9983cfe6998/cover-540.webp": "2731373fb677447fbd8712eeffab1f3251681a413ed251abb9564510bca6e773",
-    "content/ritmus-first-app/4d8483f90e9e1f8679e8ff88d2edfc42d601f77ad5a5e51cbe89e9983cfe6998/cover-1080.webp": "167b8a1abb154b5eb75da1f3a79da3d4cf8d4b1c74d4a09c57eae73196c7351e",
-    "content/ritmus-first-app/4d8483f90e9e1f8679e8ff88d2edfc42d601f77ad5a5e51cbe89e9983cfe6998/post.json": "aeeea84fba53426b62047d84b9bf60b8d455c11537c3e5183b8254d880e4c531",
+    "content/ritmus-first-app/9ccb41ae0c1b20b11a8bc2dbc3b90817497dd4ceaa032832d4868b0e1199cde2/968d06cd21b9d74cd585.png": "968d06cd21b9d74cd5859f5bdbd11be7758e3ac6d5eea256bf2e22c803a9b054",
+    "content/ritmus-first-app/9ccb41ae0c1b20b11a8bc2dbc3b90817497dd4ceaa032832d4868b0e1199cde2/217b643da28845757217.png": "217b643da288457572178ea7c2d9f5138ecd2273e1b8bf6e722e51dcc7991a50",
+    "content/ritmus-first-app/9ccb41ae0c1b20b11a8bc2dbc3b90817497dd4ceaa032832d4868b0e1199cde2/d5e5d1dc7c5aab3c8472.png": "d5e5d1dc7c5aab3c8472d1a4fa4ccd86343ed547c59c38673d478178de83f8bd",
+    "content/ritmus-first-app/9ccb41ae0c1b20b11a8bc2dbc3b90817497dd4ceaa032832d4868b0e1199cde2/1a2315e32b8f1c17fd2a.png": "1a2315e32b8f1c17fd2a267c271abe6ef930d91b1f6051c90a633332b5be606f",
+    "content/ritmus-first-app/9ccb41ae0c1b20b11a8bc2dbc3b90817497dd4ceaa032832d4868b0e1199cde2/088177f2396a23b1c017.png": "088177f2396a23b1c017b875aac80fc7bee0944c38b752eb255808fd7951aa6d",
+    "content/ritmus-first-app/9ccb41ae0c1b20b11a8bc2dbc3b90817497dd4ceaa032832d4868b0e1199cde2/41c1dd5d2533c858638b.png": "41c1dd5d2533c858638bea5b99f6860e96c72ebb9a537b3f6696d875342896f1",
+    "content/ritmus-first-app/9ccb41ae0c1b20b11a8bc2dbc3b90817497dd4ceaa032832d4868b0e1199cde2/f240cd8a6fdc342e8146.png": "f240cd8a6fdc342e81468813e8e3f5516f7c3c0e02de023cebbb41a63dc0e28e",
+    "content/ritmus-first-app/9ccb41ae0c1b20b11a8bc2dbc3b90817497dd4ceaa032832d4868b0e1199cde2/be11d924fad8eb3114d4.png": "be11d924fad8eb3114d4645c51a04719d5f9a0386f3cf0f731672b1652a1a3cb",
+    "content/ritmus-first-app/9ccb41ae0c1b20b11a8bc2dbc3b90817497dd4ceaa032832d4868b0e1199cde2/cover-540.webp": "4be28a05d90d752df68b2115e7e32358c64d5ee6696d40786c5485f7b130b65e",
+    "content/ritmus-first-app/9ccb41ae0c1b20b11a8bc2dbc3b90817497dd4ceaa032832d4868b0e1199cde2/cover-1080.webp": "a18ffc98705e97595ef01c79d6dc4dea814e5cc03adc396b280a88510c6837cc",
+    "content/ritmus-first-app/9ccb41ae0c1b20b11a8bc2dbc3b90817497dd4ceaa032832d4868b0e1199cde2/post.json": "7be58102b950b44ad02437baba85e9cccc0277532949e8db42f26334f9918ac3",
     "content/calm-tech-series-01-concept/747c2743aeded55ad5235f173bdb005d84d2bcbca54a22e90d8a284edb61d16c/111c524e78c2406144be.png": "111c524e78c2406144be846cc9750a42fd4a583fb16268e0424a393953117303",
     "content/calm-tech-series-01-concept/747c2743aeded55ad5235f173bdb005d84d2bcbca54a22e90d8a284edb61d16c/fe3553f7dd688200b7c2.png": "fe3553f7dd688200b7c2fe64f16959083371aa3ea60caef23215671b8e047bf9",
     "content/calm-tech-series-01-concept/747c2743aeded55ad5235f173bdb005d84d2bcbca54a22e90d8a284edb61d16c/f224e13f5aab1982ca4d.png": "f224e13f5aab1982ca4d6ae78a448f1e2f72a33ac1811e77610f6bee4a16af0c",
