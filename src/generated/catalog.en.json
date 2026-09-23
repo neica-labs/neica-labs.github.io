@@ -3,34 +3,34 @@
   "mode": "publish",
   "locale": "en",
   "publicPrefix": "content-en",
-  "buildId": "4d6bbd8cb7c24d0ec67a3772d469c5667b96cbc8e5c42537c21c4bba9228c599",
+  "buildId": "c141ff5ebfc286f224f49f6e5a2451857007ddafeceb426f332a75e59e86472a",
   "entries": [
     {
       "id": "ritmus-first-app",
       "locale": "en",
-      "revision": "ef9635a9a11cd1b1b2bc806d7e22f3a06c0a429bd8e1b788c0aabfff487b6420",
+      "revision": "3b73815f0a37c0124c7cfcc2a1cf21ac67fc89bfbe7747d4d2b00e9711a8a97b",
       "title": "RITMUS — NEICA's First App",
       "displayDate": "2026-09-20",
       "order": -1,
       "kind": "carousel",
       "cover": {
-        "path": "content-en/ritmus-first-app/ef9635a9a11cd1b1b2bc806d7e22f3a06c0a429bd8e1b788c0aabfff487b6420/b1d68180abaeada5a94c.png",
+        "path": "content-en/ritmus-first-app/3b73815f0a37c0124c7cfcc2a1cf21ac67fc89bfbe7747d4d2b00e9711a8a97b/eba179d06c151a9d1f0d.png",
         "width": 1080,
         "height": 1350,
         "alt": "NEICA의 고민이 첫 번째 앱이 되었습니다. / NEICA's questions led to its first app.",
         "variants": [
           {
-            "path": "content-en/ritmus-first-app/ef9635a9a11cd1b1b2bc806d7e22f3a06c0a429bd8e1b788c0aabfff487b6420/cover-540.webp",
+            "path": "content-en/ritmus-first-app/3b73815f0a37c0124c7cfcc2a1cf21ac67fc89bfbe7747d4d2b00e9711a8a97b/cover-540.webp",
             "width": 540
           },
           {
-            "path": "content-en/ritmus-first-app/ef9635a9a11cd1b1b2bc806d7e22f3a06c0a429bd8e1b788c0aabfff487b6420/cover-1080.webp",
+            "path": "content-en/ritmus-first-app/3b73815f0a37c0124c7cfcc2a1cf21ac67fc89bfbe7747d4d2b00e9711a8a97b/cover-1080.webp",
             "width": 1080
           }
         ]
       },
       "slideCount": 8,
-      "postPath": "content-en/ritmus-first-app/ef9635a9a11cd1b1b2bc806d7e22f3a06c0a429bd8e1b788c0aabfff487b6420/post.json"
+      "postPath": "content-en/ritmus-first-app/3b73815f0a37c0124c7cfcc2a1cf21ac67fc89bfbe7747d4d2b00e9711a8a97b/post.json"
     },
     {
       "id": "special-edition-02-why-we-keep-thinking",
@@ -223,17 +223,17 @@
     }
   ],
   "files": {
-    "content-en/ritmus-first-app/ef9635a9a11cd1b1b2bc806d7e22f3a06c0a429bd8e1b788c0aabfff487b6420/b1d68180abaeada5a94c.png": "b1d68180abaeada5a94c51c76b3fe7ed856bc0a769745f4b6812d55daf843d8e",
-    "content-en/ritmus-first-app/ef9635a9a11cd1b1b2bc806d7e22f3a06c0a429bd8e1b788c0aabfff487b6420/624db72cbd6f23e6bb44.png": "624db72cbd6f23e6bb44062741dfd12b436d17e1ac6c800ce7f6beab232c66b4",
-    "content-en/ritmus-first-app/ef9635a9a11cd1b1b2bc806d7e22f3a06c0a429bd8e1b788c0aabfff487b6420/3dac4a7bec6c08281005.png": "3dac4a7bec6c08281005bdcc809c502430e14bf7cc8b2ddf1c140b508b90d6b6",
-    "content-en/ritmus-first-app/ef9635a9a11cd1b1b2bc806d7e22f3a06c0a429bd8e1b788c0aabfff487b6420/c50490d99dbf06f05e5f.png": "c50490d99dbf06f05e5f5d7ee644cd2672aa6fe3995d9484ff73337d3e54c3cd",
-    "content-en/ritmus-first-app/ef9635a9a11cd1b1b2bc806d7e22f3a06c0a429bd8e1b788c0aabfff487b6420/8e98ec3aa063dd421e13.png": "8e98ec3aa063dd421e13ed12f053920fcceff7ffcc49b8b6133a7c32e76a3061",
-    "content-en/ritmus-first-app/ef9635a9a11cd1b1b2bc806d7e22f3a06c0a429bd8e1b788c0aabfff487b6420/e72a5e1edefcf831aacb.png": "e72a5e1edefcf831aacb6d6a4bbc767ca87894c0d80944cc27d931639d06ecbd",
-    "content-en/ritmus-first-app/ef9635a9a11cd1b1b2bc806d7e22f3a06c0a429bd8e1b788c0aabfff487b6420/a44fe7d5b749c71791a2.png": "a44fe7d5b749c71791a25e0274a24b148c66dccde018f0a55b98ef0ec56fb86f",
-    "content-en/ritmus-first-app/ef9635a9a11cd1b1b2bc806d7e22f3a06c0a429bd8e1b788c0aabfff487b6420/6b0e9e0a20cda5b2142c.png": "6b0e9e0a20cda5b2142cee689b840dadf2fb1c75863eb7820a2645384a190774",
-    "content-en/ritmus-first-app/ef9635a9a11cd1b1b2bc806d7e22f3a06c0a429bd8e1b788c0aabfff487b6420/cover-540.webp": "571b8cc05840454974fe54a62a40c12d1a5d76c5ed3221d20595f855b6e46ca0",
-    "content-en/ritmus-first-app/ef9635a9a11cd1b1b2bc806d7e22f3a06c0a429bd8e1b788c0aabfff487b6420/cover-1080.webp": "d7ef836e95e7c7ce3e952ba03183c79e85c58ca08a677de9412e2c1682e8c095",
-    "content-en/ritmus-first-app/ef9635a9a11cd1b1b2bc806d7e22f3a06c0a429bd8e1b788c0aabfff487b6420/post.json": "81a452ba63967c7d94de9d725bb3110483c04e106f3524f4a80d691b642ed25c",
+    "content-en/ritmus-first-app/3b73815f0a37c0124c7cfcc2a1cf21ac67fc89bfbe7747d4d2b00e9711a8a97b/eba179d06c151a9d1f0d.png": "eba179d06c151a9d1f0dfe8cec3dea3a3198a042c5454928c1efb77f5342bd82",
+    "content-en/ritmus-first-app/3b73815f0a37c0124c7cfcc2a1cf21ac67fc89bfbe7747d4d2b00e9711a8a97b/84c46551b70089c9f847.png": "84c46551b70089c9f847200abd40d1df184bfd5c906f9a3cb379cd5575640f57",
+    "content-en/ritmus-first-app/3b73815f0a37c0124c7cfcc2a1cf21ac67fc89bfbe7747d4d2b00e9711a8a97b/b7f67ac13c750cb31dd4.png": "b7f67ac13c750cb31dd4a40318d66ccab2b0ceb3fa408bc6f8740c452fdffd30",
+    "content-en/ritmus-first-app/3b73815f0a37c0124c7cfcc2a1cf21ac67fc89bfbe7747d4d2b00e9711a8a97b/71b6d7857c39c22ca023.png": "71b6d7857c39c22ca023f848f1c1f6f753009f6adf719892388940bd296827fb",
+    "content-en/ritmus-first-app/3b73815f0a37c0124c7cfcc2a1cf21ac67fc89bfbe7747d4d2b00e9711a8a97b/ed6a187e063dbd0bd17a.png": "ed6a187e063dbd0bd17a61dbbdc4415739ed708912320050ee60954490ec5cfe",
+    "content-en/ritmus-first-app/3b73815f0a37c0124c7cfcc2a1cf21ac67fc89bfbe7747d4d2b00e9711a8a97b/09c54382aba230578210.png": "09c54382aba230578210957d12337de551caed1cdccb5e3d6f4eb0c5eab7ce15",
+    "content-en/ritmus-first-app/3b73815f0a37c0124c7cfcc2a1cf21ac67fc89bfbe7747d4d2b00e9711a8a97b/4ae324dd922cfd2e4e5f.png": "4ae324dd922cfd2e4e5ff9ab69f0e6dec6629282cf7aec9ce9dc70205b5ac0c0",
+    "content-en/ritmus-first-app/3b73815f0a37c0124c7cfcc2a1cf21ac67fc89bfbe7747d4d2b00e9711a8a97b/5e803601c2d8ab7584fd.png": "5e803601c2d8ab7584fd9f5ed94376dd44115e1438d432725d4f25c36b049ee8",
+    "content-en/ritmus-first-app/3b73815f0a37c0124c7cfcc2a1cf21ac67fc89bfbe7747d4d2b00e9711a8a97b/cover-540.webp": "89933e5c0e32806580b421ddda518fbb437002526c5b3941ed8107f66a69f5df",
+    "content-en/ritmus-first-app/3b73815f0a37c0124c7cfcc2a1cf21ac67fc89bfbe7747d4d2b00e9711a8a97b/cover-1080.webp": "555bd76052e808e14d7099f7e41d7ada130719d1e9d9cc4ad2bb37fcf4b0b609",
+    "content-en/ritmus-first-app/3b73815f0a37c0124c7cfcc2a1cf21ac67fc89bfbe7747d4d2b00e9711a8a97b/post.json": "741b0293acc595b33027a78ee12ffdfa70e9090ac0d103fbe5e06887cddff1c8",
     "content-en/calm-tech-series-01-concept/d66b81f14c0fd30f1aa321f3f29936b2972596058335137549a72403e3a625d8/3f59fd6618e6a31cc914.png": "3f59fd6618e6a31cc9143ba103175c650346da671c448a67cdd61c5fcd2162e5",
     "content-en/calm-tech-series-01-concept/d66b81f14c0fd30f1aa321f3f29936b2972596058335137549a72403e3a625d8/c977d505f79aafd8d547.png": "c977d505f79aafd8d5477241bb135d7105efb8c8a8b3feecac9db1d72ae16b35",
     "content-en/calm-tech-series-01-concept/d66b81f14c0fd30f1aa321f3f29936b2972596058335137549a72403e3a625d8/1e0573afe05576e11918.png": "1e0573afe05576e11918ee2371a2ad33b15fcaa7987279c436b706838e674807",

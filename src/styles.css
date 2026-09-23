@@ -224,15 +224,14 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #fff;
-  border: 1px solid #8b8b8b;
+  background: #f2f1ec;
+  border: 0;
   color: #111;
   text-align: left;
 }
 .submission-card:hover,
 .submission-card:focus-visible {
-  border-color: #111;
-  background: #fafafa;
+  background: #ecebe5;
 }
 .submission-card-label,
 .submission-card-action {
