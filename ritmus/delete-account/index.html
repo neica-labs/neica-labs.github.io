@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="no-referrer" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://apis.google.com; connect-src 'self' https://*.googleapis.com https://*.cloudfunctions.net https://*.firebaseapp.com; frame-src https://tickflow-d24e5.firebaseapp.com https://accounts.google.com https://appleid.apple.com; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'" />
+  <title>RITMUS 계정 삭제 — NEICA</title>
+  <meta name="description" content="앱 재설치 없이 Google 또는 Apple 계정으로 본인 확인 후 RITMUS 계정과 관련 서버 데이터를 삭제하세요." />
+</head>
+<body>
+  <main id="deletion-root"></main>
+  <noscript>계정 삭제에는 JavaScript가 필요합니다. 도움이 필요하면 neica.labs@gmail.com으로 문의하세요. 비밀번호를 보내지 마세요.</noscript>
+  <script type="module" src="/src/ritmus-deletion.ts"></script>
+</body>
+</html>
