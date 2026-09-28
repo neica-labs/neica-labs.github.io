@@ -224,7 +224,6 @@ createRoot(document.getElementById("root")!).render(
     )}
     <footer className="site-copyright">
       <a href={localizedSiteUrl("privacy/", locale)}>{text.privacy.heading}</a>
-      <a href={localizedSiteUrl("ritmus/delete-account/", locale)}>{locale === "en" ? "Delete RITMUS account" : "RITMUS 계정 삭제"}</a>
       <span>©2026 NEICA. All rights reserved.</span>
     </footer>
   </>,
