@@ -12,6 +12,10 @@
 .test-number { display: block; font: 20px/1.4 var(--mono); letter-spacing: -.06em; color: #666; margin-bottom: 14px; }
 .test-step h2 { margin: 0 0 8px; font-size: 20px; font-weight: 650; line-height: 1.4; letter-spacing: -.035em; }
 .test-step p { font-size: 16px; line-height: 1.7; color: #555; margin: 0 0 24px; }
+.test-review-notice { margin: 12px 0 18px; padding: 16px; border-left: 3px solid #111; background: #f5f5f5; font-size: 16px; line-height: 1.65; }
+.test-review-notice strong { display: block; margin-bottom: 8px; font-weight: 650; }
+.test-review-notice p { margin: 0; color: #333; }
+.test-review-notice p + p { margin-top: 10px; }
 .test-action { display: flex; width: 100%; justify-content: space-between; align-items: center; gap: 12px; margin-top: auto; padding: 15px 18px; min-height: 54px; border: 1px solid #222; font-size: 16px; line-height: 1.4; font-weight: 550; background: #fff; color: #111; }
 .test-action.primary { background: #111; color: #fff; }
 .test-action:hover { background: #eee; color: #111; }
