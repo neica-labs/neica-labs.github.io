@@ -16,6 +16,7 @@ for (const route of [
   "contact/index.html",
   "privacy/index.html",
   "ritmus/delete-account/index.html",
+  "ritmus/test/index.html",
   "404.html",
 ]) {
   const html = await fs.readFile(path.join(dist, route), "utf8");

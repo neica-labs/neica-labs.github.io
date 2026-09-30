@@ -154,6 +154,7 @@ export default defineConfig(({ command, mode }) => {
             "contact/index",
             "privacy/index",
             "ritmus/delete-account/index",
+            "ritmus/test/index",
             "404",
           ].map((name) => [name, path.join(root, `${name}.html`)]),
         ),
